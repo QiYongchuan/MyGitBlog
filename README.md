@@ -8,7 +8,7 @@ My personal blog using issues and GitHub Actions
 | 科目 | 为何要学 |视频资源| 
  | ---- | ---- | ---- |
 | 编程 | 不要做一个「永远没彻底搞懂」诸如递归等概念的程序员。 | [Brian Harvey’s Berkeley CS 61A](#)  |
-| [计算机系统结构] | 计算机组成原理课高级平替版本 | Berkeley CS 61C |
+| 计算机系统结构 | 计算机组成原理课高级平替版本 | Berkeley CS 61C |
 | 操作系统 |代码运行的原理 | Berkeley CS 162  |
 | 计算机网络 | 分布式系统的前置课程？ 但是目前看书感觉挺有趣，其次这学期要考试 | 《计算机网络：自顶向下方法》 or Standford CS 144 |
 
@@ -71,7 +71,7 @@ My personal blog using issues and GitHub Actions
 
 | 科目 | 描述 |时间| 
 | ---- | ---- | ---- |
-| 深入理解 Vue.js 实战| 开源的项目，讲的比较详细，很基础，从Vue2开始|  |
+| 【深入理解 Vue.js实战](https://github.com/godbasin/vue-ebook)| 开源的项目，讲的比较详细，很基础，从Vue2开始|  |
 | [Node入门](https://www.nodebeginner.org/index-zh-cn.html) |可以作为借的纸质版书的替代品，通俗易懂 |
 |[Let’s Build A Web Server](https://ruslanspivak.com/lsbaws-part1/)|英文，图多，易懂| 尽快看
 |[计算机教育中缺失的一课](https://missing-semester-cn.github.io/)|讲各种工具，git,vim等| 整理git笔记可参考
