@@ -71,13 +71,13 @@ My personal blog using issues and GitHub Actions
 
 | 科目 | 描述 |时间| 
 | ---- | ---- | ---- |
-| 【深入理解 Vue.js实战](https://github.com/godbasin/vue-ebook)| 开源的项目，讲的比较详细，很基础，从Vue2开始|  |
+| [深入理解 Vue.js实战](https://github.com/godbasin/vue-ebook)| 开源的项目，讲的比较详细，很基础，从Vue2开始|  |
 | [Node入门](https://www.nodebeginner.org/index-zh-cn.html) |可以作为借的纸质版书的替代品，通俗易懂 |
 |[Let’s Build A Web Server](https://ruslanspivak.com/lsbaws-part1/)|英文，图多，易懂| 尽快看
 |[计算机教育中缺失的一课](https://missing-semester-cn.github.io/)|讲各种工具，git,vim等| 整理git笔记可参考
 |[REACT 全栈](https://fullstackopen.com/zh/)|全栈| |
 |[JavaScript Visualized](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)| 讲解js可视化|很短，可以尽快来看 |
-
+|[What the f*ck JavaScript?](https://github.com/denysdovhan/wtfjs/blob/master/README-zh-cn.md)|有趣的js讲解| 解决一些细节问题|
 
 
 ## 日记
