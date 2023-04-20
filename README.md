@@ -38,7 +38,7 @@ My personal blog using issues and GitHub Actions
 
 **or just for fun!**
 
-<details>
+</details>
 
 ## 置顶文章
 
