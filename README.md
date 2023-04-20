@@ -2,6 +2,8 @@
 
 My personal blog using issues and GitHub Actions 
 
+本博客记录学习和日常的生活，记录数字生命碎片痕迹
+
 ## 学习清单
 | 科目 | 为何要学 |视频资源| 
  | ---- | ---- | ---- |
@@ -15,11 +17,6 @@ My personal blog using issues and GitHub Actions
 > 本文档完整版源自 [TeachYourselfCS](https://teachyourselfcs.com) 内容的中文翻译，原作者为 [Ozan Onay](https://twitter.com/oznova_) 和 [Myles Byrne](https://twitter.com/quackingduck)。
 
 如果你是一个自学成才的工程师，或者从编程培训班毕业，那么你很有必要学习计算机科学。幸运的是，不必为此花上数年光阴和不菲费用去攻读一个学位：仅仅依靠自己，你就可以获得世界一流水平的教育💸。
-
-互联网上，到处都有许多的学习资源，然而精华与糟粕并存。你所需要的，不是一个诸如「200+ 免费在线课程」的清单，而是以下问题的答案：
-
-* 你应当学习 **哪些科目**，为什么？
-* 对于这些科目，**最好的书籍或者视频课程** 是什么？
 
 
 ### 为什么要学习计算机科学？
@@ -44,6 +41,9 @@ My personal blog using issues and GitHub Actions
 <details>
 
 ## 置顶文章
+
+- [第一篇日记](https://github.com/QiYongchuan/MyGitBlog/issues/1#issue-1676844335) --2023-4-20
+
 - [如何用一个仓库记录自己的一年](https://github.com/yihong0618/gitblog/issues/209)--2021-05-28
 - [我转行程序员的经历](https://github.com/yihong0618/gitblog/issues/186)--2020-09-13
 
@@ -133,7 +133,7 @@ My personal blog using issues and GitHub Actions
 - [年终岁尾](https://github.com/yihong0618/gitblog/issues/230)--2022-01-28
 - [一件小事](https://github.com/yihong0618/gitblog/issues/214)--2021-07-05
 - [逃离](https://github.com/yihong0618/gitblog/issues/208)--2021-05-12
-<details><summary>显示更多</summary>
+
 
 
 
@@ -141,8 +141,8 @@ My personal blog using issues and GitHub Actions
 TODO list from [Postgres 需要学的东西](https://github.com/yihong0618/gitblog/issues/234)--18 jobs to do--1 jobs done
 - [x] 计算机网络
 - [x] cs61a
-- [ ] 
-- [ ] Shared memory
+- [ ] 操作系统
+- [ ] 计算机组成原理
 - [ ] Page
 
 
