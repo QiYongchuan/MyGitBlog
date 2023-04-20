@@ -53,19 +53,6 @@ My personal blog using issues and GitHub Actions
 
 
 
-
-## 一些计划
-
-- [自律，悔恨，逝去的日子，成长](https://github.com/yihong0618/gitblog/issues/174)--2020-08-12
-
-- [把事情做完，做一件事，爬也要爬完](https://github.com/yihong0618/gitblog/issues/167)--2020-06-23
-<details><summary>显示更多</summary>
-
-- [跑步数据找到同步方法了](https://github.com/yihong0618/gitblog/issues/164)--2020-06-06
-- [从今天起](https://github.com/yihong0618/gitblog/issues/126)--2020-03-01
-
-</details>
-
 ## 收藏的文章
 - [写诗吧](https://github.com/yihong0618/gitblog/issues/254)--2022-11-25
 - [如果判断一个数字帐号来自中国大陆](https://github.com/yihong0618/gitblog/issues/248)--2022-10-25
@@ -80,13 +67,16 @@ My personal blog using issues and GitHub Actions
 
 </details>
 
+## 收藏的课程
 
-
-
-
-## 技术文章
-- [用 eBPF trace PostgreSQL 的几种姿势](https://github.com/yihong0618/gitblog/issues/257)--2023-01-28
-
+| 科目 | 描述 |时间| 
+| ---- | ---- | ---- |
+| 深入理解 Vue.js 实战| 开源的项目，讲的比较详细，很基础，从Vue2开始|  |
+| [Node入门](https://www.nodebeginner.org/index-zh-cn.html) |可以作为借的纸质版书的替代品，通俗易懂 |
+|[Let’s Build A Web Server](https://ruslanspivak.com/lsbaws-part1/)|英文，图多，易懂| 尽快看
+|[计算机教育中缺失的一课](https://missing-semester-cn.github.io/)|讲各种工具，git,vim等| 整理git笔记可参考
+|[REACT 全栈](https://fullstackopen.com/zh/)|全栈| |
+|[JavaScript Visualized](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)| 讲解js可视化|很短，可以尽快来看 |
 
 
 
@@ -114,16 +104,6 @@ My personal blog using issues and GitHub Actions
 - [计算机组成要素读书笔记](https://github.com/yihong0618/gitblog/issues/52)--2019-10-04
 - [《快乐的Linux命令行》读书笔记](https://github.com/yihong0618/gitblog/issues/23)--2019-08-12
 - [MySQL是怎样跑起来的读书笔记](https://github.com/yihong0618/gitblog/issues/13)--2019-08-01
-
-
-
-
-## 生活
-- [今天的跑步电台](https://github.com/yihong0618/gitblog/issues/239)--2022-07-18
-- [新冠纪元](https://github.com/yihong0618/gitblog/issues/235)--2022-04-26
-- [年终岁尾](https://github.com/yihong0618/gitblog/issues/230)--2022-01-28
-- [一件小事](https://github.com/yihong0618/gitblog/issues/214)--2021-07-05
-- [逃离](https://github.com/yihong0618/gitblog/issues/208)--2021-05-12
 
 
 
