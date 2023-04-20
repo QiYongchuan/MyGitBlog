@@ -51,16 +51,8 @@ My personal blog using issues and GitHub Actions
 
 - [写诗吧](https://github.com/yihong0618/gitblog/issues/254)--2022-11-25
 
-## 2019
-- [2019最后一天，不是总结的总结](https://github.com/yihong0618/gitblog/issues/97)--2019-12-31
 
-- [2019年剩下的不多了](https://github.com/yihong0618/gitblog/issues/49)--2019-10-04
-<details><summary>显示更多</summary>
-- [七月总结和八月计划](https://github.com/yihong0618/gitblog/issues/14)--2019-08-01
-</details>
 
-## 2022
-- [2022 失落的一年](https://github.com/yihong0618/gitblog/issues/255)--2022-12-19
 
 ## 一些计划
 
@@ -74,7 +66,7 @@ My personal blog using issues and GitHub Actions
 
 </details>
 
-## 一些记录
+## 收藏的文章
 - [写诗吧](https://github.com/yihong0618/gitblog/issues/254)--2022-11-25
 - [如果判断一个数字帐号来自中国大陆](https://github.com/yihong0618/gitblog/issues/248)--2022-10-25
 
@@ -84,13 +76,12 @@ My personal blog using issues and GitHub Actions
 - [我转行程序员的经历](https://github.com/yihong0618/gitblog/issues/186)--2020-09-13
 - [做减法](https://github.com/yihong0618/gitblog/issues/148)--2020-04-16
 - [少说，多做，](https://github.com/yihong0618/gitblog/issues/112)--2020-02-13
-
 - [编程的一些心得](https://github.com/yihong0618/gitblog/issues/53)--2019-10-04
 
 </details>
 
-## 工作
-- [经历了人生体验最棒的一次面试](https://github.com/yihong0618/gitblog/issues/228)--2021-12-06
+
+
 
 
 ## 技术文章
@@ -118,7 +109,7 @@ My personal blog using issues and GitHub Actions
 - [修炼内功，最近在刷《SICP》](https://github.com/yihong0618/gitblog/issues/163)--2020-06-04
 - [人和人之家的差距太大了](https://github.com/yihong0618/gitblog/issues/147)--2020-04-13
 
-## 读书笔记
+## 我的读书笔记
 - [《Vim实用技巧》读书笔记](https://github.com/yihong0618/gitblog/issues/74)--2019-11-05
 - [计算机组成要素读书笔记](https://github.com/yihong0618/gitblog/issues/52)--2019-10-04
 - [《快乐的Linux命令行》读书笔记](https://github.com/yihong0618/gitblog/issues/23)--2019-08-12
@@ -140,32 +131,27 @@ My personal blog using issues and GitHub Actions
 ## TODO
 TODO list from [Postgres 需要学的东西](https://github.com/yihong0618/gitblog/issues/234)--18 jobs to do--1 jobs done
 - [x] 计算机网络
-- [x] cs61a
+- [ ] cs61a
 - [ ] 操作系统
 - [ ] 计算机组成原理
-- [ ] Page
+- [ ] [React](https://fullstackopen.com/zh/)
 
 
 TODO list from [接下来要写的东西](https://github.com/yihong0618/gitblog/issues/219)--3 jobs to do--5 jobs done
-- [x] running_page 一周年总结
-- [x] 机核文章
-- [x] 我跑步听的播客
-- [x] 该离开了
-- [x] 选择
-- [ ] django shell 的运行原理
-- [ ] 推荐两个 YouTube 程序员
-- [ ] 游戏行业科普
+- [ ] git使用
+- [ ] 计算机网络的学习笔记记录
+- [ ] 计算机组成原理的作业
+
+
 
 TODO list from [学习生活上的计划](https://github.com/yihong0618/gitblog/issues/181)--3 jobs to do--1 jobs done
-- [x] 背标日初级下的单词
-- [ ] 月跑量突破250 km
-- [ ] 瘦到130斤
-- [ ] 年底考个日语 3 级
+- [ ] 写下外刊的单词
+
 
 TODO list from [程序上新的计划](https://github.com/yihong0618/gitblog/issues/180)--2 jobs to do--8 jobs done
-- [x] 完善 gitblog 的 action 让用户更少更改
-- [x] 给 gitblog 这个增加todo list 功能(这个就是测试）
-- [x] 给 running page 增加排序
-- [x] 完善 runtastic 增加一个参数
+- [ ] yupi的伙伴匹配系统
+- [ ] node.js跑一个小项目
+- [ ] springBoot的作业
+
 
 
