@@ -40,7 +40,7 @@ My personal blog using issues and GitHub Actions
 
 </details>
 
-## 置顶文章
+## 我的文章
 
 - [第一篇日记](https://github.com/QiYongchuan/MyGitBlog/issues/1#issue-1676844335) --2023-4-20
 
@@ -67,6 +67,12 @@ My personal blog using issues and GitHub Actions
 
 </details>
 
+## 一些有趣的博客
+|博客名称 | 添加日期 | type | 备注|
+| ---- | ---- | ---- | ---- |
+|[如何用一个仓库记录自己的一年](https://github.com/yihong0618/gitblog/issues/209)|2034-4-23|python为主| 这是本博客的爹，我的博客就是根据这个博客建的|
+
+
 ## 收藏的课程
 
 | 科目 | 描述 |时间| 
@@ -78,6 +84,7 @@ My personal blog using issues and GitHub Actions
 |[REACT 全栈](https://fullstackopen.com/zh/)|全栈| |
 |[JavaScript Visualized](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)| 讲解js可视化|很短，可以尽快来看 |
 |[What the f*ck JavaScript?](https://github.com/denysdovhan/wtfjs/blob/master/README-zh-cn.md)|有趣的js讲解| 解决一些细节问题|
+|[Jsp](https://www.edureka.co/blog/servlet-and-jsp-tutorial/)|从头开始学jsp，一个貌似很古老的技术 | |
 
 
 ## 日记
