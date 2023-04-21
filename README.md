@@ -40,6 +40,11 @@ My personal blog using issues and GitHub Actions
 
 </details>
 
+### 快崩溃了？代码挑不出来，bugs找不到！
+<details><summary>自找苦吃，辛苦了</summary>
+![image](https://user-images.githubusercontent.com/105039020/233700183-e31dbd3d-a0f3-4fd6-a9e8-9348fb1acff3.png)
+
+</details>
 ## 我的文章
 
 - [第一篇日记](https://github.com/QiYongchuan/MyGitBlog/issues/1#issue-1676844335) --2023-4-20
