@@ -44,27 +44,32 @@ My personal blog using issues and GitHub Actions
 
 - [第一篇日记](https://github.com/QiYongchuan/MyGitBlog/issues/1#issue-1676844335) --2023-4-20
 
-- [如何用一个仓库记录自己的一年](https://github.com/yihong0618/gitblog/issues/209)--2021-05-28
-- [我转行程序员的经历](https://github.com/yihong0618/gitblog/issues/186)--2020-09-13
 
 ## 最近更新
 
 - [写诗吧](https://github.com/yihong0618/gitblog/issues/254)--2022-11-25
 
+## 我的读书笔记
+- [《Vim实用技巧》读书笔记](https://github.com/yihong0618/gitblog/issues/74)--2019-11-05
+- [计算机组成要素读书笔记](https://github.com/yihong0618/gitblog/issues/52)--2019-10-04
+- [《快乐的Linux命令行》读书笔记](https://github.com/yihong0618/gitblog/issues/23)--2019-08-12
+- [MySQL是怎样跑起来的读书笔记](https://github.com/yihong0618/gitblog/issues/13)--2019-08-01
 
 
-## 收藏的文章
-- [写诗吧](https://github.com/yihong0618/gitblog/issues/254)--2022-11-25
-- [如果判断一个数字帐号来自中国大陆](https://github.com/yihong0618/gitblog/issues/248)--2022-10-25
+## 收藏的文章/原住民的文章
+- [如何用一个仓库记录自己的一年](https://github.com/yihong0618/gitblog/issues/209)--2021-05-28
+- [我转行程序员的经历](https://github.com/yihong0618/gitblog/issues/186)--2020-09-13
 
 <details><summary>显示更多</summary>
 
 - [推荐一些我一直关注的觉得不错的和 Python 相关的独立博客](https://github.com/yihong0618/gitblog/issues/195)--2020-11-20
-- [我转行程序员的经历](https://github.com/yihong0618/gitblog/issues/186)--2020-09-13
-- [做减法](https://github.com/yihong0618/gitblog/issues/148)--2020-04-16
-- [少说，多做，](https://github.com/yihong0618/gitblog/issues/112)--2020-02-13
-- [编程的一些心得](https://github.com/yihong0618/gitblog/issues/53)--2019-10-04
-
+- [如果判断一个数字帐号来自中国大陆](https://github.com/yihong0618/gitblog/issues/248)--2022-10-25
+- [写诗吧](https://github.com/yihong0618/gitblog/issues/254)--2022-11-25
+- [自律](https://github.com/yihong0618/gitblog/issues/32)--2019-09-11
+- [关于成长](https://github.com/yihong0618/gitblog/issues/31)--2019-09-06
+- [总结很重要啊](https://github.com/yihong0618/gitblog/issues/28)--2019-08-29
+- [懈怠](https://github.com/yihong0618/gitblog/issues/27)--2019-08-24
+- [有趣与无趣](https://github.com/yihong0618/gitblog/issues/221)--2021-10-13
 </details>
 
 ## 一些有趣的博客
@@ -81,61 +86,31 @@ My personal blog using issues and GitHub Actions
 | [Node入门](https://www.nodebeginner.org/index-zh-cn.html) |可以作为借的纸质版书的替代品，通俗易懂 |
 |[Let’s Build A Web Server](https://ruslanspivak.com/lsbaws-part1/)|英文，图多，易懂| 尽快看
 |[计算机教育中缺失的一课](https://missing-semester-cn.github.io/)|讲各种工具，git,vim等| 整理git笔记可参考
-|[REACT 全栈](https://fullstackopen.com/zh/)|全栈| |
+|[React 全栈](https://fullstackopen.com/zh/)|全栈| |
 |[JavaScript Visualized](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)| 讲解js可视化|很短，可以尽快来看 |
 |[What the f*ck JavaScript?](https://github.com/denysdovhan/wtfjs/blob/master/README-zh-cn.md)|有趣的js讲解| 解决一些细节问题|
 |[Jsp](https://www.edureka.co/blog/servlet-and-jsp-tutorial/)|从头开始学jsp，一个貌似很古老的技术 | |
 
 
-## 日记
-- [一杯敬月光](https://github.com/yihong0618/gitblog/issues/251)--2022-11-18
-- [有趣与无趣](https://github.com/yihong0618/gitblog/issues/221)--2021-10-13
-- [一点思考](https://github.com/yihong0618/gitblog/issues/218)--2021-08-19
-- [朋友圈](https://github.com/yihong0618/gitblog/issues/216)--2021-08-03
-- [新年碎碎念](https://github.com/yihong0618/gitblog/issues/201)--2021-01-08
-<details><summary>显示更多</summary>
-
-
-- [自律](https://github.com/yihong0618/gitblog/issues/32)--2019-09-11
-- [关于成长](https://github.com/yihong0618/gitblog/issues/31)--2019-09-06
-- [总结很重要啊](https://github.com/yihong0618/gitblog/issues/28)--2019-08-29
-- [懈怠](https://github.com/yihong0618/gitblog/issues/27)--2019-08-24
-</details>
-
-## 精进计划
-- [修炼内功，最近在刷《SICP》](https://github.com/yihong0618/gitblog/issues/163)--2020-06-04
-- [人和人之家的差距太大了](https://github.com/yihong0618/gitblog/issues/147)--2020-04-13
-
-## 我的读书笔记
-- [《Vim实用技巧》读书笔记](https://github.com/yihong0618/gitblog/issues/74)--2019-11-05
-- [计算机组成要素读书笔记](https://github.com/yihong0618/gitblog/issues/52)--2019-10-04
-- [《快乐的Linux命令行》读书笔记](https://github.com/yihong0618/gitblog/issues/23)--2019-08-12
-- [MySQL是怎样跑起来的读书笔记](https://github.com/yihong0618/gitblog/issues/13)--2019-08-01
-
-
 
 
 ## TODO
-TODO list from [Postgres 需要学的东西](https://github.com/yihong0618/gitblog/issues/234)--18 jobs to do--1 jobs done
-- [x] 计算机网络
+ 
+- [ ] 计算机网络
 - [ ] cs61a
 - [ ] 操作系统
 - [ ] 计算机组成原理
-- [ ] [React](https://fullstackopen.com/zh/)
+- [ ] React
 
 
-TODO list from [接下来要写的东西](https://github.com/yihong0618/gitblog/issues/219)--3 jobs to do--5 jobs done
+TODO list from 接下来要写的东西
 - [ ] git使用
 - [ ] 计算机网络的学习笔记记录
 - [ ] 计算机组成原理的作业
 
 
 
-TODO list from [学习生活上的计划](https://github.com/yihong0618/gitblog/issues/181)--3 jobs to do--1 jobs done
-- [ ] 写下外刊的单词
-
-
-TODO list from [程序上新的计划](https://github.com/yihong0618/gitblog/issues/180)--2 jobs to do--8 jobs done
+TODO list from
 - [ ] yupi的伙伴匹配系统
 - [ ] node.js跑一个小项目
 - [ ] springBoot的作业
