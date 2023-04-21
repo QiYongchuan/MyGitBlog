@@ -21,7 +21,7 @@ My personal blog using issues and GitHub Actions
 
 ### 为什么要学习计算机科学？
 
-<details><summary>来点鸡汤动力？</summary>
+<details><summary>来点鸡汤？</summary>
 
 软件工程师分为两种：一种充分理解了计算机科学，从而有能力应对充满挑战的创造性工作；另一种仅仅凭着对一些高级工具的熟悉而勉强应付。
 
@@ -43,6 +43,9 @@ My personal blog using issues and GitHub Actions
 ### 快崩溃了？代码挑不出来，bugs找不到！
 <details><summary>自找苦吃，辛苦了</summary>
 ![image](https://user-images.githubusercontent.com/105039020/233700183-e31dbd3d-a0f3-4fd6-a9e8-9348fb1acff3.png)
+
+ ![image](https://user-images.githubusercontent.com/105039020/233700927-0ca9d4b1-1e22-43fd-a041-9eb6d9cbc10c.png)
+![image](https://user-images.githubusercontent.com/105039020/233701450-e324799e-a37a-4dde-ab6c-c7c253ef36e8.png)
 
 </details>
 ## 我的文章
