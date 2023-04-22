@@ -58,10 +58,10 @@ My personal blog using issues and GitHub Actions
 - [写诗吧](https://github.com/yihong0618/gitblog/issues/254)--2022-11-25
 
 ## 我的学习笔记
-- [《Vim实用技巧》读书笔记](https://github.com/yihong0618/gitblog/issues/74)--2019-11-05
-- [Javaweb Jsp搭建记录](#)
+
+- [Javaweb Jsp搭建记录](https://github.com/QiYongchuan/MyGitBlog/issues/2#issue-1678084049)
 - [SpringBoot项目记录](#)
-- [计算机组成要素读书笔记](https://github.com/yihong0618/gitblog/issues/52)--2019-10-04
+
 - [《快乐的Linux命令行》读书笔记](https://github.com/yihong0618/gitblog/issues/23)--2019-08-12
 - [MySQL是怎样跑起来的读书笔记](https://github.com/yihong0618/gitblog/issues/13)--2019-08-01
 
@@ -89,6 +89,8 @@ My personal blog using issues and GitHub Actions
 ## 我的文章
 
 - [第一篇日记](https://github.com/QiYongchuan/MyGitBlog/issues/1#issue-1676844335) --2023-4-20
+- 
+- [Javaweb Jsp搭建记录](https://github.com/QiYongchuan/MyGitBlog/issues/2#issue-1678084049)
 
 ## 收藏的课程
 
