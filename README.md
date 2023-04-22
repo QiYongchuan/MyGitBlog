@@ -61,7 +61,7 @@ My personal blog using issues and GitHub Actions
 
 - [Javaweb Jsp搭建记录](https://github.com/QiYongchuan/MyGitBlog/issues/2#issue-1678084049)
 - [SpringBoot项目记录](#)
-
+- [南大操作系统笔记]()
 - [《快乐的Linux命令行》读书笔记](https://github.com/yihong0618/gitblog/issues/23)--2019-08-12
 - [MySQL是怎样跑起来的读书笔记](https://github.com/yihong0618/gitblog/issues/13)--2019-08-01
 
@@ -89,9 +89,10 @@ My personal blog using issues and GitHub Actions
 
 ## 我的文章
 
-- [第一篇日记](https://github.com/QiYongchuan/MyGitBlog/issues/1#issue-1676844335) --2023-4-20
-- 
+- [那就写点什么记录吧](https://github.com/QiYongchuan/MyGitBlog/issues/1#issue-1676844335) --2023-4-20
+- [听到大家都在自讨苦吃，痛苦的前行，我心情好了许多](https://github.com/QiYongchuan/MyGitBlog/issues/4#issue-1678869562)
 - [Javaweb Jsp搭建记录](https://github.com/QiYongchuan/MyGitBlog/issues/2#issue-1678084049)
+
 
 ## 收藏的课程
 
@@ -131,6 +132,6 @@ TODO list from
 - [ ] springBoot的作业
 - [ ] [先试下讲扇贝单词传送到gpt](
 https://mobile.twitter.com/yihong0618/status/1649433890032082944)
--[ ] 个人简历项目（B站收藏）
+- [ ] 个人简历项目（B站收藏）
 
 
