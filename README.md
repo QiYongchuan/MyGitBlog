@@ -6,10 +6,13 @@ My personal blog using issues and GitHub Actions
 
 ## 学习清单
 | 科目 | 为何要学 |视频资源| 
- | ---- | ---- | ---- |
-| 编程 | 不要做一个「永远没彻底搞懂」诸如递归等概念的程序员。 | [Brian Harvey’s Berkeley CS 61A](#)  |
+| ---- | ---- | ---- |
+| Structure and Interpretation of Computer Programs (https://nju-sicp.bitbucket.io/2021/) | 南京大学的SICP，中文版的cs61a,大概是PA的前置课？ | [课程官网]((https://nju-sicp.bitbucket.io/2021/))  |
+| 编程 | 不要做一个「永远没彻底搞懂」诸如递归等概念的程序员。 | [Brian Harvey’s Berkeley CS 61A](#) |
+| [PA](https://nju-projectn.github.io/ics-pa-gitbook/ics2022/index.html)| jyy，计算机组成原理？做出一个仙剑？|除了课程主页资料，[B站]( https://b23.tv/iVcPUSO)| 
 | 计算机系统结构 | 计算机组成原理课高级平替版本 | Berkeley CS 61C |
-| 操作系统 |代码运行的原理 | Berkeley CS 162  |
+| [操作系统jyy](http://jyywiki.cn/OS/2022/) |一门十分硬核的编程课,生存下来，如果生存不下来就去看上面的PA，PA生存不下来，就去看SICP| 课程主页以及[B站的课程]( https://b23.tv/KHzxzW5)  |
+| 操作系统 |代码运行的原理 | Berkeley CS 162   |
 | 计算机网络 | 分布式系统的前置课程？ 但是目前看书感觉挺有趣，其次这学期要考试 | 《计算机网络：自顶向下方法》 or Standford CS 144 |
 
 ### 自学计算机科学
@@ -85,7 +88,7 @@ My personal blog using issues and GitHub Actions
 |博客名称 | 添加日期 | type | 备注|
 | ---- | ---- | ---- | ---- |
 |[如何用一个仓库记录自己的一年](https://github.com/yihong0618/gitblog/issues/209)|2034-4-23|python为主| 这是本博客的爹，我的博客就是根据这个博客建的|
-|[在南极](https://brr.fyi/posts/last-flight-out)｜2023.4.22｜英语，南极生活｜
+|[在南极](https://brr.fyi/posts/last-flight-out)|2023.4.22|英语，南极生活｜
 
 ## 我的文章
 
