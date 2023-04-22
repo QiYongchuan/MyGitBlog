@@ -122,6 +122,7 @@ TODO list from
 - [ ] yupi的伙伴匹配系统
 - [ ] node.js跑一个小项目
 - [ ] springBoot的作业
-
+- [ ] [先试下讲扇贝单词传送到gpt](
+https://mobile.twitter.com/yihong0618/status/1649433890032082944)
 
 
