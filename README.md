@@ -85,7 +85,7 @@ My personal blog using issues and GitHub Actions
 |博客名称 | 添加日期 | type | 备注|
 | ---- | ---- | ---- | ---- |
 |[如何用一个仓库记录自己的一年](https://github.com/yihong0618/gitblog/issues/209)|2034-4-23|python为主| 这是本博客的爹，我的博客就是根据这个博客建的|
-[在南极做it的家伙](https://brr.fyi/posts/last-flight-out)｜2023.4.22｜英语，南极生活｜
+|[在南极](https://brr.fyi/posts/last-flight-out)｜2023.4.22｜英语，南极生活｜
 
 ## 我的文章
 
@@ -131,5 +131,6 @@ TODO list from
 - [ ] springBoot的作业
 - [ ] [先试下讲扇贝单词传送到gpt](
 https://mobile.twitter.com/yihong0618/status/1649433890032082944)
+-[ ] 个人简历项目（B站收藏）
 
 
