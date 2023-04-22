@@ -7,7 +7,7 @@ My personal blog using issues and GitHub Actions
 ## 学习清单
 | 科目 | 为何要学 |视频资源| 
 | ---- | ---- | ---- |
-| [Structure and Interpretation of Computer Programs] (https://nju-sicp.bitbucket.io/2021/) | 南京大学的SICP，中文版的cs61a,大概是PA的前置课？ | [课程官网]((https://nju-sicp.bitbucket.io/2021/))  |
+| [Structure and Interpretation of Computer Programs](https://nju-sicp.bitbucket.io/2021/)| 南京大学的SICP，中文版的cs61a,大概是PA的前置课？ | [课程官网]((https://nju-sicp.bitbucket.io/2021/))  |
 | 编程 | 不要做一个「永远没彻底搞懂」诸如递归等概念的程序员。 | Brian Harvey’s Berkeley CS 61A() |
 | [PA](https://nju-projectn.github.io/ics-pa-gitbook/ics2022/index.html)| jyy，计算机组成原理？做出一个仙剑？|除了课程主页资料，[B站]( https://b23.tv/iVcPUSO)| 
 | 计算机系统结构 | 计算机组成原理课高级平替版本 | Berkeley CS 61C |
@@ -63,6 +63,8 @@ My personal blog using issues and GitHub Actions
 
 - [Javaweb Jsp搭建记录](https://github.com/QiYongchuan/MyGitBlog/issues/2#issue-1678084049)
 - [SpringBoot项目记录](#)
+- [南大SICP课程笔记]()
+- [南大PA课程笔记]()
 - [南大操作系统笔记]()
 - [《快乐的Linux命令行》读书笔记](https://github.com/yihong0618/gitblog/issues/23)--2019-08-12
 - [MySQL是怎样跑起来的读书笔记](https://github.com/yihong0618/gitblog/issues/13)--2019-08-01
