@@ -41,27 +41,30 @@ My personal blog using issues and GitHub Actions
 </details>
 
 ### 快崩溃了？代码挑不出来，bugs找不到！
-<details><summary>自找苦吃，辛苦了</summary>
-![image](https://user-images.githubusercontent.com/105039020/233700183-e31dbd3d-a0f3-4fd6-a9e8-9348fb1acff3.png)
 
- ![image](https://user-images.githubusercontent.com/105039020/233700927-0ca9d4b1-1e22-43fd-a041-9eb6d9cbc10c.png)
+<details><summary>自找苦吃，辛苦了</summary>
+
+![image](https://user-images.githubusercontent.com/105039020/233700183-e31dbd3d-a0f3-4fd6-a9e8-9348fb1acff3.png)
+![image](https://user-images.githubusercontent.com/105039020/233700927-0ca9d4b1-1e22-43fd-a041-9eb6d9cbc10c.png)
 ![image](https://user-images.githubusercontent.com/105039020/233701450-e324799e-a37a-4dde-ab6c-c7c253ef36e8.png)
 
 </details>
-## 我的文章
 
-- [第一篇日记](https://github.com/QiYongchuan/MyGitBlog/issues/1#issue-1676844335) --2023-4-20
+
 
 
 ## 最近更新
-
+- [听到大家都在自讨苦吃，痛苦的前行，我心情好了许多]()
 - [写诗吧](https://github.com/yihong0618/gitblog/issues/254)--2022-11-25
 
-## 我的读书笔记
+## 我的学习笔记
 - [《Vim实用技巧》读书笔记](https://github.com/yihong0618/gitblog/issues/74)--2019-11-05
+- [Javaweb Jsp搭建记录](#)
+- [SpringBoot项目记录](#)
 - [计算机组成要素读书笔记](https://github.com/yihong0618/gitblog/issues/52)--2019-10-04
 - [《快乐的Linux命令行》读书笔记](https://github.com/yihong0618/gitblog/issues/23)--2019-08-12
 - [MySQL是怎样跑起来的读书笔记](https://github.com/yihong0618/gitblog/issues/13)--2019-08-01
+
 
 
 ## 收藏的文章/原住民的文章
@@ -71,8 +74,6 @@ My personal blog using issues and GitHub Actions
 <details><summary>显示更多</summary>
 
 - [推荐一些我一直关注的觉得不错的和 Python 相关的独立博客](https://github.com/yihong0618/gitblog/issues/195)--2020-11-20
-- [如果判断一个数字帐号来自中国大陆](https://github.com/yihong0618/gitblog/issues/248)--2022-10-25
-- [写诗吧](https://github.com/yihong0618/gitblog/issues/254)--2022-11-25
 - [自律](https://github.com/yihong0618/gitblog/issues/32)--2019-09-11
 - [关于成长](https://github.com/yihong0618/gitblog/issues/31)--2019-09-06
 - [总结很重要啊](https://github.com/yihong0618/gitblog/issues/28)--2019-08-29
@@ -85,6 +86,9 @@ My personal blog using issues and GitHub Actions
 | ---- | ---- | ---- | ---- |
 |[如何用一个仓库记录自己的一年](https://github.com/yihong0618/gitblog/issues/209)|2034-4-23|python为主| 这是本博客的爹，我的博客就是根据这个博客建的|
 
+## 我的文章
+
+- [第一篇日记](https://github.com/QiYongchuan/MyGitBlog/issues/1#issue-1676844335) --2023-4-20
 
 ## 收藏的课程
 
