@@ -63,7 +63,7 @@ My personal blog using issues and GitHub Actions
 
 - [Javaweb Jsp搭建记录](https://github.com/QiYongchuan/MyGitBlog/issues/2#issue-1678084049)
 - [SpringBoot项目记录](#)
-- [南大SICP课程笔记]()
+- [南大SICP课程笔记](https://github.com/QiYongchuan/MyGitBlog/issues/5#issue-1680048715)
 - [南大PA课程笔记]()
 - [南大操作系统笔记]()
 - [《快乐的Linux命令行》读书笔记](https://github.com/yihong0618/gitblog/issues/23)--2019-08-12
