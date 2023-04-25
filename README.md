@@ -57,6 +57,7 @@ My personal blog using issues and GitHub Actions
 
 ## 最近更新
 - [听到大家都在自讨苦吃，痛苦的前行，我心情好了许多](https://github.com/QiYongchuan/MyGitBlog/issues/4#issue-1678869562)
+- [奶奶家的小狗与生日聚餐](https://github.com/QiYongchuan/MyGitBlog/issues/8#issue-1682831654)
 - [写诗吧](https://github.com/yihong0618/gitblog/issues/254)--2022-11-25
 
 ## 我的学习笔记
@@ -96,7 +97,7 @@ My personal blog using issues and GitHub Actions
 - [那就写点什么记录吧](https://github.com/QiYongchuan/MyGitBlog/issues/1#issue-1676844335) --2023-4-20
 - [听到大家都在自讨苦吃，痛苦的前行，我心情好了许多](https://github.com/QiYongchuan/MyGitBlog/issues/4#issue-1678869562)
 - [Javaweb Jsp搭建记录](https://github.com/QiYongchuan/MyGitBlog/issues/2#issue-1678084049)
-- [奶奶家的小狗与生日聚餐(https://github.com/QiYongchuan/MyGitBlog/issues/8#issue-1682831654)]
+- [奶奶家的小狗与生日聚餐](https://github.com/QiYongchuan/MyGitBlog/issues/8#issue-1682831654)
 
 
 ## 收藏的课程
