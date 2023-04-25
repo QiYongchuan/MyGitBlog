@@ -110,7 +110,7 @@ My personal blog using issues and GitHub Actions
 |[JavaScript Visualized](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)| 讲解js可视化|很短，可以尽快来看 |
 |[What the f*ck JavaScript?](https://github.com/denysdovhan/wtfjs/blob/master/README-zh-cn.md)|有趣的js讲解| 解决一些细节问题|
 |[Servlet and JSP Tutorial- How to Build Web Applications in Java?](https://www.edureka.co/blog/servlet-and-jsp-tutorial/)|从头开始学jsp，一个貌似很古老的技术 | |
-|[50projects50days]()|好玩的网站 |2023.4.25|
+|[50projects50days](https://github.com/bradtraversy/50projects50days)|好玩的网站 |2023.4.25|
 
 
 
