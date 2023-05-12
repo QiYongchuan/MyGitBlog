@@ -3,7 +3,7 @@
 My personal blog using issues and GitHub Actions 
 
 本博客记录学习和日常的生活，记录数字生命碎片痕迹
-
+<details>
 ## 学习清单
 | 科目 | 为何要学 |视频资源| 
 | ---- | ---- | ---- |
@@ -20,6 +20,7 @@ My personal blog using issues and GitHub Actions
 
 如果你是一个自学成才的工程师，或者从编程培训班毕业，那么你很有必要学习计算机科学。幸运的是，不必为此花上数年光阴和不菲费用去攻读一个学位：仅仅依靠自己，你就可以获得世界一流水平的教育💸。
 
+</details>
 
 ### 为什么要学习计算机科学？
 
@@ -62,7 +63,7 @@ My personal blog using issues and GitHub Actions
 - [写诗吧](https://github.com/yihong0618/gitblog/issues/254)--2022-11-25
 
 ## 我的学习笔记
-
+- [RealTimeApp实时聊天开发记录](https://github.com/QiYongchuan/MyGitBlog/issues/14#issue-1706011932)
 - [Javaweb Jsp搭建记录](https://github.com/QiYongchuan/MyGitBlog/issues/2#issue-1678084049)
 - [SpringBoot项目记录](#)
 - [南大SICP课程笔记](https://github.com/QiYongchuan/MyGitBlog/issues/5#issue-1680048715)
