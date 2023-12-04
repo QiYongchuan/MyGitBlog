@@ -38,7 +38,8 @@ jobs:
         run: |
           source venv/bin/activate
           python main.py ${{ secrets.G_T }} ${{ github.repository }} --issue_number '${{ github.event.issue.number }}'
-
+      - name: Set Git Remote URL with Token
+        run: git remote set-url origin https://x-access-token:${{ secrets.G_T }}@github.com/QiYongchuan/MyGitBlog.git
       - name: Push README
         run: |
           git config --local user.email "action@github.com"
