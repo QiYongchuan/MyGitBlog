@@ -9,7 +9,7 @@ from lxml.etree import CDATA
 from marko.ext.gfm import gfm as marko
 
 MD_HEAD = """## Gitblog
-My personal blog using issues and GitHub Actions (随意转载，无需署名)
+My personal blog using issues and GitHub Actions (不可以随意转载，无需署名)
 [RSS Feed](https://raw.githubusercontent.com/{repo_name}/master/feed.xml)
 """
 
