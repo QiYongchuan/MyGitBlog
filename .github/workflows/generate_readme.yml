@@ -8,7 +8,7 @@ on:
     types: [created, edited]
   push:
     branches:
-      - master
+      - main
     paths:
       - main.py
 
