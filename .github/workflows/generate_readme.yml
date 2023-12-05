@@ -20,6 +20,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -34,11 +35,23 @@ jobs:
           source venv/bin/activate
           pip install -r requirements.txt
 
+         # 打印当前的 Git 远程 URL
+      - name: Print Git Remote URL
+        run: git remote -v
+
+        # 打印当前 Git 分支
+      - name: Print Current Branch
+        run: git branch
+
       - name: Generate new md
         run: |
           source venv/bin/activate
-          python main.py ${{ secrets.G_T }} ${{ github.repository }} --issue_number '${{ github.event.issue.number }}'
-      
+          python main.py ${{ secrets.G_T}} ${{ github.repository }} --issue_number '${{ github.event.issue.number }}'
+       
+        # 检查 Git 状态
+      - name: Check Git Status
+        run: git status
+        
       - name: Push README
         run: |
           git config --local user.email "action@github.com"
