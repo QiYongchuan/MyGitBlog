@@ -3,7 +3,7 @@ My personal blog using issues and GitHub Actions (不可以随意转载，无需
 [RSS Feed](https://raw.githubusercontent.com/QiYongchuan/MyGitBlog/master/feed.xml)
 
 ## 置顶文章
-- [听了印度老哥的建议后修改权限](https://github.com/QiYongchuan/MyGitBlog/issues/41)--2023-12-05
+- [听了印度老哥的建议后修改权限，最终成功了！](https://github.com/QiYongchuan/MyGitBlog/issues/41)--2023-12-05
 - [增加仓库更多的日志信息，查看](https://github.com/QiYongchuan/MyGitBlog/issues/40)--2023-12-05
 - [修改仓库的权限](https://github.com/QiYongchuan/MyGitBlog/issues/39)--2023-12-05
 - [增加了两条代码，试图解决push权限问题](https://github.com/QiYongchuan/MyGitBlog/issues/38)--2023-12-04
@@ -12,7 +12,7 @@ My personal blog using issues and GitHub Actions (不可以随意转载，无需
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
 - [Github 的action学习笔记](https://github.com/QiYongchuan/MyGitBlog/issues/42)--2023-12-05
-- [听了印度老哥的建议后修改权限](https://github.com/QiYongchuan/MyGitBlog/issues/41)--2023-12-05
+- [听了印度老哥的建议后修改权限，最终成功了！](https://github.com/QiYongchuan/MyGitBlog/issues/41)--2023-12-05
 - [增加仓库更多的日志信息，查看](https://github.com/QiYongchuan/MyGitBlog/issues/40)--2023-12-05
 - [修改仓库的权限](https://github.com/QiYongchuan/MyGitBlog/issues/39)--2023-12-05
 - [增加了两条代码，试图解决push权限问题](https://github.com/QiYongchuan/MyGitBlog/issues/38)--2023-12-04
