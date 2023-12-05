@@ -1,5 +1,5 @@
 ## Gitblog
-My personal blog using issues and GitHub Actions (不可以随意转载，无需署名)
+My personal blog using issues and GitHub Actions (可以随意转载，无需署名)
 [RSS Feed](https://raw.githubusercontent.com/QiYongchuan/MyGitBlog/master/feed.xml)
 
 ## 置顶文章
