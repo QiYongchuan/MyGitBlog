@@ -24,6 +24,7 @@ My personal blog using issues and GitHub Actions (不可以随意转载，无需
 - [Git 如何将本地仓库中上传一个本地有但是远程没有的分支？](https://github.com/QiYongchuan/MyGitBlog/issues/25)--2023-06-30
 - [Git push时遇到10054问题](https://github.com/QiYongchuan/MyGitBlog/issues/24)--2023-06-30
 ## notes
+- [嵌入式开发实训记录](https://github.com/QiYongchuan/MyGitBlog/issues/43)--2023-12-09
 - [JSP学习笔记](https://github.com/QiYongchuan/MyGitBlog/issues/2)--2023-04-21
 ## daily
 - [测试，看是否能顺利更新](https://github.com/QiYongchuan/MyGitBlog/issues/36)--2023-12-04
