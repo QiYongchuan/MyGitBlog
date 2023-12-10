@@ -3,6 +3,7 @@ My personal blog using issues and GitHub Actions (不可以随意转载，无需
 [RSS Feed](https://raw.githubusercontent.com/QiYongchuan/MyGitBlog/master/feed.xml)
 
 ## 置顶文章
+- [嵌入式开发实训记录](https://github.com/QiYongchuan/MyGitBlog/issues/43)--2023-12-09
 - [听了印度老哥的建议后修改权限，最终成功了！](https://github.com/QiYongchuan/MyGitBlog/issues/41)--2023-12-05
 - [增加仓库更多的日志信息，查看](https://github.com/QiYongchuan/MyGitBlog/issues/40)--2023-12-05
 - [修改仓库的权限](https://github.com/QiYongchuan/MyGitBlog/issues/39)--2023-12-05
