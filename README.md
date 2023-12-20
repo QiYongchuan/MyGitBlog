@@ -1,5 +1,5 @@
 ## Gitblog
-My personal blog using issues and GitHub Actions (不可以随意转载，无需署名)
+My personal blog using issues and GitHub Actions (可以随意转载，无需署名)
 [RSS Feed](https://raw.githubusercontent.com/QiYongchuan/MyGitBlog/master/feed.xml)
 
 ## 置顶文章
@@ -33,3 +33,5 @@ My personal blog using issues and GitHub Actions (不可以随意转载，无需
 - [测试，看是否能顺利更新](https://github.com/QiYongchuan/MyGitBlog/issues/36)--2023-12-04
 - [快乐释放胶囊](https://github.com/QiYongchuan/MyGitBlog/issues/28)--2023-07-07
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
+## 技术记录
+- [AI创造：疯狂的蔬菜一家人     ](https://github.com/QiYongchuan/MyGitBlog/issues/33)--2023-12-03
