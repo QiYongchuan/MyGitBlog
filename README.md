@@ -9,11 +9,11 @@ My personal blog using issues and GitHub Actions (可以随意转载，无需署
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [“既然这样，不如我们重新来过。”--考前押题复习的老师](https://github.com/QiYongchuan/MyGitBlog/issues/48)--2023-12-22
 - [Hope&Love网页作品](https://github.com/QiYongchuan/MyGitBlog/issues/47)--2023-12-20
 - [只要太阳出来了，一切都会好起来的](https://github.com/QiYongchuan/MyGitBlog/issues/46)--2023-12-20
 - [迷失在寒冷的冬天](https://github.com/QiYongchuan/MyGitBlog/issues/45)--2023-12-13
 - [漫长的冬天](https://github.com/QiYongchuan/MyGitBlog/issues/44)--2023-12-13
-- [嵌入式开发实训记录](https://github.com/QiYongchuan/MyGitBlog/issues/43)--2023-12-09
 ## summary
 - [2023 第一学年结束的总结](https://github.com/QiYongchuan/MyGitBlog/issues/23)--2023-06-29
 - [《一个帖子解决所有的英语学习问题》](https://github.com/QiYongchuan/MyGitBlog/issues/12)--2023-04-28
@@ -41,13 +41,14 @@ My personal blog using issues and GitHub Actions (可以随意转载，无需署
 </details>
 
 ## daily
+- [“既然这样，不如我们重新来过。”--考前押题复习的老师](https://github.com/QiYongchuan/MyGitBlog/issues/48)--2023-12-22
 - [只要太阳出来了，一切都会好起来的](https://github.com/QiYongchuan/MyGitBlog/issues/46)--2023-12-20
 - [迷失在寒冷的冬天](https://github.com/QiYongchuan/MyGitBlog/issues/45)--2023-12-13
 - [漫长的冬天](https://github.com/QiYongchuan/MyGitBlog/issues/44)--2023-12-13
 - [测试，看是否能顺利更新](https://github.com/QiYongchuan/MyGitBlog/issues/36)--2023-12-04
-- [721面试复盘（外贸）](https://github.com/QiYongchuan/MyGitBlog/issues/30)--2023-07-21
 <details><summary>显示更多</summary>
 
+- [721面试复盘（外贸）](https://github.com/QiYongchuan/MyGitBlog/issues/30)--2023-07-21
 - [快乐释放胶囊](https://github.com/QiYongchuan/MyGitBlog/issues/28)--2023-07-07
 - [生活有无数种可能，这次决定先不想最坏的了](https://github.com/QiYongchuan/MyGitBlog/issues/15)--2023-05-12
 - [生活需要cookie](https://github.com/QiYongchuan/MyGitBlog/issues/13)--2023-05-10
