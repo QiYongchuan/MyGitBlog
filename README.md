@@ -9,11 +9,11 @@ My personal blog using issues and GitHub Actions (可以随意转载，无需署
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [软件工程复习笔记](https://github.com/QiYongchuan/MyGitBlog/issues/49)--2023-12-22
 - [“既然这样，不如我们重新来过。”--考前押题复习的老师](https://github.com/QiYongchuan/MyGitBlog/issues/48)--2023-12-22
 - [Hope&Love网页作品](https://github.com/QiYongchuan/MyGitBlog/issues/47)--2023-12-20
 - [只要太阳出来了，一切都会好起来的](https://github.com/QiYongchuan/MyGitBlog/issues/46)--2023-12-20
 - [迷失在寒冷的冬天](https://github.com/QiYongchuan/MyGitBlog/issues/45)--2023-12-13
-- [漫长的冬天](https://github.com/QiYongchuan/MyGitBlog/issues/44)--2023-12-13
 ## summary
 - [2023 第一学年结束的总结](https://github.com/QiYongchuan/MyGitBlog/issues/23)--2023-06-29
 - [《一个帖子解决所有的英语学习问题》](https://github.com/QiYongchuan/MyGitBlog/issues/12)--2023-04-28
@@ -30,13 +30,14 @@ My personal blog using issues and GitHub Actions (可以随意转载，无需署
 </details>
 
 ## notes
+- [软件工程复习笔记](https://github.com/QiYongchuan/MyGitBlog/issues/49)--2023-12-22
 - [嵌入式开发实训记录](https://github.com/QiYongchuan/MyGitBlog/issues/43)--2023-12-09
 - [软件测试笔记备份](https://github.com/QiYongchuan/MyGitBlog/issues/34)--2023-12-04
 - [计算机组成原理期末复习](https://github.com/QiYongchuan/MyGitBlog/issues/20)--2023-06-20
 - [计算机网络期末复习](https://github.com/QiYongchuan/MyGitBlog/issues/19)--2023-06-18
-- [操作系统期末复习](https://github.com/QiYongchuan/MyGitBlog/issues/17)--2023-06-09
 <details><summary>显示更多</summary>
 
+- [操作系统期末复习](https://github.com/QiYongchuan/MyGitBlog/issues/17)--2023-06-09
 - [JSP学习笔记](https://github.com/QiYongchuan/MyGitBlog/issues/2)--2023-04-21
 </details>
 
