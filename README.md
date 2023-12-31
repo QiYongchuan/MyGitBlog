@@ -9,11 +9,11 @@ My personal blog using issues and GitHub Actions (可以随意转载，无需署
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [2024周记](https://github.com/QiYongchuan/MyGitBlog/issues/59)--2023-12-31
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
 - [算法知识补充：递归与尾递归](https://github.com/QiYongchuan/MyGitBlog/issues/57)--2023-12-31
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
 - [issue中发帖子的图片无法显示问题](https://github.com/QiYongchuan/MyGitBlog/issues/55)--2023-12-29
-- [扫盲：科学上网（请不要转发分享）](https://github.com/QiYongchuan/MyGitBlog/issues/54)--2023-12-29
 ## 总结
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
