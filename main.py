@@ -9,9 +9,10 @@ from lxml.etree import CDATA
 from marko.ext.gfm import gfm as marko
 
 MD_HEAD = """## Gitblog
-My personal blog using issues and GitHub Actions (可以随意转载，无需署名)
-用文字记录我的胡思乱想与生活的瞬间和轨迹，我疯狂的想法与可能为之的行动。  
-一个年轻人，从农学研究生退学转行到计算机行业的人，  记录在这个时代下的焦虑、迷茫、希望与挣扎。
+My personal blog using issues and GitHub Actions (参考yihong)
+* 用文字记录我的胡思乱想与生活的瞬间和轨迹，我疯狂的想法与可能为之的行动。  
+* 一个年轻人，从农学研究生退学转行到计算机行业的人。
+* 记录在这个时代下的焦虑、迷茫、挣扎与希望。
 
 [RSS Feed](https://raw.githubusercontent.com/{repo_name}/master/feed.xml)
 """
