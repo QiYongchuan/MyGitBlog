@@ -1,5 +1,8 @@
 ## Gitblog
 My personal blog using issues and GitHub Actions (可以随意转载，无需署名)
+用文字记录我的胡思乱想与生活的瞬间和轨迹，我疯狂的想法与可能为之的行动。
+一个年轻人，从农学研究生退学转行到计算机行业的人，在这个时代下的焦虑、迷茫、希望与挣扎。
+
 [RSS Feed](https://raw.githubusercontent.com/QiYongchuan/MyGitBlog/master/feed.xml)
 
 ## 置顶文章
