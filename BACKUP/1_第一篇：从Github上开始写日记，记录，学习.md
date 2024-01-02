@@ -51,3 +51,9 @@ hello，这是4.21号的回复
 
 hello there,现在是凌晨3：49，第一次熬夜到这么晚！
 评论来自手机
+
+---
+
+> GitHub Issues 写博客，推荐一个完全基于 `Github Pages` 、 `Github Issues` 和 `Github Actions` 的博客框架~ https://github.com/Meekdai/Gmeek
+
+哇，看了一下，很酷！ 后续我这个博客可能考虑在完善一点别的，但是前端，github的page页暂时不想再修改了，博客首页暂时想保留这种纯文字风格的。
