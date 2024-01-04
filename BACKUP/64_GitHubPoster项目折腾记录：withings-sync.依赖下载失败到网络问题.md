@@ -46,3 +46,8 @@
 
 
 后续考虑：如何把下载生成的图片动态插入到博客页？
+
+---
+
+另一方面：感受到gpt4.0带给我的信心了，本来是一开始就打算去大佬的issue区去求助的，最后让自己给搞出来了！
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/40f764e3-2b93-4c6a-9954-6009c95a3eaf)
