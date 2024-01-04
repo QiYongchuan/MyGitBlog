@@ -56,3 +56,10 @@
 ---
 
 ![github](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/cce123e1-cd9f-4ff8-8caf-1a97c2f09e1d)
+
+
+---
+
+后续的计划：在GitHub的action中设置工作流【这一步同这个博客的自动化更新】，自动获取变化，以及生成svg的图片，然后再在博客中引用就可以实现自动更新了。
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/9c5f7a8e-ce3d-4978-9a1b-59164e544777)
