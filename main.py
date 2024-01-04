@@ -35,9 +35,9 @@ IGNORE_LABELS = FRIENDS_LABELS + TOP_ISSUES_LABELS + TODO_ISSUES_LABELS
 FRIENDS_TABLE_HEAD = "| Name | Link | Desc | \n | ---- | ---- | ---- |\n"
 FRIENDS_TABLE_TEMPLATE = "| {name} | {link} | {desc} |\n"
 FRIENDS_INFO_DICT = {
-    "名字": "",
-    "链接": "",
-    "描述": "",
+    "名字": "hhh",
+    "链接": "www.baidu.com",
+    "描述": "test",
 }
 
 
