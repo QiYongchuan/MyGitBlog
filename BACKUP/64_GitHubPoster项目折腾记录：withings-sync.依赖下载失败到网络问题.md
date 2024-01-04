@@ -51,3 +51,8 @@
 
 另一方面：感受到gpt4.0带给我的信心了，本来是一开始就打算去大佬的issue区去求助的，最后让自己给搞出来了！
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/40f764e3-2b93-4c6a-9954-6009c95a3eaf)
+
+
+---
+
+![github](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/cce123e1-cd9f-4ff8-8caf-1a97c2f09e1d)
