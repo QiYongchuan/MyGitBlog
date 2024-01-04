@@ -21,7 +21,7 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
-- [增加博客的友链与收藏模块](https://github.com/QiYongchuan/MyGitBlog/issues/61)--2024-01-04
+- [博客功能完善计划](https://github.com/QiYongchuan/MyGitBlog/issues/61)--2024-01-04
 - [转瞬即逝的小想法](https://github.com/QiYongchuan/MyGitBlog/issues/60)--2024-01-04
 - [2024周记](https://github.com/QiYongchuan/MyGitBlog/issues/59)--2023-12-31
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
@@ -94,7 +94,7 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## TODO
-TODO list from [增加博客的友链与收藏模块](https://github.com/QiYongchuan/MyGitBlog/issues/61)--2 jobs to do--0 jobs done
+TODO list from [博客功能完善计划](https://github.com/QiYongchuan/MyGitBlog/issues/61)--2 jobs to do--0 jobs done
 - [ ] 增加友链模块
 - [ ] 增加收藏的文章模块
 
