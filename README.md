@@ -116,8 +116,9 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## TODO
-TODO list from [博客功能完善计划](https://github.com/QiYongchuan/MyGitBlog/issues/61)--3 jobs to do--0 jobs done
+TODO list from [博客功能完善计划](https://github.com/QiYongchuan/MyGitBlog/issues/61)--4 jobs to do--0 jobs done
 - [ ] 增加友链模块
 - [ ] 增加收藏的文章模块
 - [ ] 增加每日单词-句子-图片模块
+- [ ] 引入自动生成svg的github贡献
 
