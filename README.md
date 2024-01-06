@@ -39,11 +39,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [git远程分支](https://github.com/QiYongchuan/MyGitBlog/issues/65)--2024-01-06
 - [GitHubPoster项目折腾记录：withings-sync 依赖下载失败到网络问题](https://github.com/QiYongchuan/MyGitBlog/issues/64)--2024-01-04
 - [朋友信息](https://github.com/QiYongchuan/MyGitBlog/issues/63)--2024-01-04
 - [有趣的博主们](https://github.com/QiYongchuan/MyGitBlog/issues/62)--2024-01-04
 - [博客功能完善计划](https://github.com/QiYongchuan/MyGitBlog/issues/61)--2024-01-04
-- [转瞬即逝的小想法](https://github.com/QiYongchuan/MyGitBlog/issues/60)--2024-01-04
 ## 总结
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
@@ -51,13 +51,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [2023 第一学年结束的总结](https://github.com/QiYongchuan/MyGitBlog/issues/23)--2023-06-29
 - [《一个帖子解决所有的英语学习问题》](https://github.com/QiYongchuan/MyGitBlog/issues/12)--2023-04-28
 ## Kill-bugs
+- [git远程分支](https://github.com/QiYongchuan/MyGitBlog/issues/65)--2024-01-06
 - [GitHubPoster项目折腾记录：withings-sync 依赖下载失败到网络问题](https://github.com/QiYongchuan/MyGitBlog/issues/64)--2024-01-04
 - [issue中发帖子的图片无法显示问题](https://github.com/QiYongchuan/MyGitBlog/issues/55)--2023-12-29
 - [听了印度老哥的建议后修改权限，最终成功了！](https://github.com/QiYongchuan/MyGitBlog/issues/41)--2023-12-05
 - [修改仓库的权限](https://github.com/QiYongchuan/MyGitBlog/issues/39)--2023-12-05
-- [Git创建新的分支，开发新功能](https://github.com/QiYongchuan/MyGitBlog/issues/29)--2023-07-08
 <details><summary>显示更多</summary>
 
+- [Git创建新的分支，开发新功能](https://github.com/QiYongchuan/MyGitBlog/issues/29)--2023-07-08
 - [Python文件 xx.py如何打包成.exe格式文件，发给非程序员朋友玩](https://github.com/QiYongchuan/MyGitBlog/issues/27)--2023-07-07
 - [Python中requests库发送请求时遇到的443问题](https://github.com/QiYongchuan/MyGitBlog/issues/26)--2023-07-07
 - [Git 如何将本地仓库中上传一个本地有但是远程没有的分支？](https://github.com/QiYongchuan/MyGitBlog/issues/25)--2023-06-30
