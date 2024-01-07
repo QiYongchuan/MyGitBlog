@@ -14,24 +14,6 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 
 [RSS Feed](https://raw.githubusercontent.com/QiYongchuan/MyGitBlog/master/feed.xml)
 
-## [友情链接](https://github.com/QiYongchuan/gitblog/issues/62)
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Link</th>
-<th>Desc</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
 ## 置顶文章
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
 - [自动化博客更新部署折腾日志](https://github.com/QiYongchuan/MyGitBlog/issues/35)--2023-12-04
@@ -82,8 +64,6 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [JSP学习笔记](https://github.com/QiYongchuan/MyGitBlog/issues/2)--2023-04-21
 </details>
 
-## FRIENDS_TABLE_TEMPLATE
-- [朋友信息](https://github.com/QiYongchuan/MyGitBlog/issues/63)--2024-01-04
 ## daily
 - [除了想象力，没有什么是限制](https://github.com/QiYongchuan/MyGitBlog/issues/50)--2023-12-23
 - [“既然这样，不如我们重新来过。”--考前押题复习的老师](https://github.com/QiYongchuan/MyGitBlog/issues/48)--2023-12-22
