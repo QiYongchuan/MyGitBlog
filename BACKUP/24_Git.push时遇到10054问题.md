@@ -2,7 +2,9 @@
 
 问题描述：
 
-![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/748e5bbf-72a8-4898-b96b-4a2a31b8c5f8)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b6fa27b8-72ab-439a-bad6-12685ce12aea)
+
 
 可能的原因：
 
