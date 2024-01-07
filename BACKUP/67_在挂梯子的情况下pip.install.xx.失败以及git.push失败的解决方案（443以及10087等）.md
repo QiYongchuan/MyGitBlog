@@ -71,4 +71,5 @@ git config --global --unset https.proxy
 这跟我们上面讲到的，当梯子断开时，能成功连接到远程仓库，成功push到，似乎是做了同样的事情，断开梯子。
 
 
+> 之前同样的问题，解决方法：[Git push时遇到10054问题 #24](https://github.com/QiYongchuan/MyGitBlog/issues/24)
 
