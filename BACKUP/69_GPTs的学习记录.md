@@ -23,3 +23,14 @@ https://waytoagi.feishu.cn/wiki/IawKwd3IgiHbezkB1KrcAFPRnbf?chunked=false&table=
 https://gapier.com/
 
 发邮件-有没有打电话或者语音模仿明星的声音，叫你起床的呢？  AI智能男女友？
+
+刚看到一个：可以用这个来实现打电话！
+https://twitter.com/i/bookmarks?post_id=1743472077439730049
+https://t.co/xy37hSFLuI
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f3eb0512-1392-4007-ba92-f02d597ab805)
+
+
+
+另一个教程网站：
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f1b5f098-d132-4e79-ba29-aa9de88245bd)
