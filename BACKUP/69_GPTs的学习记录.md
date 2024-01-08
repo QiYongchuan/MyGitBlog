@@ -37,3 +37,19 @@ https://t.co/xy37hSFLuI
 https://mojju.com/blog/how-to-create-complex-gpts-with-api-actions-and-a-node-js-backend
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/3641ce81-56d7-4734-8af8-2efeb2f9d7c6)
+
+
+---
+
+注意：这里讲到得
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/223ae9b6-6ed4-495a-b733-b1212f075238)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/70a98cff-813a-472e-b539-0e26be438327)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/c8ad7465-3a8b-4cd3-aeec-e3dcea3f66b2)
+
+
+增加数据库的玩法：
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/30bf5746-b033-48de-94b9-a9977b582bc3)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/a70873a4-479b-4bd5-bb64-563b1b81b331)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/88d4932b-e6b6-4f88-8b2b-ecbc1f4711de)
