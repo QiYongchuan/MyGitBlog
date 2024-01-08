@@ -34,3 +34,6 @@ https://t.co/xy37hSFLuI
 另一个教程网站：
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f1b5f098-d132-4e79-ba29-aa9de88245bd)
+https://mojju.com/blog/how-to-create-complex-gpts-with-api-actions-and-a-node-js-backend
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/3641ce81-56d7-4734-8af8-2efeb2f9d7c6)
