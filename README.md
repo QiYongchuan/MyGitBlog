@@ -108,3 +108,5 @@ TODO list from [博客功能完善计划](https://github.com/QiYongchuan/MyGitBl
 - [ ] 增加收藏的文章模块
 - [ ] 增加每日单词-句子-图片模块
 
+TODO list from [转瞬即逝的小想法](https://github.com/QiYongchuan/MyGitBlog/issues/60) all done
+
