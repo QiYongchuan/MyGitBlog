@@ -89,16 +89,18 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## 记录
+- [GPTs的学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/69)--2024-01-08
 - [2024找工作的尝试](https://github.com/QiYongchuan/MyGitBlog/issues/68)--2024-01-08
 - [2024周记](https://github.com/QiYongchuan/MyGitBlog/issues/59)--2023-12-31
 ## 项目记录
+- [GPTs的学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/69)--2024-01-08
 - [GitHubPoster项目折腾记录：withings-sync 依赖下载失败到网络问题](https://github.com/QiYongchuan/MyGitBlog/issues/64)--2024-01-04
 - [Hope&Love网页作品](https://github.com/QiYongchuan/MyGitBlog/issues/47)--2023-12-20
 - [AI创造：疯狂的蔬菜一家人     ](https://github.com/QiYongchuan/MyGitBlog/issues/33)--2023-12-03
 - [AI作图的一些尝试](https://github.com/QiYongchuan/MyGitBlog/issues/32)--2023-12-02
-- [实训项目（10天）](https://github.com/QiYongchuan/MyGitBlog/issues/18)--2023-06-12
 <details><summary>显示更多</summary>
 
+- [实训项目（10天）](https://github.com/QiYongchuan/MyGitBlog/issues/18)--2023-06-12
 - [实时聊天应用开发记录](https://github.com/QiYongchuan/MyGitBlog/issues/14)--2023-05-11
 - [暂未成功的扇贝背单词项目](https://github.com/QiYongchuan/MyGitBlog/issues/11)--2023-04-27
 </details>

@@ -53,3 +53,10 @@ https://mojju.com/blog/how-to-create-complex-gpts-with-api-actions-and-a-node-js
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/30bf5746-b033-48de-94b9-a9977b582bc3)
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/a70873a4-479b-4bd5-bb64-563b1b81b331)
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/88d4932b-e6b6-4f88-8b2b-ecbc1f4711de)
+
+
+---
+
+https://mojju.com/gpt/database-planning-architect-by-mojju
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/93ba8848-c197-454c-9806-85bb0e4f4005)
+shu'j数据库方面
