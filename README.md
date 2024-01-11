@@ -68,13 +68,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## daily
+- [有趣的文章](https://github.com/QiYongchuan/MyGitBlog/issues/71)--2024-01-11
 - [算法学习初体验：慢慢来，原来我也可以](https://github.com/QiYongchuan/MyGitBlog/issues/66)--2024-01-07
 - [除了想象力，没有什么是限制](https://github.com/QiYongchuan/MyGitBlog/issues/50)--2023-12-23
 - [“既然这样，不如我们重新来过。”--考前押题复习的老师](https://github.com/QiYongchuan/MyGitBlog/issues/48)--2023-12-22
 - [只要太阳出来了，一切都会好起来的](https://github.com/QiYongchuan/MyGitBlog/issues/46)--2023-12-20
-- [迷失在寒冷的冬天](https://github.com/QiYongchuan/MyGitBlog/issues/45)--2023-12-13
 <details><summary>显示更多</summary>
 
+- [迷失在寒冷的冬天](https://github.com/QiYongchuan/MyGitBlog/issues/45)--2023-12-13
 - [漫长的冬天](https://github.com/QiYongchuan/MyGitBlog/issues/44)--2023-12-13
 - [测试，看是否能顺利更新](https://github.com/QiYongchuan/MyGitBlog/issues/36)--2023-12-04
 - [721面试复盘（外贸）](https://github.com/QiYongchuan/MyGitBlog/issues/30)--2023-07-21
@@ -88,6 +89,8 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 </details>
 
+## 收藏
+- [有趣的文章](https://github.com/QiYongchuan/MyGitBlog/issues/71)--2024-01-11
 ## 记录
 - [GPTs的学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/69)--2024-01-08
 - [2024找工作的尝试](https://github.com/QiYongchuan/MyGitBlog/issues/68)--2024-01-08
