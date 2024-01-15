@@ -60,3 +60,13 @@ https://mojju.com/blog/how-to-create-complex-gpts-with-api-actions-and-a-node-js
 https://mojju.com/gpt/database-planning-architect-by-mojju
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/93ba8848-c197-454c-9806-85bb0e4f4005)
 shu'j数据库方面
+
+---
+
+### 最新的网站：无代码形式创建AI应用
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f85744f0-1bba-4f88-bfe1-b5ae566e10ce)
+
+类似之前的takomi  但是更强大了，提示词以及调用模型方面更强大了
+
+https://create.imagica.ai/fot/#/editor
