@@ -70,3 +70,5 @@ shu'j数据库方面
 类似之前的takomi  但是更强大了，提示词以及调用模型方面更强大了
 
 https://create.imagica.ai/fot/#/editor
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/171286a1-9be1-4784-95d3-7ac73198fbfa)
