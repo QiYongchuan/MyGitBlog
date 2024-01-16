@@ -21,11 +21,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [ Git 的简单用法-cs50x](https://github.com/QiYongchuan/MyGitBlog/issues/73)--2024-01-16
 - [2024一些完成的小事情](https://github.com/QiYongchuan/MyGitBlog/issues/72)--2024-01-14
 - [有趣的文章](https://github.com/QiYongchuan/MyGitBlog/issues/71)--2024-01-11
 - [GPTs的学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/69)--2024-01-08
 - [2024找工作的尝试](https://github.com/QiYongchuan/MyGitBlog/issues/68)--2024-01-08
-- [在挂梯子的情况下pip install xx 失败以及git push失败的解决方案（443以及10087等）](https://github.com/QiYongchuan/MyGitBlog/issues/67)--2024-01-07
 ## 总结
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
@@ -49,13 +49,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## notes
+- [ Git 的简单用法-cs50x](https://github.com/QiYongchuan/MyGitBlog/issues/73)--2024-01-16
 - [GPTs的学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/69)--2024-01-08
 - [在挂梯子的情况下pip install xx 失败以及git push失败的解决方案（443以及10087等）](https://github.com/QiYongchuan/MyGitBlog/issues/67)--2024-01-07
 - [算法知识补充：递归与尾递归](https://github.com/QiYongchuan/MyGitBlog/issues/57)--2023-12-31
 - [算法设计与分析期末复习](https://github.com/QiYongchuan/MyGitBlog/issues/53)--2023-12-29
-- [Get和post的区别在哪里？](https://github.com/QiYongchuan/MyGitBlog/issues/51)--2023-12-27
 <details><summary>显示更多</summary>
 
+- [Get和post的区别在哪里？](https://github.com/QiYongchuan/MyGitBlog/issues/51)--2023-12-27
 - [除了想象力，没有什么是限制](https://github.com/QiYongchuan/MyGitBlog/issues/50)--2023-12-23
 - [软件工程复习笔记](https://github.com/QiYongchuan/MyGitBlog/issues/49)--2023-12-22
 - [嵌入式开发实训记录](https://github.com/QiYongchuan/MyGitBlog/issues/43)--2023-12-09
