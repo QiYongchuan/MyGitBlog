@@ -50,13 +50,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## notes
+- [Git-在已经建好的仓库中，将其中一部分文件夹单独上传到新的仓库中](https://github.com/QiYongchuan/MyGitBlog/issues/77)--2024-02-01
 - [响应式页面实现的几种方式](https://github.com/QiYongchuan/MyGitBlog/issues/75)--2024-01-16
 - [SCSS-增加变量的CSS](https://github.com/QiYongchuan/MyGitBlog/issues/74)--2024-01-16
 - [ Git 的简单用法-cs50x](https://github.com/QiYongchuan/MyGitBlog/issues/73)--2024-01-16
 - [GPTs的学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/69)--2024-01-08
-- [在挂梯子的情况下pip install xx 失败以及git push失败的解决方案（443以及10087等）](https://github.com/QiYongchuan/MyGitBlog/issues/67)--2024-01-07
 <details><summary>显示更多</summary>
 
+- [在挂梯子的情况下pip install xx 失败以及git push失败的解决方案（443以及10087等）](https://github.com/QiYongchuan/MyGitBlog/issues/67)--2024-01-07
 - [算法知识补充：递归与尾递归](https://github.com/QiYongchuan/MyGitBlog/issues/57)--2023-12-31
 - [算法设计与分析期末复习](https://github.com/QiYongchuan/MyGitBlog/issues/53)--2023-12-29
 - [Get和post的区别在哪里？](https://github.com/QiYongchuan/MyGitBlog/issues/51)--2023-12-27
