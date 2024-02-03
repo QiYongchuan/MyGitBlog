@@ -21,11 +21,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [python中的数据类型](https://github.com/QiYongchuan/MyGitBlog/issues/79)--2024-02-03
 - [Python中面向对象编程](https://github.com/QiYongchuan/MyGitBlog/issues/78)--2024-02-03
 - [Git-在已经建好的仓库中，将其中一部分文件夹单独上传到新的仓库中](https://github.com/QiYongchuan/MyGitBlog/issues/77)--2024-02-01
 - [实现无限滚动遇到的坑—document.body.offsetHeight 的值一直不变？](https://github.com/QiYongchuan/MyGitBlog/issues/76)--2024-01-30
 - [响应式页面实现的几种方式](https://github.com/QiYongchuan/MyGitBlog/issues/75)--2024-01-16
-- [SCSS-增加变量的CSS](https://github.com/QiYongchuan/MyGitBlog/issues/74)--2024-01-16
 ## 总结
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
@@ -50,13 +50,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## notes
+- [python中的数据类型](https://github.com/QiYongchuan/MyGitBlog/issues/79)--2024-02-03
 - [Python中面向对象编程](https://github.com/QiYongchuan/MyGitBlog/issues/78)--2024-02-03
 - [Git-在已经建好的仓库中，将其中一部分文件夹单独上传到新的仓库中](https://github.com/QiYongchuan/MyGitBlog/issues/77)--2024-02-01
 - [响应式页面实现的几种方式](https://github.com/QiYongchuan/MyGitBlog/issues/75)--2024-01-16
 - [SCSS-增加变量的CSS](https://github.com/QiYongchuan/MyGitBlog/issues/74)--2024-01-16
-- [ Git 的简单用法-cs50x](https://github.com/QiYongchuan/MyGitBlog/issues/73)--2024-01-16
 <details><summary>显示更多</summary>
 
+- [ Git 的简单用法-cs50x](https://github.com/QiYongchuan/MyGitBlog/issues/73)--2024-01-16
 - [GPTs的学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/69)--2024-01-08
 - [在挂梯子的情况下pip install xx 失败以及git push失败的解决方案（443以及10087等）](https://github.com/QiYongchuan/MyGitBlog/issues/67)--2024-01-07
 - [算法知识补充：递归与尾递归](https://github.com/QiYongchuan/MyGitBlog/issues/57)--2023-12-31
