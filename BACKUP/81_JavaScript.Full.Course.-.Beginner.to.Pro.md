@@ -59,3 +59,13 @@ JSON.parse()              ===>   将JSON    转化为  JavaScript object
     const objectProduct = JSON.parse(jsonString)
     console.log(objectProduct);
 ```
+
+---
+
+**localStorage本地存储**
+
+* 长期存储在浏览器中 ，相比之下sessionStorage生命周期更短，一次会话结束后失效
+* localStorage 只能存储字符串，如果想存储object，需要先将object转化成Json（Json在JavaScript中的类型为string）
+* localStorage.setItem('score',score)  存储值
+* localStorage.getItem('score)  获取值
+* localStorage.removeItem('score')  删除值
