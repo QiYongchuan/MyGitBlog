@@ -26,6 +26,7 @@ return与parameter的区别
 * json更通用，可以被其它语言理解，但JavaScript的object只被JavaScript能理解。
 * json用于计算机之间的传输信息；
 * 用于存储信息
+* json在JavaScript中数据类型为string
 
 ---
 
