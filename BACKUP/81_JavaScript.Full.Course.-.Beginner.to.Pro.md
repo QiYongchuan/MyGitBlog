@@ -10,7 +10,7 @@ return与parameter的区别
 
 ---
 
-Json与JavaScript的object的区别？
+**Json与JavaScript的object的区别？**
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/c716aacc-91aa-41d3-b827-17ceeaf16c48)
 
 * 两者写法类似，注意json只能用双引号
