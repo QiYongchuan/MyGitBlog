@@ -89,3 +89,50 @@ JSON.parse()              ===>   将JSON    转化为  JavaScript object
 
 同样适用于数字类型和布尔类型，但对于null和undefined不适用
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/ab2988af-dad8-415a-9f47-b5b2dfada3fc)
+
+
+---
+
+**对象的引用  objects are references **  
+
+* javascript中对象存储的是一个引用地址，即存储的是一个位置,而不是所有的信息。
+
+```
+  const object1 = {
+      message: "hello object1",
+    }
+
+    const object2 = object1
+    console.log(object1);
+    console.log(object2);
+
+    object1.message = 'hello,change'
+    console.log('change 1');
+    console.log(object1);
+    console.log(object2);
+
+    object2.message = 'hello,change2'
+    console.log('change 2');
+    console.log(object1);
+    console.log(object2);
+```
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/3eb4e147-c079-45c6-a8ce-f86e33c6f476)
+
+> JavaScript 中的对象引用和赋值的知识点。在 JavaScript 中，当你将一个对象赋值给另一个变量时，**实际上是将对象的引用（内存地址）赋给了新的变量，而不是创建了一个新的对象。这意味着这两个变量实际上指向了同一个对象**，因此对其中一个变量所指向的对象进行修改，会影响到另一个变量所指向的对象。
+> 
+> 在这段代码中，object1 和 object2 都指向了同一个对象。当你修改 object1 的 message 属性时，object2 的 message 属性也会随之改变，因为它们实际上指向同一个对象。(也是同一个地址，所以object1===object2）
+> 
+> 这种行为在 JavaScript 中称为**对象引用**。如果你想要创建一个对象的独立副本，而不是引用，你需要使用深拷贝的方法来创建一个新的对象，而不是简单地将一个对象赋值给另一个变量。
+
+
+** 对象的解构 **
+
+可以直接使用快捷方式来获取，但注意{ } 里面的名称需要对应对象中的属性名称，否则无法解构。
+```
+  // const message = object3.message;
+    const { message, price } = object3   //解构
+
+    console.log(message);
+    console.log(price);
+
+```
