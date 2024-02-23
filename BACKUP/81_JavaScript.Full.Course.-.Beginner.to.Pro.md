@@ -69,3 +69,12 @@ JSON.parse()              ===>   将JSON    转化为  JavaScript object
 * localStorage.setItem('score',score)  存储值
 * localStorage.getItem('score)  获取值
 * localStorage.removeItem('score')  删除值
+
+---
+
+ **null 与undefined的区别？**
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/a4a8efff-3c86-481d-9577-fe569ed11765)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/74b0d106-61eb-4d2b-861e-82b49b917ea2)
+* 两者均是false
+* undefined 是默认值，而null就是null
+
