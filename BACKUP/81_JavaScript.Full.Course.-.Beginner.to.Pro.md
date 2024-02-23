@@ -78,3 +78,14 @@ JSON.parse()              ===>   将JSON    转化为  JavaScript object
 * 两者均是false
 * undefined 是默认值，而null就是null
 
+
+
+---
+
+**object 的auto-boxing**
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/2fa70c50-573a-4956-896f-1dd448391c30)
+上述例子中，字符串也有对象的方法，这是因为JavaScript自动将字符串包裹着一个像盒子一样的对象中，来实现的。
+这一过程就被称为自动装箱。
+
+同样适用于数字类型和布尔类型，但对于null和undefined不适用
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/ab2988af-dad8-415a-9f47-b5b2dfada3fc)
