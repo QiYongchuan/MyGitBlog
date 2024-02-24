@@ -82,7 +82,16 @@ const score = {
 
 ```
 
+对象中方法序列化存储到localstorage中：
+无法实现：可以存储状态，再根据状态转换
 
+> 要通过localStorage存储对象中的方法（例如get score()）是不直接可能的，因为localStorage只支持字符串类型的数据。当你尝试将对象序列化为字符串（使用JSON.stringify()）时，对象中的方法（包括get和set访问器属性）将不会被序列化。这意味着当你从localStorage中检索数据并反序列化（使用JSON.parse()）时，这些方法将不会被恢复。
+> 
+> 如果你的目标是保持score对象的状态（即win和lose属性的值），同时能够在页面加载时恢复这些值并重新应用get score()方法来计算分数，你可以采用以下步骤实现：
+> 
+> 序列化和存储状态：只存储对象的状态（即非函数属性），而不是整个对象。
+> 
+> 读取和反序列化状态：从localStorage读取状态，并使用这些状态值创建一个新的对象，该对象包含相应的方法。
 
 ---
 
@@ -159,4 +168,34 @@ const score = {
     console.log(message);
     console.log(price);
 
+```
+
+
+---
+
+**如何进行深拷贝，而不仅仅是复制引用呢？**
+
+在 JavaScript 中，有几种方法可以实现深拷贝，其中包括使用对象展开运算符（spread operator）、Object.assign 方法、JSON.parse 和 JSON.stringify 方法，以及一些第三方库如 Lodash 的 _.cloneDeep 方法等。
+
+```
+// 使用对象展开运算符进行深拷贝
+const originalObject = { a: 1, b: { c: 2 } };
+const copiedObject = { ...originalObject };
+copiedObject.b.c = 3;
+console.log(originalObject); // 输出: { a: 1, b: { c: 2 } }
+console.log(copiedObject); // 输出: { a: 1, b: { c: 3 } }
+
+// 使用Object.assign方法进行深拷贝
+const originalObject = { a: 1, b: { c: 2 } };
+const copiedObject = Object.assign({}, originalObject);
+copiedObject.b.c = 3;
+console.log(originalObject); // 输出: { a: 1, b: { c: 2 } }
+console.log(copiedObject); // 输出: { a: 1, b: { c: 3 } }
+
+// 使用JSON.parse和JSON.stringify方法进行深拷贝
+const originalObject = { a: 1, b: { c: 2 } };
+const copiedObject = JSON.parse(JSON.stringify(originalObject));
+copiedObject.b.c = 3;
+console.log(originalObject); // 输出: { a: 1, b: { c: 2 } }
+console.log(copiedObject); // 输出: { a: 1, b: { c: 3 } }
 ```
