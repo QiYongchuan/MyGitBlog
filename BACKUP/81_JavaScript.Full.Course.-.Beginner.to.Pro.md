@@ -60,6 +60,30 @@ JSON.parse()              ===>   将JSON    转化为  JavaScript object
     console.log(objectProduct);
 ```
 
+补充扩展：
+
+* 如何在object中存储一个方法调用自己的属性呢？
+* 如何将这个方法序列化存储到localstroge中呢？
+
+对象中存储方法调用自己的属性
+```
+const score = {
+  lose: 0,
+  win: 0,
+  get score() {
+    return this.win - this.lose;
+  }
+}
+
+调用：
+ document.querySelector('#score').innerHTML = `${score.score}`;
+
+直接object.属性名  就可以直接调用
+
+```
+
+
+
 ---
 
 **localStorage本地存储**
