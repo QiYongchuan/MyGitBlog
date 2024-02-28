@@ -277,3 +277,9 @@ public class User {
     {
     }
 ```
+
+
+---
+
+JVM虚拟机内存模型
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/df7b1df1-6352-437a-bb35-51a05b806e67)
