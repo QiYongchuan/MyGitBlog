@@ -296,3 +296,17 @@ People p2 = new People()  则是实现了在堆中新建一个地址区
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/4cf5a2e7-0496-4493-91d9-ebb55e3ef8ca)
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/8145b950-bdd6-406c-a9a3-8c9098a6f479)
+
+```
+ public static void main(String[] args) {
+  
+        People p1 = new People();
+        p1.age = 10;
+        People p2 = p1;
+        System.out.println(p2.age);  //10
+        p2.age = 20;
+        System.out.println(p1.age);  //20
+    }
+
+本质：两者是同一个引用地址
+```
