@@ -2,7 +2,7 @@
 My personal blog using issues and GitHub Actions (参考[yihong](https://github.com/yihong0618/gitblog))
 
 * 用文字记录我的胡思乱想与生活的瞬间，我疯狂的想法与可能为之的行动。  
-* 一个从[农学研究生退学](https://github.com/QiYongchuan/MyGitBlog/issues/84)转行到计算机行业的年轻人。
+* 一个从农学研究生退学转行到计算机行业的年轻人。
 * 记录在这个时代下的焦虑、迷茫、挣扎与希望。
 
 ### 提醒自己：
@@ -15,6 +15,7 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 [RSS Feed](https://raw.githubusercontent.com/QiYongchuan/MyGitBlog/master/feed.xml)
 
 ## 置顶文章
+- [从研究生退学之后的两年](https://github.com/QiYongchuan/MyGitBlog/issues/84)--2024-02-28
 - [哈佛大学cs50x-cs50-full-stack全栈项目学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/82)--2024-02-24
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
 - [自动化博客更新部署折腾日志](https://github.com/QiYongchuan/MyGitBlog/issues/35)--2023-12-04
@@ -122,8 +123,6 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## TODO
-TODO list from [从研究生退学之后的两年](https://github.com/QiYongchuan/MyGitBlog/issues/84) all done
-
 TODO list from [博客功能完善计划](https://github.com/QiYongchuan/MyGitBlog/issues/61)--3 jobs to do--1 jobs done
 - [x] 引入自动生成svg的github贡献
 - [ ] 增加友链模块

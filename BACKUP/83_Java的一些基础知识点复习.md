@@ -52,3 +52,16 @@ char: 单个16位Unicode字符，范围为'\u0000'到'\uffff'。
 浮点数：float、double
 字符：char
 逻辑：boolean
+
+基本数据类型的默认值如下：
+
+byte: 0
+short: 0
+int: 0
+long: 0L
+float: 0.0f
+double: 0.0d
+boolean: false
+char: '\u0000'
+
+补充：所有的引用类型则是null
