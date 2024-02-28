@@ -53,6 +53,9 @@ char: 单个16位Unicode字符，范围为'\u0000'到'\uffff'。
 字符：char
 逻辑：boolean
 
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/cf6c2442-f05b-4232-9153-c7c0ba2053f6)
+
+
 基本数据类型的默认值如下：
 
 byte: 0
