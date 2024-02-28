@@ -33,3 +33,22 @@
         return a+b+c;
     }
 ```
+
+---
+
+Java中的基本数据类型
+
+
+byte: 8位有符号的补码整数，范围为-128到127。
+short: 16位有符号的补码整数，范围为-32768到32767。
+int: 32位有符号的补码整数，范围为-2^31到2^31-1。
+long: 64位有符号的补码整数，范围为-2^63到2^63-1。
+float: 单精度32位IEEE 754浮点数。
+double: 双精度64位IEEE 754浮点数。
+boolean: 逻辑类型，只能取两个值之一：true或false。
+char: 单个16位Unicode字符，范围为'\u0000'到'\uffff'。
+
+整数：byte、short、int、long
+浮点数：float、double
+字符：char
+逻辑：boolean
