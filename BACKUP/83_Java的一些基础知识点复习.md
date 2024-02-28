@@ -285,6 +285,14 @@ JVM虚拟机内存模型
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/df7b1df1-6352-437a-bb35-51a05b806e67)
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/2d5f486c-1da0-4671-832b-66a4f2633acb)
+```
+注意这里：
+People p2 = p1   //执行的是将p1堆中的地址给了p2，
+
+而
+People p2 = new People()  则是实现了在堆中新建一个地址区
+
+```
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/4cf5a2e7-0496-4493-91d9-ebb55e3ef8ca)
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/8145b950-bdd6-406c-a9a3-8c9098a6f479)
