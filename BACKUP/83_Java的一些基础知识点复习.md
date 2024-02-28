@@ -309,3 +309,18 @@ People p2 = new People()  则是实现了在堆中新建一个地址区
 
 本质：两者是同一个引用地址
 ```
+
+垃圾回收：
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/84c6119e-db9a-40fa-b11b-f062fc1e9e00)
+为什么  b.age 会报错？
+
+将b设置为null，断开了b与Person对象的连接。在Java中，设置为null意味着引用不再指向任何对象，但由于a仍然指向那个对象，所以那个对象不会被垃圾回收器回收。
+
+尝试打印b.age，但是会抛出NullPointerException，因为b已经被设置为null，不再指向任何对象。
+```
+System.out.println(b.age); // 抛出NullPointerException
+```
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/20a75a87-f038-4adf-b019-1b956407cf99)
+
+
