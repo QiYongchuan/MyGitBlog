@@ -15,17 +15,18 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 [RSS Feed](https://raw.githubusercontent.com/QiYongchuan/MyGitBlog/master/feed.xml)
 
 ## 置顶文章
+- [哈佛大学cs50x-cs50-full-stack全栈项目学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/82)--2024-02-24
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
 - [自动化博客更新部署折腾日志](https://github.com/QiYongchuan/MyGitBlog/issues/35)--2023-12-04
 - [2023 第一学年结束的总结](https://github.com/QiYongchuan/MyGitBlog/issues/23)--2023-06-29
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [Java的一些基础知识点复习](https://github.com/QiYongchuan/MyGitBlog/issues/83)--2024-02-28
 - [哈佛大学cs50x-cs50-full-stack全栈项目学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/82)--2024-02-24
 - [JavaScript Full Course - Beginner to Pro](https://github.com/QiYongchuan/MyGitBlog/issues/81)--2024-02-22
 - [Django学习记录：如何创建一个项目](https://github.com/QiYongchuan/MyGitBlog/issues/80)--2024-02-04
 - [python中的数据类型](https://github.com/QiYongchuan/MyGitBlog/issues/79)--2024-02-03
-- [Python中面向对象编程](https://github.com/QiYongchuan/MyGitBlog/issues/78)--2024-02-03
 ## 总结
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
@@ -50,13 +51,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## notes
+- [Java的一些基础知识点复习](https://github.com/QiYongchuan/MyGitBlog/issues/83)--2024-02-28
 - [JavaScript Full Course - Beginner to Pro](https://github.com/QiYongchuan/MyGitBlog/issues/81)--2024-02-22
 - [Django学习记录：如何创建一个项目](https://github.com/QiYongchuan/MyGitBlog/issues/80)--2024-02-04
 - [python中的数据类型](https://github.com/QiYongchuan/MyGitBlog/issues/79)--2024-02-03
 - [Python中面向对象编程](https://github.com/QiYongchuan/MyGitBlog/issues/78)--2024-02-03
-- [Git-在已经建好的仓库中，将其中一部分文件夹单独上传到新的仓库中](https://github.com/QiYongchuan/MyGitBlog/issues/77)--2024-02-01
 <details><summary>显示更多</summary>
 
+- [Git-在已经建好的仓库中，将其中一部分文件夹单独上传到新的仓库中](https://github.com/QiYongchuan/MyGitBlog/issues/77)--2024-02-01
 - [响应式页面实现的几种方式](https://github.com/QiYongchuan/MyGitBlog/issues/75)--2024-01-16
 - [SCSS-增加变量的CSS](https://github.com/QiYongchuan/MyGitBlog/issues/74)--2024-01-16
 - [ Git 的简单用法-cs50x](https://github.com/QiYongchuan/MyGitBlog/issues/73)--2024-01-16
@@ -105,13 +107,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [2024找工作的尝试](https://github.com/QiYongchuan/MyGitBlog/issues/68)--2024-01-08
 - [2024周记](https://github.com/QiYongchuan/MyGitBlog/issues/59)--2023-12-31
 ## 项目记录
+- [哈佛大学cs50x-cs50-full-stack全栈项目学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/82)--2024-02-24
 - [GPTs的学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/69)--2024-01-08
 - [GitHubPoster项目折腾记录：withings-sync 依赖下载失败到网络问题](https://github.com/QiYongchuan/MyGitBlog/issues/64)--2024-01-04
 - [Hope&Love网页作品](https://github.com/QiYongchuan/MyGitBlog/issues/47)--2023-12-20
 - [AI创造：疯狂的蔬菜一家人     ](https://github.com/QiYongchuan/MyGitBlog/issues/33)--2023-12-03
-- [AI作图的一些尝试](https://github.com/QiYongchuan/MyGitBlog/issues/32)--2023-12-02
 <details><summary>显示更多</summary>
 
+- [AI作图的一些尝试](https://github.com/QiYongchuan/MyGitBlog/issues/32)--2023-12-02
 - [实训项目（10天）](https://github.com/QiYongchuan/MyGitBlog/issues/18)--2023-06-12
 - [实时聊天应用开发记录](https://github.com/QiYongchuan/MyGitBlog/issues/14)--2023-05-11
 - [暂未成功的扇贝背单词项目](https://github.com/QiYongchuan/MyGitBlog/issues/11)--2023-04-27
