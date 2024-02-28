@@ -47,6 +47,8 @@ float: 单精度32位IEEE 754浮点数。
 double: 双精度64位IEEE 754浮点数。
 boolean: 逻辑类型，只能取两个值之一：true或false。
 char: 单个16位Unicode字符，范围为'\u0000'到'\uffff'。
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/2dc7996c-fe8f-4f7b-af09-a08ab3a474f3)
+
 
 整数：byte、short、int、long
 浮点数：float、double
