@@ -22,11 +22,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [从研究生退学之后的两年](https://github.com/QiYongchuan/MyGitBlog/issues/84)--2024-02-28
 - [Java的一些基础知识点复习](https://github.com/QiYongchuan/MyGitBlog/issues/83)--2024-02-28
 - [哈佛大学cs50x-cs50-full-stack全栈项目学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/82)--2024-02-24
 - [JavaScript Full Course - Beginner to Pro](https://github.com/QiYongchuan/MyGitBlog/issues/81)--2024-02-22
 - [Django学习记录：如何创建一个项目](https://github.com/QiYongchuan/MyGitBlog/issues/80)--2024-02-04
-- [python中的数据类型](https://github.com/QiYongchuan/MyGitBlog/issues/79)--2024-02-03
 ## 总结
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
@@ -79,13 +79,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## daily
+- [从研究生退学之后的两年](https://github.com/QiYongchuan/MyGitBlog/issues/84)--2024-02-28
 - [算法学习初体验：慢慢来，原来我也可以](https://github.com/QiYongchuan/MyGitBlog/issues/66)--2024-01-07
 - [除了想象力，没有什么是限制](https://github.com/QiYongchuan/MyGitBlog/issues/50)--2023-12-23
 - [“既然这样，不如我们重新来过。”--考前押题复习的老师](https://github.com/QiYongchuan/MyGitBlog/issues/48)--2023-12-22
 - [只要太阳出来了，一切都会好起来的](https://github.com/QiYongchuan/MyGitBlog/issues/46)--2023-12-20
-- [迷失在寒冷的冬天](https://github.com/QiYongchuan/MyGitBlog/issues/45)--2023-12-13
 <details><summary>显示更多</summary>
 
+- [迷失在寒冷的冬天](https://github.com/QiYongchuan/MyGitBlog/issues/45)--2023-12-13
 - [漫长的冬天](https://github.com/QiYongchuan/MyGitBlog/issues/44)--2023-12-13
 - [测试，看是否能顺利更新](https://github.com/QiYongchuan/MyGitBlog/issues/36)--2023-12-04
 - [721面试复盘（外贸）](https://github.com/QiYongchuan/MyGitBlog/issues/30)--2023-07-21
@@ -121,6 +122,8 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## TODO
+TODO list from [从研究生退学之后的两年](https://github.com/QiYongchuan/MyGitBlog/issues/84) all done
+
 TODO list from [博客功能完善计划](https://github.com/QiYongchuan/MyGitBlog/issues/61)--3 jobs to do--1 jobs done
 - [x] 引入自动生成svg的github贡献
 - [ ] 增加友链模块
