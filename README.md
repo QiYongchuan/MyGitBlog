@@ -2,7 +2,7 @@
 My personal blog using issues and GitHub Actions (参考[yihong](https://github.com/yihong0618/gitblog))
 
 * 用文字记录我的胡思乱想与生活的瞬间，我疯狂的想法与可能为之的行动。  
-* 一个从农学研究生退学转行到计算机行业的年轻人。
+* 一个从[农学研究生退学](https://github.com/QiYongchuan/MyGitBlog/issues/84)转行到计算机行业的年轻人。
 * 记录在这个时代下的焦虑、迷茫、挣扎与希望。
 
 ### 提醒自己：
