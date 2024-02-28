@@ -283,3 +283,8 @@ public class User {
 
 JVM虚拟机内存模型
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/df7b1df1-6352-437a-bb35-51a05b806e67)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/2d5f486c-1da0-4671-832b-66a4f2633acb)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/4cf5a2e7-0496-4493-91d9-ebb55e3ef8ca)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/8145b950-bdd6-406c-a9a3-8c9098a6f479)
