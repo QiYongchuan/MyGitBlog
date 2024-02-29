@@ -44,7 +44,7 @@
 
 ---
 
-Java中的基本数据类型
+**Java中的基本数据类型**
 
 
 byte: 8位有符号的补码整数，范围为-128到127。
@@ -78,6 +78,48 @@ boolean: false
 char: '\u0000'
 
 补充：所有的引用类型则是null
+
+**数据类型转换**
+
+* 自动类型转换：精度低的向精度高的类型转换
+* 强制类型转换：精度高的向精度低的转换
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f69b69be-cafd-4ff3-b088-954c0d227967)
+```
+public static void main(String[] args) {
+        int num = 'a';  //   char --> int 97
+        double d1 = 80;  // double -->  80.0
+
+        System.out.println(num);
+        System.out.println(d1);
+    }
+```
+注：
+1.混合多种类型时，转换为最高的类型
+2.（byte,short)和char之间不会相互自动转换
+3.byte,shoort,char 他们三者可以计算，计算时首先转化为int 再计算；另三种无论是单独还是混合都会提升。（精度提升到int） 
+
+强制类型转化：
+* 数据精度丢失
+* 数据溢出造成不可知的数
+```
+int a = (int)1.9;
+        System.out.println(a); //1   直接丢失了小数部分
+
+        int n = 2000;
+        byte b = (byte)n;    // 超出byte127的范围，会造成数据溢出
+        System.out.println(b);   //-48
+```
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/7e091bce-8b18-43b6-ba3d-ec39b6fdeb50)
+
+**基本数据类型与String类型的转换**
+* 基本数据类型转字符串：直接用+连接就可以
+* String转为基本数据类型：通过基本数据类包装类调用parseXX方法
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/eb970fe4-24d1-4206-86e8-9ab31f5efbdc)
+注：String转char时，是charAt(0),即转为String的第一个值。
+注意：
+* Sring 转化为数字时，只有String的内容是数字才可以转化，比如”123“，但是”123hi“ 或”hello"都不可以转
+* 
 
 ---
 
