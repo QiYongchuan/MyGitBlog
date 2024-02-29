@@ -191,6 +191,10 @@ public class Student {
 3. **执行构造方法**
 4. 返回对象的地址给相关的变量
 
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/892c8e3a-9db9-4131-ac6c-c689aee8c229)
+
+
+
 构造器（构造方法）的四个要点：
 * 构造器通过new 关键字调用
 * 不能在构造器中使用return返回某个值；构造器有返回值，但不能定义返回的类型的（返回值的类型肯定是本类）
