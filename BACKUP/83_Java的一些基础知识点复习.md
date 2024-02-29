@@ -177,7 +177,9 @@ public class Student {
 
 简单内存分析（帮助理解面向对象）：
 
-![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/53545232-a2ee-4aa7-b2ca-97d6e7f28e9c)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/02ddcb29-bb58-4501-bb9f-c5d2d61ce051)
+
 
 **构造方法（构造器constructor）**
 构造器用于对象的初始化，而不是创建；
