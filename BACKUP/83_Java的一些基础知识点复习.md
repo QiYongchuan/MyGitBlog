@@ -220,3 +220,8 @@ System.out.println(b.age); // 抛出NullPointerException
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/20a75a87-f038-4adf-b019-1b956407cf99)
 
 
+区分：
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b8c15a82-e74a-44fd-b9be-e4de8894915a)
+
+这里p=null指向空，栈中test200中的p空了，但是main中的p.age依然指向原来的地址（堆中的地址p）
