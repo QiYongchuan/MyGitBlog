@@ -423,3 +423,18 @@ this访问属性的区别：
 以及count++ 是后加加，先输出之后，后加
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/aca07fe3-b57b-4376-a9e2-f96e57002bc1)
+
+
+---
+
+**包 package**
+why?
+包的三大作用：
+* 区分相同名字的类
+* 当类很多时可以很好的管理类
+* 控制访问范围
+
+本质：创建不同的文件夹/目录，来保存文件
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/067ea62a-c286-42b8-a05b-0deb2890f9fa)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/21793574-3003-4931-9c4f-23903123d0f9)
