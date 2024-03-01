@@ -438,3 +438,16 @@ why?
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/067ea62a-c286-42b8-a05b-0deb2890f9fa)
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/21793574-3003-4931-9c4f-23903123d0f9)
+
+
+---
+
+**访问修饰符**
+用于控制方法和属性（成员变量）的访问权限（访问范围）。
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/3806f0b1-6879-4d4a-a745-1d82bbc4f5f2)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/7158b4d5-14df-4907-b342-8238ea888315)
+
+
+* 修饰符修饰方法、属性、和类
+* 只有public和默认可以修饰类
