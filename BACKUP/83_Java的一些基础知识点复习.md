@@ -451,3 +451,23 @@ why?
 
 * 修饰符修饰方法、属性、和类
 * 只有public和默认可以修饰类
+
+
+---
+
+**封装**
+面向对象的三大特征：封装、继承、多态
+封装：把抽象出来的数据（属性）和对对象的操作（方法）封装在一起，数据被保护在内部，程序的其它部分只有通过被授权的操作（方法），才能对数据进行操作。
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/ec3c0ea8-02a7-4372-8129-9c7af90c1524)
+
+如何实现？
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/1c621e9f-9b59-45e1-b9ff-cb6229b12cc4)
+   
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/c2135ab4-231e-4018-993a-932cd6e7bcbc)
+
+
+**构造器与setxx**
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f6ffabaa-6810-44d9-ba1b-c6c2c5c7c2b5)
+因为当只写构造器时，可以在初始化时直接赋值，这样就绕过了set设置的规则；此时如果想继续保证set的效果，就将构造器与set结合，在构造器中调用set，这样即使是初始化赋值给的值不符合要求，就无法绕过set了。
