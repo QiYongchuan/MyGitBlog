@@ -219,8 +219,30 @@ public class Student {
 
 
 **构造方法（构造器constructor）**
+why ?
+> 在创建的同时进行赋值
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/501f6357-bd91-473f-a380-b3bf9db52dbc)
+如果不写，则是默认的系统指定的无参构造器，无法在创建的时候进行赋值，只能等创建完成之后，再赋值；一旦构建了有参构造器后，默认的构造器就会被覆盖了，如果想用就必须再创建一个默认的无参构造器。
+```
+class Person{
+    String name;
+    int age;
+   public Person(String name1,int age1){
+       System.out.println("Constructor 被调用");
+        name = name1;
+        age = age1;
+    }
+    public Person(){
+        System.out.println("默认构造函数被调用");
+    }
+}
+```
+
 构造器用于对象的初始化，而不是创建；
 > 构造方法是装修房子，而不是创建房子
+
+* 方法名与类名相同
+* 在创建对象时，系统自动调用该类的构造器完成对象的初始化。
 
 创建对象的四步：
 1. 分配对象空间，并对对象成员变量初始化为0或者空
@@ -265,6 +287,19 @@ public class User {
     {
     }
 ```
+
+对象创建流程详解：
+
+1. 加载类（Perseon.class）信息，只会加载一次
+2. 在堆中分配内存空间（地址）
+3. 在完成对象初始化
+   * 3.1 默认初始化 age=0 name=null
+   * 3.2 显式初始化 age=90 name=null
+   * 3.3 构造器初始化 age=20，name=小倩
+ 4. 将对象在堆中分配到的内存地址，返回给p（p，就是对象名，也就是说是对象的引用）
+
+
+
 
 
 ---
