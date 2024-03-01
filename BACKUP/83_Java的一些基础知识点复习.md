@@ -376,3 +376,44 @@ Java中变量一般分为：属性和成员方法中的变量，即分别是全�
 修饰符:
 * 全局变量前面可以加修饰符
 * 局部变量不可以加修饰符
+
+
+---
+
+**this关键字**
+why？
+区分当前类的属性和局部变量而引入。
+
+* 哪个对象调用，就代表哪个对象（”我的“）
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/a940ab0b-06f0-40f8-a12f-451df2c4e959)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/1734d227-043d-488e-950b-6b5f9de204d4)
+
+```
+//访问成员方法的语法  this.f
+class T{
+    public void f1(){
+        System.out.println("f1（） 方法");
+    }
+    
+    public void f2(){
+        System.out.println("f2（） 方法");
+        
+        //调用本类的f1（）方法
+        //第一种方式
+        f1();
+        //第二种方式
+        this.f1();
+    }
+}
+
+```
+
+构造器中使用this
+注：仅限在构造器中使用，且this要放在第一条语句
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/6ae8d7a1-1517-4558-a341-4255df979f18)
+
+this访问属性的区别：
+如果没有this时，在成员方法中访问属性时采用就近原则（即有局部变量先访问局部变量，没有时访问全局变量），但是有this时，就只访问全局变量了。
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/1fdd9a53-85f9-442a-ac54-118718eacfa4)
+
+
