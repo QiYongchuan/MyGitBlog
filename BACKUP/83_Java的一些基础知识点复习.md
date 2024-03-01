@@ -62,7 +62,18 @@ Java中允许同一个类中多个**同名** **同功能**但是**参数个数�
 ==>对方法重载的一种优化，不用因为参数个数不同而写多个方法了
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/a287a282-f311-40a2-84ca-37850136dafb)
 
+可以把传入的参数nums  视为数组
+```
+    public int getSum(int... nums) {
+        System.out.println("参数的个数" + nums.length);
+        int tolNums = 0;
+        for (int i = 0; i < nums.length; i++) {
 
+            tolNums += nums[i];
+        }
+        return tolNums;
+    }
+```
 
 
 ---
