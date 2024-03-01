@@ -417,3 +417,9 @@ this访问属性的区别：
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/1fdd9a53-85f9-442a-ac54-118718eacfa4)
 
 
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/fcc2279c-0af0-4529-9bfb-1f2c770d9c31)
+答案10，9，10
+涉及匿名对象，创建之后就销毁了
+以及count++ 是后加加，先输出之后，后加
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/aca07fe3-b57b-4376-a9e2-f96e57002bc1)
