@@ -318,3 +318,16 @@ System.out.println(b.age); // 抛出NullPointerException
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b8c15a82-e74a-44fd-b9be-e4de8894915a)
 
 这里p=null指向空，栈中test200中的p空了，但是main中的p.age依然指向原来的地址（堆中的地址p）
+
+---
+
+**作用域**
+变量的范围。
+Java中变量一般分为：属性和成员方法中的变量，即分别是全局变量和局部变量。
+* 全局变量==>类的属性（成员变量），可以在整个类体中使用
+* 局部变量：出来属性之外的其它变量，作用域为定义它的代码块。
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/24202f73-54fd-4496-89c7-d477906583a2)
+
+补充：
+* 全局变量可以不赋值，此时为默认值
+* 局部变量必须赋值才可以适应，因为没有默认值
