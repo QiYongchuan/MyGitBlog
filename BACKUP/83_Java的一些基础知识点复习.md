@@ -471,3 +471,52 @@ why?
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f6ffabaa-6810-44d9-ba1b-c6c2c5c7c2b5)
 因为当只写构造器时，可以在初始化时直接赋值，这样就绕过了set设置的规则；此时如果想继续保证set的效果，就将构造器与set结合，在构造器中调用set，这样即使是初始化赋值给的值不符合要求，就无法绕过set了。
+
+
+---
+
+**继承**
+why ？
+当两个类的属性和方法很多是相同的时候，怎么办  ==》继承，提高代码复用性 、
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/a28378b8-49ce-4ac0-b31e-dfe1cc6ae5e6)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/7ea03a29-c239-4b43-a312-f8bd0d141add)
+
+好处：
+* 扩展性提高了
+* 复用性提高了
+
+继承细节点：
+* 子类继承了所有的属性和方法，但是私有属性和方法不能在子类中直接访问，只能通过公共的方法去访问。
+```
+ private int n4 = 4;
+
+    public int getN4() {
+        return n4;
+    }
+
+  private void Test4(){
+        System.out.println("Private Base Test3...");
+    }
+    public void callPrivate(){  // 私有方法也可以使用公共方法调用
+        Test4();
+    }
+```
+
+* 创建子类对象时，必须调分类的构造器，先完成父类的初始化
+
+>在子类创建时，子类的构造器默认调用了super（）方法：本质是调用父类的无参构造器。
+
+*当创建子类时，无论调用子类的哪一个构造器，默认情况下总会调用父类的无参构造器；
+* 如果父类没有无参构造器，就必须在子类构造器中用super指定使用父类的哪个构造器完成对父类的初始化工作，否则无法编译通过。
+* 如果希望调用父类的某个构造器，可以通过super（参数列表）显式调用
+* super（）在使用时，需要放在构造器的第一行，且只能放在构造器中使用
+* super（）和this（)都只能放在构造器的第一行，因此无法共存在一个构造器中
+
+java中所有类都是Objece类的子类，Object类是所有类的基类（父类）
+父类构造器的调用不限于直接的父类，将会一直往上追溯到Object类（顶级父类）
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b57017ee-630b-486e-8e6e-bf825f5590c5)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/0f1537b6-9dfd-42f3-b0d6-73dd3848d1a9)
+单继承机制，只能一个父类；如果想继承C,可以先让B继承C,A就继承到了C.
+
