@@ -520,3 +520,19 @@ java中所有类都是Objece类的子类，Object类是所有类的基类（父�
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/0f1537b6-9dfd-42f3-b0d6-73dd3848d1a9)
 单继承机制，只能一个父类；如果想继承C,可以先让B继承C,A就继承到了C.
 
+
+
+---
+
+**继承的本质**
+==>逐层向上的查找关系
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/8253e05a-7782-4569-950e-3eb2e20d9c19)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/d8a54071-8057-4df1-8aba-cb43aa7f3c23)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/885d5aad-7cbf-4d3b-b77e-8ee8782692fc)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/03b44d8b-abb5-45a7-bd8e-9d1283183de7)
+
+关键：
+不要忘记了所有的构造器都有默认的super（）
+super（"hhh")显示调用，并传参
+
