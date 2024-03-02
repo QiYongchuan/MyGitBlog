@@ -580,3 +580,10 @@ super（"hhh")显示调用，并传参
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/8162ddb8-6dcf-4647-810d-d3dba70c3535)
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/4124b9c7-c4dc-4c66-acaa-207c32daec5f)
+
+
+---
+
+**方法的重写/覆盖override**
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/cf223d3c-2710-4fb7-ba51-1ef91999e0d6)
