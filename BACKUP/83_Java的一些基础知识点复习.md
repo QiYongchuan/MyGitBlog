@@ -596,3 +596,23 @@ super（"hhh")显示调用，并传参
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/d2b06b2d-5f0d-4103-ab74-f38b3acf2bb8)
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/00400d64-8f39-4483-b913-763d751544ad)
+
+
+---
+
+**多态polymorphic**
+方法和对象具有多种形态，是面向对象的第三大特征，多态是建立在封装和继承基础之上的。
+why?
+当类越来越多时，传统方法，代码复用性不高，且不利于维护
+
+1. 方法的多态：
+    （方法的重写和重载就体现了多态）
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/fcd702b7-b20c-41d9-b78a-3191922e3cc4)
+
+2.对象的多态
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/4078d508-d36f-4f47-ab00-ed073a4d557e)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/3070de66-248e-4c8b-9479-13801abea6f4)
+
+ 
