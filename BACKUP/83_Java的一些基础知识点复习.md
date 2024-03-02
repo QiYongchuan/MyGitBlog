@@ -587,3 +587,12 @@ super（"hhh")显示调用，并传参
 **方法的重写/覆盖override**
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/cf223d3c-2710-4fb7-ba51-1ef91999e0d6)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/d099f195-02c2-431f-82cc-c406c34f221e)
+
+注意：
+* 方法三要素一定要相同才是方法重写：返回值类型、名称、参数列表
+* 返回类型可以是父类的子类，但是不能是父类；比如父类是object，子类可以是String
+* 访问权限不能变小
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/d2b06b2d-5f0d-4103-ab74-f38b3acf2bb8)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/00400d64-8f39-4483-b913-763d751544ad)
