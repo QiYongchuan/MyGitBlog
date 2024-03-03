@@ -698,3 +698,17 @@ animal.cry()；   //运行时，执行的是子类的cry（），因为animal的
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f16b59b9-3212-44e3-bfec-f35311554088)
 
+
+
+---
+
+**Hashcode**
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/7428d619-877a-4fc7-ac4d-e3cd14c99abd)
+
+**toString**
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/e2ae77ff-d577-49d5-a483-da6e00e9fdf6)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/aa77a7a4-63eb-4aa6-8c9e-5ed352dffc38)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/23b976d2-6f70-4cdc-9e6e-9fd7ef94c951)
+
+重写：
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/a034a6c4-8d4f-450b-87d5-3902f2c9e12b)
