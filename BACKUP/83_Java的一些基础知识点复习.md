@@ -712,3 +712,12 @@ animal.cry()；   //运行时，执行的是子类的cry（），因为animal的
 
 重写：
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/a034a6c4-8d4f-450b-87d5-3902f2c9e12b)
+
+
+**finalize**
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/82ca5fc7-0d7a-4d35-9868-498e90736ab6)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b3f8faa8-c354-4678-9535-e3f4254adf9f)
+
+ 
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/37d4afbb-d968-415f-92be-bf3c39bc4b97)
