@@ -612,7 +612,36 @@ why?
 2.对象的多态
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/4078d508-d36f-4f47-ab00-ed073a4d557e)
-
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/3070de66-248e-4c8b-9479-13801abea6f4)
 
  
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/2b82db2e-93c7-48f7-8391-bf553252c3c3)
+**向上转型：**
+本质：父类的引用指向了子类的对象
+Animal animal = new Dog();    //animal 编译类型就是Animal，运行类型就是Dog
+animal.cry()；   //运行时，执行的是子类的cry（），因为animal的运行类型就是Dog，所以cry就是Dog的cry  
+
+ **向上转型的规则**
+* 可以调用父类的所有方法（遵循访问权限）
+* 但不能调用子类特有的成员
+* 因为在编译阶段，能调用哪些成员是由编译类型决定的。（此时编译类型是父类，而子类特有的成员父类没有）
+* 最终的运行效果看子类（运行）的具体实现，运行时，运行类型则是子类，即调用方法时，按照子类开始查找方法（即有可能子类重写了父类的方法，所以实现会不同）
+
+
+
+
+**多态的向下转型**
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/8e910072-8f38-475d-a6ca-149bdd21e614)
+ 
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/173d9bb0-8420-442b-b4b1-c9122390a575)
+
+
+**属性重写问题**
+* 注意：属性区别于方法，属性没有重写
+* 值，直接看编译类型，从编译类型处查找
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/db9e2168-8b1d-44ce-9456-fa8415f016cf)
+
+第一个例子向上转型后，base.count 时，此时的编译类型是Base 父类，所以base.count直接从父类查找，即10
+第二个例子，不是向上转型,sub.count 遵循属性查找规则，先找本类，有，即20
