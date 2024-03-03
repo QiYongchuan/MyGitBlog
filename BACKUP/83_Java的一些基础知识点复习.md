@@ -663,3 +663,18 @@ animal.cry()；   //运行时，执行的是子类的cry（），因为animal的
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/15c3bae3-d7ef-4d3e-9350-619d02dbc62d)
 
 注意最后的b.display();  方法运行看运行类型，此时b的运行类型是s，所以执行s的方法，输出的是20
+
+---
+
+**java的动态绑定机制**
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/1cc4b926-b716-46a4-bb2f-b18d7c1794e4)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/33dd2736-e5f3-4157-bbe6-b6e5d115c561)
+[详解](https://www.bilibili.com/video/BV1fh411y7R8/?p=315&spm_id_from=pageDriver&vd_source=c3c4a5db9e4d968c67a652118ea87497)
+
+* 方法有动态绑定，方法先到运行类型里去找
+* 属性没有动态绑定，属性直接就是看编译类型
+
+**多态的应用2：多态参数**
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/451df40b-85dc-4e6e-ab04-3bb0d09d7c2e)
+
