@@ -678,3 +678,23 @@ animal.cry()；   //运行时，执行的是子类的cry（），因为animal的
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/451df40b-85dc-4e6e-ab04-3bb0d09d7c2e)
 
+
+
+---
+
+**object类详解**
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/0929bdec-81b5-4186-bce8-8decb243b738)
+**equal和 == 的区别**
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/90c3402e-c81f-4600-8a13-7ba9f9640e60)
+区别：
+*   == 是运算符，既可以判断基本数据类型又可以判断引用数据类型，基本数据类型判断值是否相等，引用则判断地址是不是同一个
+* equals 是Object类中的方法，只能判断(对象）引用类型，判断引用地址是否相同； 如果字符串调用equal，则是重写后的equal，则判断内容是否相同。
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/3850f046-7687-4ea4-b200-208a62a04af7)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/39634941-989b-4d16-a8c6-fa25570a4a4d)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/402d6170-2463-408c-a0fc-ae0885887656)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/40a58883-c530-4355-8313-85aa94304e6d)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f16b59b9-3212-44e3-bfec-f35311554088)
+
