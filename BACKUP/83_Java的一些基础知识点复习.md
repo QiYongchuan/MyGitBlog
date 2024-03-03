@@ -655,3 +655,11 @@ animal.cry()；   //运行时，执行的是子类的cry（），因为animal的
 
 * instance of
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f2142dd4-ae84-41d4-9fc8-d5c7be3353d1)
+
+
+---
+
+练习：
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/15c3bae3-d7ef-4d3e-9350-619d02dbc62d)
+
+注意最后的b.display();  方法运行看运行类型，此时b的运行类型是s，所以执行s的方法，输出的是20
