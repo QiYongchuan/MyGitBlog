@@ -823,3 +823,10 @@ animal.cry()；   //运行时，执行的是子类的cry（），因为animal的
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/77b6950b-b437-4449-b5a5-3994f5d3c497)
 
 注意：z在类调用时，完成静态属性和静态 代码块的加载；同时，静态代码块只执行一次；
+
+---
+
+**单例设计模式**
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/cce07051-057d-4c90-9430-34a0c158a721)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/27eab9d8-e404-4bb7-9fd7-10093a976058)
