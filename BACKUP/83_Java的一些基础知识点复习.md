@@ -880,3 +880,18 @@ public abstract void eat()
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/d85a7196-a2c3-495e-8399-c0a59f991d66)
 
 
+
+
+---
+
+**接口**
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/4bc0e144-d834-468b-8277-17863c2961ea)
+在接口中抽象方法可以省略abstract
+
+interface中可以写属性以及方法，方法只能有以下三种：
+* 抽象方法
+* 默认实现方法（前面需要加default）
+* 静态方法
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/dd6bfe2a-170c-432c-afef-c95684ea6958)
+
