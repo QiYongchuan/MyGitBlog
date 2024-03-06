@@ -766,3 +766,15 @@ animal.cry()；   //运行时，执行的是子类的cry（），因为animal的
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/7473efc2-20c9-40b3-a519-2571ed933d2b)
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/87109b91-1a4f-497e-b7f3-b6a04ceac0d5)
+
+
+---
+
+**main方法**
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/ea72ee28-78e5-4088-bb08-40490445987f)
+* 1.java虚拟机调用的main方法
+* 2.args参数，在执行的时候传入的
+
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/c58b023e-2b05-4770-a4eb-67f91a758a87)
