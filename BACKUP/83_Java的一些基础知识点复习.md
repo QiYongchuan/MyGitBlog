@@ -743,3 +743,26 @@ animal.cry()；   //运行时，执行的是子类的cry（），因为animal的
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/e42064c6-1065-4094-9c51-1152fd2c1786)
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/207ea239-25eb-4426-a2d6-0392a170ae41)
 
+
+
+---
+
+**类方法（静态方法）**
+
+类的方法，可被所有的成员对象共享、调用；
+* 注意：静态方法只能访问 静态成员；
+* 普通方法，既可以访问非静态成员，也可以访问静态成员（变量和方法）
+
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/08ab4da1-e8dd-44ab-b079-57d335cf793a)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/9cbc263c-10ab-47f9-b0b2-b23c6bd6b26f)
+
+类方法的经典使用场景：
+* 如果我们希望不创建实例，也可以调用某种方法时。比如某些工具类，比如Math中的各种方法均是static
+* 在开发中，某些通用的方法，比如打印一维数组，冒泡排序等
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/e2184fd4-c193-4b2a-98a2-4d9e4f3dc3d5)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/03955bcc-3372-4e0e-beaa-34b5165fe2f7)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/7473efc2-20c9-40b3-a519-2571ed933d2b)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/87109b91-1a4f-497e-b7f3-b6a04ceac0d5)
