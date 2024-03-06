@@ -830,3 +830,27 @@ animal.cry()；   //运行时，执行的是子类的cry（），因为animal的
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/cce07051-057d-4c90-9430-34a0c158a721)
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/27eab9d8-e404-4bb7-9fd7-10093a976058)
+
+
+---
+
+**final**  -- 常量
+当不希望类被继承、或者方法被重写时
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/8df06c60-084e-4447-a078-cd7457223754)
+
+赋值的地方有三个：
+* 定义时
+* 构造器中
+* 代码块中
+
+如果final修饰的属性是静态的，则初始化的位置只能是：
+1.在定义时
+2.在静态代码块中
+
+不能在构造器中（因为此时static加载是在类时，而构造器则是在实例化的时候）
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/8007172e-2275-4bdc-8cdd-5d794f1127c4)
+
+
+当只想要某个值，但是不需要类加载时，可以同时使用final和static
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/44c4d5a1-41f5-492f-b0c7-aad925dd7950)
+
