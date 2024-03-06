@@ -854,3 +854,29 @@ animal.cry()；   //运行时，执行的是子类的cry（），因为animal的
 当只想要某个值，但是不需要类加载时，可以同时使用final和static
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/44c4d5a1-41f5-492f-b0c7-aad925dd7950)
 
+
+
+---
+
+**抽象类**
+当父类有方法，但是暂时不确定时。
+
+抽象方法，就是没有实现的方法，即没有方法体的方法
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/bec46b0b-438e-4290-8d20-aff6b3ebb5c4)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/9e8ad7dd-f16e-4bdd-89c2-1117ee791bf4)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f6f9c72a-d271-46d7-a053-ea308abab1fb)
+
+
+```
+public abstract void eat()
+```
+
+细节：
+* 抽象类无法被实例
+* 抽象类不一定含有抽象方法，抽象方法一定必须声明抽象类
+* 抽象类中可以有其它方法，不一定有抽象方法
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/6c8694e7-7635-4c9b-8b4f-ccc2b39ea6ad)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/d85a7196-a2c3-495e-8399-c0a59f991d66)
+
+
