@@ -895,3 +895,21 @@ interface中可以写属性以及方法，方法只能有以下三种：
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/dd6bfe2a-170c-432c-afef-c95684ea6958)
 
+
+
+---
+
+**内部类**
+属性、方法、构造器、代码块、内部类
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/e30a9636-b73b-4b7c-b79b-b71038c614ab)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/cfa4ab42-d249-4759-b764-fc94cacb79f1)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/7e3472e7-8487-40fc-a94b-33571b07433e)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/183277cd-d688-4ed5-a425-8bb532b44ab3)
+ 
+1.局部内部类定义在方法中/代码块中
+2.作用域在方法体里或代码中
+3.本质仍然是一个类 
+
+**匿名内部类**
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/686d7fc5-e268-4c01-bf27-1a4e153050b3)
+
