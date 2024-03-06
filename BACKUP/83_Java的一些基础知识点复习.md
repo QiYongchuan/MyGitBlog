@@ -721,3 +721,25 @@ animal.cry()；   //运行时，执行的是子类的cry（），因为animal的
 
  
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/37d4afbb-d968-415f-92be-bf3c39bc4b97)
+
+
+---
+
+**类变量（静态变量）**
+最大的特点就是可以被类的所有实例共享。
+所有的对象都共享的空间（在堆中单独的空间），都拥有的对象
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/648463c4-8c63-42ab-85ee-d24fdd108143)
+
+* 可以直接通过类名访问
+* static 变量是同一个类所有对象共享的
+* static类变量，在类加载的时候就生成了
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/02cb7c9a-fd61-4039-93f4-41757e1e9c1f)
+
+访问： 
+ 类名.类变量名（推荐）
+或者：对象名.类变量名
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/e42064c6-1065-4094-9c51-1152fd2c1786)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/207ea239-25eb-4426-a2d6-0392a170ae41)
+
