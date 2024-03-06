@@ -778,3 +778,48 @@ animal.cry()；   //运行时，执行的是子类的cry（），因为animal的
 
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/c58b023e-2b05-4770-a4eb-67f91a758a87)
+
+
+---
+
+**代码块**
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/7b4c94ab-5590-427c-82a0-66ba12926445)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/a00a5bb7-3636-4a73-bad0-a7ef3c07bd3d)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/6a0bb9a1-541e-4ccf-a7ef-849c0ce0f6b2)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/009f6c30-3b02-46ce-9d9e-4917d8c9f65b)
+
+补充细节：静态代码块与普通代码块
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/a10104a7-0b3f-4056-9ed4-6edcff535958)
+
+当同时有静态属性初始化和静态代码块时：
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/d6d70120-4462-40a7-b79b-d8f48f0b050f)
+
+注意：构造器是最后执行的
+
+当涉及继承时:  构造器内默认隐藏的两步：
+* super
+* 本类的普通代码块
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/70cf8b55-3b20-436b-8379-8d6dfa25232b)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/5598281b-3dbc-49d2-9791-0e644ee88b3d)
+
+综合案例
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/1d3b7af7-5f09-4ba8-a582-0c2180ffcf3f)
+
+1.先加载类
+  1.1 加载父类的静态属性以及代码块
+  1.2 再加载子类静态属性以及代码块
+2.再加载对象
+   2.1 执行子类的构造器super（）
+       2.2 在执行子类构造器之前，隐藏了父类的super（），以及父类的普通代码块和普通属性的初始化操作，的执行
+    2.3 执行完2.2，相当于执行完了子类super之前的隐藏的东西，现在 执行子类的普通代码块以及普通属性的初始化（看代码顺序了）
+  2.4 再执行完子类构造器中的剩余内容
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/7f8ee305-d083-4f7f-8c49-a02f7167a7ca)
+
+
+练习题：
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/77b6950b-b437-4449-b5a5-3994f5d3c497)
+
+注意：z在类调用时，完成静态属性和静态 代码块的加载；同时，静态代码块只执行一次；
