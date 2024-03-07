@@ -108,7 +108,6 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 ## 记录
 - [2024一些完成的小事情](https://github.com/QiYongchuan/MyGitBlog/issues/72)--2024-01-14
 - [GPTs的学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/69)--2024-01-08
-- [2024找工作的尝试](https://github.com/QiYongchuan/MyGitBlog/issues/68)--2024-01-08
 - [2024周记](https://github.com/QiYongchuan/MyGitBlog/issues/59)--2023-12-31
 ## 项目记录
 - [哈佛大学cs50x-cs50-full-stack全栈项目学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/82)--2024-02-24
