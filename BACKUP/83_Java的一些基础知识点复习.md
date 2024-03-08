@@ -917,8 +917,45 @@ interface中可以写属性以及方法，方法只能有以下三种：
 3.本质仍然是一个类 
 4.可以访问外部类的所有成员，包括私有的
 
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/247c4e69-6b76-487a-bc93-32ee58003a5d)
 
 
 **匿名内部类**
-![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/686d7fc5-e268-4c01-bf27-1a4e153050b3)
 
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/686d7fc5-e268-4c01-bf27-1a4e153050b3)
+* 本质还是类
+* 是一个内部的类
+* 该类没有名字（其实有名字，但是看不到，是系统给分配的)
+* 同时还是一个对象
+
+WHY?
+什么时候会需要以及产生内部类？
+==>  匿名内部类是用来简化开发的，匿名其实是系统自动分配一个用户看不到的名字的内部类，用来实例化
+
+使用场景：基于接口的内部类
+1.当我们想实现一个接口的方法，但不想创建一个新的类时，
+```
+IA tiger =new IA(){  // 注意：这里的编译类型是IA 接口， 运行类似就是**匿名内部类**，
+此时是编译器自动执行的。
+ new ==>jdk底层在创建匿名内部类的时候，也同时创建了实例，并且把实例返回给了tiger
+@Overwride
+//实现接口的方法
+}
+```
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/436ffd5f-d59c-458a-85b3-ce3b143d25b4)
+
+2.基于类的匿名内部类
+即原来有一个类，如果要继承之后重写，需要新建一个类，现在可以直接使用匿名的内部类来实现
+如何写？
+
+原来new一个对象，只需要
+Father father = new Father();
+就可以，如何使用匿名内部类，则需要：
+Father father = new Father(){};     //  注意，多了对象的{}，如果是抽象的父类，就需要重写抽象方法了
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/65fb0567-71d6-47d7-bef2-a38849661800)
+
+
+匿名内部类的最佳实践：
+当作实参直接传递
+代码简洁高效
