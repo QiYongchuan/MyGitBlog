@@ -989,3 +989,29 @@ Father father = new Father(){};     //  注意，多了对象的{}，如果是�
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/1af20f26-d982-46b7-b26f-ee159b09a289)
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b7b200b5-03ec-410a-b4a0-b18e4542868b)
 
+
+
+---
+
+**Java枚举类**
+why？
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/289af423-a8f5-45a6-8246-0a215fb78fde)
+* 常量的集合
+* 有限的特定对象
+
+枚举的实现方式：
+1.自定义实现
+2.使用 enum 关键字实现枚举
+
+如何自定义实现枚举类？
+1.将构造器私有化，这样就保证了无法在外部直接new的方式创建对象
+2.去掉setXxx方法，防止属性被修改
+3.在Season内部，直接创建固定的对象
+4.优化，可以加入final修饰符，类不用加载了
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b6ca686b-dda8-41a9-910a-75c988c15627)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b6ed9814-5621-49b6-b9ed-42d41c883316)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/89d827cf-5de5-4864-8e39-8d61d118bd42)
+
+
