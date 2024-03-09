@@ -1012,6 +1012,12 @@ why？
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b6ca686b-dda8-41a9-910a-75c988c15627)
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b6ed9814-5621-49b6-b9ed-42d41c883316)
 
+
+使用关键字enum 来创建：
+* 1.将enum替换为class
+* 2.直接写常量+参数列表
+* 3.注意属性和2的顺序
+
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/89d827cf-5de5-4864-8e39-8d61d118bd42)
 
 
