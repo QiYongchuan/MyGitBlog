@@ -1041,10 +1041,15 @@ enum类的常用方法
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b414f656-2bd8-4637-bf0c-1eb3f1eaa4de)
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/d0c129d6-39bc-4866-9d2e-ca63b52559c5)
-
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/950d0073-a463-46ca-84e8-8a60e7ff9f7c)
+可以实现j接口
+不能继承其它类了，因为本身隐式继承了Enum类了（java单继承机制，即只能有一个直接的父类）
 
 
 补充知识点：增强for循环
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/db3232d6-cc2f-4fb5-8b61-ef036baafde7)
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f3958e34-a381-42d2-9ade-b676f30b1242)
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b330dc2e-5992-4aab-94ed-11362710dc07)
+
+
+
