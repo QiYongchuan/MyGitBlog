@@ -1072,3 +1072,10 @@ Jdk的基本注解内容：
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f91d455f-a237-4580-8b6b-b29f001b4ce6)
 
 相当于做了一个语法的校验，加强检查的功能了。
+
+**deprecated**
+用于提醒，版本升级时的过渡使用
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/84be5eec-7ebe-40dd-a412-9c88fb1260d1)
+
+suppresswaring
+抑制警告
