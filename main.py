@@ -10,6 +10,7 @@ from marko.ext.gfm import gfm as marko
 
 MD_HEAD = """## MyGitBlog
 My personal blog using issues and GitHub Actions (参考[yihong](https://github.com/yihong0618/gitblog))
+[About me](https://github.com/QiYongchuan/Qiyongchuan)
 
 * 用文字记录我的胡思乱想与生活的瞬间，我疯狂的想法与可能为之的行动。  
 * 一个从[农学研究生退学](https://github.com/QiYongchuan/MyGitBlog/issues/84)转行到计算机行业的年轻人。
