@@ -1065,3 +1065,10 @@ Jdk的基本注解内容：
 
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/48fb5eed-3d31-4d59-a494-fd12b65bdd35)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/c4a23cf6-afa5-4099-8a8d-355aff9b7586)
+
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/fa901f49-62cf-4696-a3fc-4a3662b8e649)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f91d455f-a237-4580-8b6b-b29f001b4ce6)
+
+相当于做了一个语法的校验，加强检查的功能了。
