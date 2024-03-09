@@ -1017,7 +1017,34 @@ why？
 * 1.将enum替换为class
 * 2.直接写常量+参数列表
 * 3.注意属性和2的顺序
+* 4.枚举对象必须放在行首
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/89d827cf-5de5-4864-8e39-8d61d118bd42)
 
 
+一些细节：
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/3f040cae-fd60-42c6-bb02-8a15ffba6d83)
+这里，如果实例化调用无参构造器时，可以只写常量名，把后面的（）也省略掉；
+比如下面：
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/15d4fd04-2248-47b4-8610-21ccbe299b01)
+
+例题：
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/09ebfd42-7d37-433f-ad3c-14c2c79b0aa1)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/2eaa17a6-8b0f-456b-85f4-578e35acdda5)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/0d28110d-3140-45f1-97ae-2cac4c311677)
+这里w为什么是True？  因为Gender2.BOY 是一个静态对象，所以boy和boy2是相同的一个，所以是True
+
+
+enum类的常用方法
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b414f656-2bd8-4637-bf0c-1eb3f1eaa4de)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/d0c129d6-39bc-4866-9d2e-ca63b52559c5)
+
+
+
+补充知识点：增强for循环
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/db3232d6-cc2f-4fb5-8b61-ef036baafde7)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f3958e34-a381-42d2-9ade-b676f30b1242)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b330dc2e-5992-4aab-94ed-11362710dc07)
