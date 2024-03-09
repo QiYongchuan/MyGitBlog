@@ -1059,7 +1059,7 @@ enum类的常用方法
 
 **注解**
 Jdk的基本注解内容：
-* @override
+* @ override
 * @deprecated
 * @suppreswarnings
 
