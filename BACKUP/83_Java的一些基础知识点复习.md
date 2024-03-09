@@ -1053,3 +1053,15 @@ enum类的常用方法
 
 
 
+
+
+---
+
+**注解**
+Jdk的基本注解内容：
+* @override
+* @deprecated
+* @suppreswarnings
+
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/48fb5eed-3d31-4d59-a494-fd12b65bdd35)
