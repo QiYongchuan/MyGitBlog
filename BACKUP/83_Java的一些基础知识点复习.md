@@ -966,6 +966,47 @@ Father father = new Father(){};     //  注意，多了对象的{}，如果是�
 3.成员内部类  
 放在成员位置
 
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/91b0e7b1-c848-4fb2-8185-5ed1d8d062da)
+
+
+**如何使用成员内部类的方法呢？**
+* 创建一个公共方法，返回类；  然后调用这个方法，先获取到这个类，再调用类的方法
+
+```
+public class Homework07 {
+    public static void main(String[] args) {
+        Car car1 = new Car(60);
+        car1.getAir().flow();
+    }
+}
+
+
+class Car{
+    private double temperature;
+
+    public Car(double temperature) {
+        this.temperature = temperature;
+    }
+
+    class Air{
+        public void flow(){
+            if (temperature < 0){
+                System.out.println("吹暖风");
+            } else if (temperature > 40) {
+                System.out.println("吹冷风");
+            } else if (temperature > 0 && temperature < 40){
+                System.out.println("空调关闭");
+            }
+        }
+    }
+   // 成员内部类如何调用方法
+    public Air getAir(){
+        return  new  Air();
+    }
+}
+```
+
+
 4.静态内部类
 * 位置是外部类 的成员位置
 * 可以**访问外部类的静态属性**（包括私有的），但不能访问非静态类成员
