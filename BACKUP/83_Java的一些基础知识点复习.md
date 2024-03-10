@@ -1079,3 +1079,12 @@ Jdk的基本注解内容：
 
 suppresswaring
 抑制警告
+
+
+---
+
+**练习题**
+1.
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/61e6fff5-e489-434d-8b19-fbd18b8621d4)
+静态变量：只执行一次，所有在第二次创建对象初始化的时候，静态变量还保留着第一次初始化后修改的属性，所以颜色也是red
+
