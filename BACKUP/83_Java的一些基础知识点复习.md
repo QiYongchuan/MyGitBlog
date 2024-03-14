@@ -1129,3 +1129,37 @@ suppresswaring
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/61e6fff5-e489-434d-8b19-fbd18b8621d4)
 静态变量：只执行一次，所有在第二次创建对象初始化的时候，静态变量还保留着第一次初始化后修改的属性，所以颜色也是red
 
+
+
+---
+
+异常  Exception
+意义在于让程序继续执行，而不是崩溃。
+
+错误 Error  -- java虚拟机无法解决的严重问题
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/a1d6f4ed-204f-47e4-89cc-62013904c4fc)
+
+异常又分为：编译时异常和运行时异常
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/e9dc0d3e-c126-429d-b4a5-01ade9203b79)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/4091d079-fed5-4ddd-acb4-22a9ac365bb4)
+
+
+编译异常
+
+异常  Exception
+意义在于让程序继续执行，而不是崩溃。
+
+错误 Error  -- java虚拟机无法解决的严重问题
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/a1d6f4ed-204f-47e4-89cc-62013904c4fc)
+
+异常又分为：编译时异常和运行时异常
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/e9dc0d3e-c126-429d-b4a5-01ade9203b79)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/4091d079-fed5-4ddd-acb4-22a9ac365bb4)
+
+
+编译异常
+
+
+
