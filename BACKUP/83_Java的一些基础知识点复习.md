@@ -1163,3 +1163,14 @@ suppresswaring
 
 
 
+
+
+---
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/657781ff-e58c-4593-a2ab-ba271f483e63)
+
+新建数组，但是是空数组，所以一开始就是空指针异常，到return 3  然后执行finally return 4； 最终的结果就是return 4
+
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/455eca55-68e0-466b-9f93-a5193637f477)
+注意这里最后的返回值，与打印值。  finally没有返回值，只有打印值。
