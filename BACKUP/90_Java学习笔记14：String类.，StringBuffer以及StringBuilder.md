@@ -89,3 +89,14 @@ String 的值是通过常量池的，而StringBuffer 是存在堆中的数组
 
 ####  String 与StringBuffer 、StringBuilder比较
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f84f2f74-2d95-4b48-9048-599aea2f84cb)
+
+效率：StringBuilder>StringBuffer> String
+
+使用场景：
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/8c90d9d4-d0dd-424d-b237-29cea8096cef)
+
+
+---
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/89b01b13-0901-41f0-8dca-0c0138eed523)
