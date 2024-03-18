@@ -1184,3 +1184,9 @@ suppresswaring
 编译异常：FileNOTFound、ClassNotFound
 运行异常：除零异常/空指针异常
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/52100044-50a9-4bad-a4f1-18226c1353db)
+
+
+---
+
+自定义异常
+throw
