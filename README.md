@@ -26,7 +26,7 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
-- [Springboot学习笔记：@Controller、@RestController以及@RequestMapping](https://github.com/QiYongchuan/MyGitBlog/issues/87)--2024-03-18
+- [Springboot学习笔记：@Controller、@RestController以及@RequestBody](https://github.com/QiYongchuan/MyGitBlog/issues/87)--2024-03-18
 - [SpringBoot学习笔记：与数据库打交道的方式(MyBatis和JPA)](https://github.com/QiYongchuan/MyGitBlog/issues/86)--2024-03-16
 - [第一次技术面试复盘](https://github.com/QiYongchuan/MyGitBlog/issues/85)--2024-03-07
 - [从研究生退学之后的两年](https://github.com/QiYongchuan/MyGitBlog/issues/84)--2024-02-28
@@ -55,13 +55,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## notes
+- [Springboot学习笔记：@Controller、@RestController以及@RequestBody](https://github.com/QiYongchuan/MyGitBlog/issues/87)--2024-03-18
 - [SpringBoot学习笔记：与数据库打交道的方式(MyBatis和JPA)](https://github.com/QiYongchuan/MyGitBlog/issues/86)--2024-03-16
 - [Java的一些基础知识点复习](https://github.com/QiYongchuan/MyGitBlog/issues/83)--2024-02-28
 - [JavaScript Full Course - Beginner to Pro](https://github.com/QiYongchuan/MyGitBlog/issues/81)--2024-02-22
 - [Django学习记录：如何创建一个项目](https://github.com/QiYongchuan/MyGitBlog/issues/80)--2024-02-04
-- [python中的数据类型](https://github.com/QiYongchuan/MyGitBlog/issues/79)--2024-02-03
 <details><summary>显示更多</summary>
 
+- [python中的数据类型](https://github.com/QiYongchuan/MyGitBlog/issues/79)--2024-02-03
 - [Python中面向对象编程](https://github.com/QiYongchuan/MyGitBlog/issues/78)--2024-02-03
 - [Git-在已经建好的仓库中，将其中一部分文件夹单独上传到新的仓库中](https://github.com/QiYongchuan/MyGitBlog/issues/77)--2024-02-01
 - [响应式页面实现的几种方式](https://github.com/QiYongchuan/MyGitBlog/issues/75)--2024-01-16
