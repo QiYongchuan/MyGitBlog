@@ -26,15 +26,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [Springboot学习笔记：@RequestMapping](https://github.com/QiYongchuan/MyGitBlog/issues/88)--2024-03-18
 - [Springboot学习笔记：@Controller、@RestController以及@RequestBody](https://github.com/QiYongchuan/MyGitBlog/issues/87)--2024-03-18
 - [SpringBoot学习笔记：与数据库打交道的方式(MyBatis和JPA)](https://github.com/QiYongchuan/MyGitBlog/issues/86)--2024-03-16
 - [第一次技术面试复盘](https://github.com/QiYongchuan/MyGitBlog/issues/85)--2024-03-07
 - [从研究生退学之后的两年](https://github.com/QiYongchuan/MyGitBlog/issues/84)--2024-02-28
-- [Java的一些基础知识点复习](https://github.com/QiYongchuan/MyGitBlog/issues/83)--2024-02-28
 ## 总结
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
-- [开题答辩拿了高分，但关于未来很迷茫](https://github.com/QiYongchuan/MyGitBlog/issues/52)--2023-12-28
 - [2023 第一学年结束的总结](https://github.com/QiYongchuan/MyGitBlog/issues/23)--2023-06-29
 - [《一个帖子解决所有的英语学习问题》](https://github.com/QiYongchuan/MyGitBlog/issues/12)--2023-04-28
 ## Kill-bugs
@@ -55,13 +54,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## notes
+- [Springboot学习笔记：@RequestMapping](https://github.com/QiYongchuan/MyGitBlog/issues/88)--2024-03-18
 - [Springboot学习笔记：@Controller、@RestController以及@RequestBody](https://github.com/QiYongchuan/MyGitBlog/issues/87)--2024-03-18
 - [SpringBoot学习笔记：与数据库打交道的方式(MyBatis和JPA)](https://github.com/QiYongchuan/MyGitBlog/issues/86)--2024-03-16
 - [Java的一些基础知识点复习](https://github.com/QiYongchuan/MyGitBlog/issues/83)--2024-02-28
 - [JavaScript Full Course - Beginner to Pro](https://github.com/QiYongchuan/MyGitBlog/issues/81)--2024-02-22
-- [Django学习记录：如何创建一个项目](https://github.com/QiYongchuan/MyGitBlog/issues/80)--2024-02-04
 <details><summary>显示更多</summary>
 
+- [Django学习记录：如何创建一个项目](https://github.com/QiYongchuan/MyGitBlog/issues/80)--2024-02-04
 - [python中的数据类型](https://github.com/QiYongchuan/MyGitBlog/issues/79)--2024-02-03
 - [Python中面向对象编程](https://github.com/QiYongchuan/MyGitBlog/issues/78)--2024-02-03
 - [Git-在已经建好的仓库中，将其中一部分文件夹单独上传到新的仓库中](https://github.com/QiYongchuan/MyGitBlog/issues/77)--2024-02-01
@@ -89,10 +89,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [第一次技术面试复盘](https://github.com/QiYongchuan/MyGitBlog/issues/85)--2024-03-07
 - [从研究生退学之后的两年](https://github.com/QiYongchuan/MyGitBlog/issues/84)--2024-02-28
 - [算法学习初体验：慢慢来，原来我也可以](https://github.com/QiYongchuan/MyGitBlog/issues/66)--2024-01-07
+- [开题答辩拿了高分，但关于未来很迷茫](https://github.com/QiYongchuan/MyGitBlog/issues/52)--2023-12-28
 - [除了想象力，没有什么是限制](https://github.com/QiYongchuan/MyGitBlog/issues/50)--2023-12-23
-- [“既然这样，不如我们重新来过。”--考前押题复习的老师](https://github.com/QiYongchuan/MyGitBlog/issues/48)--2023-12-22
 <details><summary>显示更多</summary>
 
+- [“既然这样，不如我们重新来过。”--考前押题复习的老师](https://github.com/QiYongchuan/MyGitBlog/issues/48)--2023-12-22
 - [只要太阳出来了，一切都会好起来的](https://github.com/QiYongchuan/MyGitBlog/issues/46)--2023-12-20
 - [迷失在寒冷的冬天](https://github.com/QiYongchuan/MyGitBlog/issues/45)--2023-12-13
 - [漫长的冬天](https://github.com/QiYongchuan/MyGitBlog/issues/44)--2023-12-13
