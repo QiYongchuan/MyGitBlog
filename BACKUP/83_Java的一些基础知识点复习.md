@@ -1174,3 +1174,13 @@ suppresswaring
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/455eca55-68e0-466b-9f93-a5193637f477)
 注意这里最后的返回值，与打印值。  finally没有返回值，只有打印值。
+
+
+---
+
+**总结：异常分编译异常和运行异常，而编译异常必须处理（try catch  或者throw）；而运行异常默认处理，不需要显式处理。**
+
+常见的编译异常和运行异常
+编译异常：FileNOTFound、ClassNotFound
+运行异常：除零异常/空指针异常
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/52100044-50a9-4bad-a4f1-18226c1353db)
