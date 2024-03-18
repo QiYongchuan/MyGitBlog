@@ -54,3 +54,22 @@ equal：比较值是否相等
 format 格式化字符串
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/586edf6f-a43e-49c7-aad1-da0c7694b5e0)
+
+
+---
+
+#### StringBuffer 与String的区别
+
+
+内存区别：
+String 的值是通过常量池的，而StringBuffer 是存在堆中的数组
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/624bd8da-de8c-4c14-b250-0e27ea27ee00)
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/e25b98be-5428-48a9-97ef-c06ce60ad5a5)
+
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/abf76d85-0268-43d2-a773-680f5fea4cab)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/0328d148-d65a-4698-abad-7acbbc988457)
+
+##### String 与StringBuffer转换
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/0871cedf-1454-4a44-8d7b-2e3b683688c7)
