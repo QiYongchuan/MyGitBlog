@@ -41,3 +41,16 @@ equal：比较值是否相等
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f89beb90-7214-4501-8393-776355aae8c9)
 
 
+
+
+---
+
+#### String 的常用方法
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/d665c5b5-364c-4ce1-8448-132acc4bdc2e)
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/d80d89ca-0869-44cf-8f99-27df55ca273b)
+
+
+format 格式化字符串
+
+![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/586edf6f-a43e-49c7-aad1-da0c7694b5e0)
