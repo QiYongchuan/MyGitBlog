@@ -1,5 +1,7 @@
 # [SpringBoot学习笔记：拦截器](https://github.com/QiYongchuan/MyGitBlog/issues/91)
 
+**拦截器（Interceptor）是用来拦截进入Controller方法之前或之后的请求的。
+它们常用于日志记录、身份验证、权限检查、或者添加通用的请求或响应的头信息等场景。**
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/1bdc09ec-ce55-4cf0-9c4e-684795045958)
 
