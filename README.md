@@ -26,11 +26,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [SpringBoot学习笔记：Swagger](https://github.com/QiYongchuan/MyGitBlog/issues/93)--2024-03-19
 - [SpringBoot学习笔记：RESTful应用接口](https://github.com/QiYongchuan/MyGitBlog/issues/92)--2024-03-19
 - [SpringBoot学习笔记：拦截器](https://github.com/QiYongchuan/MyGitBlog/issues/91)--2024-03-19
 - [Java学习笔记14：String类 ，StringBuffer以及StringBuilder](https://github.com/QiYongchuan/MyGitBlog/issues/90)--2024-03-18
 - [Java学习笔记13：包装类](https://github.com/QiYongchuan/MyGitBlog/issues/89)--2024-03-18
-- [Springboot学习笔记：@RequestMapping](https://github.com/QiYongchuan/MyGitBlog/issues/88)--2024-03-18
 ## 总结
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
@@ -54,13 +54,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## notes
+- [SpringBoot学习笔记：RESTful应用接口](https://github.com/QiYongchuan/MyGitBlog/issues/92)--2024-03-19
 - [SpringBoot学习笔记：拦截器](https://github.com/QiYongchuan/MyGitBlog/issues/91)--2024-03-19
 - [Java学习笔记14：String类 ，StringBuffer以及StringBuilder](https://github.com/QiYongchuan/MyGitBlog/issues/90)--2024-03-18
 - [Java学习笔记13：包装类](https://github.com/QiYongchuan/MyGitBlog/issues/89)--2024-03-18
 - [Springboot学习笔记：@RequestMapping](https://github.com/QiYongchuan/MyGitBlog/issues/88)--2024-03-18
-- [Springboot学习笔记：@Controller、@RestController以及@RequestBody](https://github.com/QiYongchuan/MyGitBlog/issues/87)--2024-03-18
 <details><summary>显示更多</summary>
 
+- [Springboot学习笔记：@Controller、@RestController以及@RequestBody](https://github.com/QiYongchuan/MyGitBlog/issues/87)--2024-03-18
 - [SpringBoot学习笔记：与数据库打交道的方式(MyBatis和JPA)](https://github.com/QiYongchuan/MyGitBlog/issues/86)--2024-03-16
 - [Java的一些基础知识点复习](https://github.com/QiYongchuan/MyGitBlog/issues/83)--2024-02-28
 - [JavaScript Full Course - Beginner to Pro](https://github.com/QiYongchuan/MyGitBlog/issues/81)--2024-02-22
