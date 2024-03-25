@@ -39,12 +39,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 ## Kill-bugs
 - [实现无限滚动遇到的坑—document.body.offsetHeight 的值一直不变？](https://github.com/QiYongchuan/MyGitBlog/issues/76)--2024-01-30
 - [在挂梯子的情况下pip install xx 失败以及git push失败的解决方案（443以及10087等）](https://github.com/QiYongchuan/MyGitBlog/issues/67)--2024-01-07
-- [git远程分支](https://github.com/QiYongchuan/MyGitBlog/issues/65)--2024-01-06
 - [GitHubPoster项目折腾记录：withings-sync 依赖下载失败到网络问题](https://github.com/QiYongchuan/MyGitBlog/issues/64)--2024-01-04
 - [issue中发帖子的图片无法显示问题](https://github.com/QiYongchuan/MyGitBlog/issues/55)--2023-12-29
+- [听了印度老哥的建议后修改权限，最终成功了！](https://github.com/QiYongchuan/MyGitBlog/issues/41)--2023-12-05
 <details><summary>显示更多</summary>
 
-- [听了印度老哥的建议后修改权限，最终成功了！](https://github.com/QiYongchuan/MyGitBlog/issues/41)--2023-12-05
 - [修改仓库的权限](https://github.com/QiYongchuan/MyGitBlog/issues/39)--2023-12-05
 - [Git创建新的分支，开发新功能](https://github.com/QiYongchuan/MyGitBlog/issues/29)--2023-07-08
 - [Python文件 xx.py如何打包成.exe格式文件，发给非程序员朋友玩](https://github.com/QiYongchuan/MyGitBlog/issues/27)--2023-07-07
@@ -74,6 +73,7 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [ Git 的简单用法-cs50x](https://github.com/QiYongchuan/MyGitBlog/issues/73)--2024-01-16
 - [GPTs的学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/69)--2024-01-08
 - [在挂梯子的情况下pip install xx 失败以及git push失败的解决方案（443以及10087等）](https://github.com/QiYongchuan/MyGitBlog/issues/67)--2024-01-07
+- [git远程分支：如何将本地分支与远程分支相关联](https://github.com/QiYongchuan/MyGitBlog/issues/65)--2024-01-06
 - [算法知识补充：递归与尾递归](https://github.com/QiYongchuan/MyGitBlog/issues/57)--2023-12-31
 - [扫盲：科学上网（请不要转发分享）](https://github.com/QiYongchuan/MyGitBlog/issues/54)--2023-12-29
 - [算法设计与分析期末复习](https://github.com/QiYongchuan/MyGitBlog/issues/53)--2023-12-29

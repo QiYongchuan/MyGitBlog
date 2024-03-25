@@ -25,3 +25,10 @@
 当然，把本地仓库push到远程的前提是，两者建立了关联：
 
 ![image](https://github.com/QiYongchuan/MyGitBlog/assets/105039020/2f5d0fa8-532a-4073-8cc2-0b3c9b6ddc39)
+
+
+---
+
+#65 
+
+参考最新的博客：可以将本地存在但远程不存在的分支上，上传并且关联；
