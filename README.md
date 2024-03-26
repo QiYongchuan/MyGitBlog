@@ -26,11 +26,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [基于自然语言和图像生成技术的英语词汇学习系统：项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/96)--2024-03-26
 - [Vue笔记](https://github.com/QiYongchuan/MyGitBlog/issues/95)--2024-03-19
 - [SpringBoot学习笔记：MyBatis以及MyBatisPlus](https://github.com/QiYongchuan/MyGitBlog/issues/94)--2024-03-19
 - [SpringBoot学习笔记：Swagger](https://github.com/QiYongchuan/MyGitBlog/issues/93)--2024-03-19
 - [SpringBoot学习笔记：RESTful应用接口](https://github.com/QiYongchuan/MyGitBlog/issues/92)--2024-03-19
-- [SpringBoot学习笔记：拦截器](https://github.com/QiYongchuan/MyGitBlog/issues/91)--2024-03-19
 ## 总结
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
@@ -53,13 +53,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## notes
+- [基于自然语言和图像生成技术的英语词汇学习系统：项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/96)--2024-03-26
 - [SpringBoot学习笔记：RESTful应用接口](https://github.com/QiYongchuan/MyGitBlog/issues/92)--2024-03-19
 - [SpringBoot学习笔记：拦截器](https://github.com/QiYongchuan/MyGitBlog/issues/91)--2024-03-19
 - [Java学习笔记14：String类 ，StringBuffer以及StringBuilder](https://github.com/QiYongchuan/MyGitBlog/issues/90)--2024-03-18
 - [Java学习笔记13：包装类](https://github.com/QiYongchuan/MyGitBlog/issues/89)--2024-03-18
-- [Springboot学习笔记：@RequestMapping](https://github.com/QiYongchuan/MyGitBlog/issues/88)--2024-03-18
 <details><summary>显示更多</summary>
 
+- [Springboot学习笔记：@RequestMapping](https://github.com/QiYongchuan/MyGitBlog/issues/88)--2024-03-18
 - [Springboot学习笔记：@Controller、@RestController以及@RequestBody](https://github.com/QiYongchuan/MyGitBlog/issues/87)--2024-03-18
 - [SpringBoot学习笔记：与数据库打交道的方式(MyBatis和JPA)](https://github.com/QiYongchuan/MyGitBlog/issues/86)--2024-03-16
 - [Java的一些基础知识点复习](https://github.com/QiYongchuan/MyGitBlog/issues/83)--2024-02-28
@@ -120,13 +121,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [GPTs的学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/69)--2024-01-08
 - [2024周记](https://github.com/QiYongchuan/MyGitBlog/issues/59)--2023-12-31
 ## 项目记录
+- [基于自然语言和图像生成技术的英语词汇学习系统：项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/96)--2024-03-26
 - [哈佛大学cs50x-cs50-full-stack全栈项目学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/82)--2024-02-24
 - [GPTs的学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/69)--2024-01-08
 - [GitHubPoster项目折腾记录：withings-sync 依赖下载失败到网络问题](https://github.com/QiYongchuan/MyGitBlog/issues/64)--2024-01-04
 - [Hope&Love网页作品](https://github.com/QiYongchuan/MyGitBlog/issues/47)--2023-12-20
-- [AI创造：疯狂的蔬菜一家人     ](https://github.com/QiYongchuan/MyGitBlog/issues/33)--2023-12-03
 <details><summary>显示更多</summary>
 
+- [AI创造：疯狂的蔬菜一家人     ](https://github.com/QiYongchuan/MyGitBlog/issues/33)--2023-12-03
 - [AI作图的一些尝试](https://github.com/QiYongchuan/MyGitBlog/issues/32)--2023-12-02
 - [实训项目（10天）](https://github.com/QiYongchuan/MyGitBlog/issues/18)--2023-06-12
 - [实时聊天应用开发记录](https://github.com/QiYongchuan/MyGitBlog/issues/14)--2023-05-11
