@@ -1,5 +1,106 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/QiYongchuan/MyGitBlog</id><title>RSS feed of QiYongchuan's MyGitBlog</title><updated>2024-07-19T07:24:53.046091+00:00</updated><link href="https://github.com/QiYongchuan/MyGitBlog"/><link href="https://raw.githubusercontent.com/QiYongchuan/MyGitBlog/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/98</id><title>Java学习笔记15：数据结构</title><updated>2024-07-19T07:24:53.286585+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/user-attachments/assets/99672c6f-0b55-4b79-858d-c64bdf25f939" alt="image" /></p>
+<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/QiYongchuan/MyGitBlog</id><title>RSS feed of QiYongchuan's MyGitBlog</title><updated>2024-07-22T14:45:48.192902+00:00</updated><link href="https://github.com/QiYongchuan/MyGitBlog"/><link href="https://raw.githubusercontent.com/QiYongchuan/MyGitBlog/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/99</id><title>OpenApiUtil ：封装调用接口的方法</title><updated>2024-07-22T14:45:48.469357+00:00</updated><content type="html"><![CDATA[<pre><code>package nc.bs.einvoice.util;
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+
+import nc.vo.pub.BusinessException;
+
+import org.apache.commons.httpclient.HttpStatus;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
+
+import java.io.IOException;
+import java.util.Map;
+
+
+public class OpenApiUtil {
+
+    private static CloseableHttpClient httpClient = HttpClients.createDefault();
+
+    /**
+     * 执行GET请求并返回指定类型的响应。
+     * @throws BusinessException 
+     */
+    public static &lt;T&gt; T doGet(String url, Map&lt;String, String&gt; headers, Class&lt;T&gt; responseType) throws BusinessException {  
+        HttpGet httpGet = new HttpGet(url);  
+        if (headers != null) {  
+            headers.forEach(httpGet::addHeader);  
+        }  
+      
+        try (CloseableHttpResponse response = httpClient.execute(httpGet)) {  
+            JSONObject jsonObject = handleResponse(response);  
+            return JSON.parseObject(jsonObject.toJSONString(), responseType);  
+        } catch (IOException | BusinessException e) {  
+            throw new BusinessException(&quot;执行GET请求失败&quot;, e);  
+        }  
+    } 
+
+    /**
+     * 执行POST请求，发送JSON数据，并返回指定类型的响应。
+     */
+    public static &lt;T&gt; T doPost(String url, Object payload, Map&lt;String, String&gt; headers, Class&lt;T&gt; responseType) {  
+        HttpPost httpPost = new HttpPost(url);  
+        StringEntity entity = new StringEntity(JSON.toJSONString(payload), &quot;UTF-8&quot;);  
+        httpPost.setEntity(entity);  
+        httpPost.setHeader(&quot;Content-Type&quot;, &quot;application/json&quot;);  
+        if (headers != null) {  
+            headers.forEach(httpPost::addHeader);  
+        }  
+      
+        try (CloseableHttpResponse response = httpClient.execute(httpPost)) {  
+            JSONObject jsonObject = handleResponse(response);  
+            return JSON.parseObject(jsonObject.toJSONString(), responseType);  
+        } catch (IOException | BusinessException e) {  
+            throw new RuntimeException(&quot;执行POST请求失败&quot;, e);  
+        }  
+    }
+
+    /**
+     * 处理HTTP响应的通用逻辑。
+     * @throws BusinessException 
+     */
+    private static JSONObject handleResponse(CloseableHttpResponse response) throws  BusinessException {  
+	        int statusCode;
+	        String jsonResponse;
+	    	try {
+	    		 statusCode = response.getStatusLine().getStatusCode();
+	    	     jsonResponse = EntityUtils.toString(response.getEntity());
+	    		} catch (IOException e) {
+	    	        // 捕获 IOException 并重新抛出为 BusinessException
+	    	        throw new BusinessException(&quot;网络请求失败: &quot; + e.getMessage(), e);
+	    	    }
+    	
+    	    if (statusCode &gt;= 200 &amp;&amp; statusCode &lt;= 300) {
+    	        if (statusCode == HttpStatus.SC_NO_CONTENT) {
+    	            return new JSONObject(); // 或者返回null，具体取决于业务逻辑
+    	        }
+    	        return JSON.parseObject(jsonResponse);
+    	    } else if (statusCode == 400) {
+    	        JSONObject errorResponse = JSON.parseObject(jsonResponse.toString());
+    	        String errorMessage = errorResponse.getString(&quot;message&quot;);
+    	        if (errorMessage == null) {
+    	            errorMessage = &quot;Unknown error&quot;;
+    	        }
+    	        String status = errorResponse.getString(&quot;status&quot;);
+    	        if (status == null) {
+    	            status = &quot;Unknown status&quot;;
+    	        }
+    	        JSONObject errors = errorResponse.getJSONObject(&quot;errors&quot;);
+    	        throw new BusinessException(&quot;Status: &quot; + status + &quot;\nError from API: &quot; + errorMessage + &quot;  \nDetails: &quot; + errors);
+    	    } else {
+    	        // 对其他错误状态码的处理可以类似地扩展
+    	        throw new BusinessException(&quot;HTTP请求失败: 状态码 &quot; + statusCode);
+    	    }
+    	}
+    }
+</code></pre>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/99"/><category term="notes"/><published>2024-07-22T14:45:23+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/98</id><title>Java学习笔记15：数据结构</title><updated>2024-07-22T14:45:48.565965+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/user-attachments/assets/99672c6f-0b55-4b79-858d-c64bdf25f939" alt="image" /></p>
 <pre><code>// 创建一个 HashMap 实例来存储请求头信息
 Map&lt;String, String&gt; headers = new HashMap&lt;&gt;();
 
@@ -9,11 +110,11 @@ headers.put(&quot;Authorization&quot;, &quot;Bearer &quot; + accessToken);
 // 设置接受的响应类型为 JSON
 headers.put(&quot;Accept&quot;, &quot;application/json&quot;); // 改为接受 JSON 格式的响应
 </code></pre>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/98"/><published>2024-07-19T07:24:29+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/97</id><title>海的那边是什么？  </title><updated>2024-07-19T07:24:53.388524+00:00</updated><content type="html"><![CDATA[<p>现在是午夜1：20，我在候机厅里，再过二十几分钟，我将登上飞回中国的飞机，同时也将结束我在新加坡xx公司一个月的实习了。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/98"/><published>2024-07-19T07:24:29+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/97</id><title>海的那边是什么？  </title><updated>2024-07-22T14:45:48.661011+00:00</updated><content type="html"><![CDATA[<p>现在是午夜1：20，我在候机厅里，再过二十几分钟，我将登上飞回中国的飞机，同时也将结束我在新加坡xx公司一个月的实习了。</p>
 <p>几十分钟前，我坐在机场的大厅的地上，改完了bug，明天系统要进行演示。</p>
 <p>一个月前，我肯定不会想到，我会在熬夜加班了一个星期后，还有耐心的掏出电脑，看代码。
 我肯定也不会想到，这一个月我写了看了这么多的java，差不多两个月前，我刚因为毕设改用了java死活写不出来，甚至四个月前，我才开始重新系统学java.</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/97"/><published>2024-06-03T17:25:36+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/96</id><title>基于自然语言和图像生成技术的英语词汇学习系统：项目总结</title><updated>2024-07-19T07:24:53.488930+00:00</updated><content type="html"><![CDATA[<blockquote>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/97"/><published>2024-06-03T17:25:36+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/96</id><title>基于自然语言和图像生成技术的英语词汇学习系统：项目总结</title><updated>2024-07-22T14:45:48.770940+00:00</updated><content type="html"><![CDATA[<blockquote>
 <p>第一版开发已经完成，实现了前后端的联通，核心功能已经实现，单词=&gt;llm的解释、例句，单词=&gt;图片的生成，写此总结一下项目过程中遇到的问题，目前计划要写：</p>
 </blockquote>
 <ul>
@@ -24,21 +125,21 @@ headers.put(&quot;Accept&quot;, &quot;application/json&quot;); // 改为接受 J
 <blockquote>
 <p>又想到中期答辩给打了最低分，越想越生气，迟迟不想动笔了，暂时先放下一段时间再写好了。</p>
 </blockquote>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/96"/><category term="notes"/><category term="项目记录"/><published>2024-03-26T12:24:03+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/95</id><title>Vue笔记</title><updated>2024-07-19T07:24:53.600380+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/d5d7e80f-2bb1-44be-b361-0b6889c0a585" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/95"/><published>2024-03-19T17:51:09+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/94</id><title>SpringBoot学习笔记：MyBatis以及MyBatisPlus</title><updated>2024-07-19T07:24:53.695674+00:00</updated><content type="html"><![CDATA[<h4>ORM介绍</h4>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/96"/><category term="notes"/><category term="项目记录"/><published>2024-03-26T12:24:03+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/95</id><title>Vue笔记</title><updated>2024-07-22T14:45:48.883061+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/d5d7e80f-2bb1-44be-b361-0b6889c0a585" alt="image" /></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/95"/><published>2024-03-19T17:51:09+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/94</id><title>SpringBoot学习笔记：MyBatis以及MyBatisPlus</title><updated>2024-07-22T14:45:49.057582+00:00</updated><content type="html"><![CDATA[<h4>ORM介绍</h4>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b3d69d94-7e1a-48d6-b38d-8d15ea56c4b0" alt="image" /></p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/76885f31-7e45-4228-ba4e-d7a8e269e916" alt="image" /></p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/5e198fd2-eeb6-4be2-8e52-ac0aafe39b21" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/94"/><published>2024-03-19T12:19:37+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/93</id><title>SpringBoot学习笔记：Swagger</title><updated>2024-07-19T07:24:53.792069+00:00</updated><content type="html"><![CDATA[<p>API表达工具
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/94"/><published>2024-03-19T12:19:37+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/93</id><title>SpringBoot学习笔记：Swagger</title><updated>2024-07-22T14:45:49.171258+00:00</updated><content type="html"><![CDATA[<p>API表达工具
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/bb53a22e-79ee-4373-a57c-73d6afef8a6d" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/93"/><published>2024-03-19T07:44:50+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/92</id><title>SpringBoot学习笔记：RESTful应用接口</title><updated>2024-07-19T07:24:53.893456+00:00</updated><content type="html"><![CDATA[<h4>什么是RESTful？</h4>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/93"/><published>2024-03-19T07:44:50+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/92</id><title>SpringBoot学习笔记：RESTful应用接口</title><updated>2024-07-22T14:45:49.298019+00:00</updated><content type="html"><![CDATA[<h4>什么是RESTful？</h4>
 <p>REST（Representational State Transfer）是一组设计原则，用于构建网络服务。RESTful服务意味着遵循这些设计原则的服务。</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/88852ba7-bf4a-474e-b180-48886926593e" alt="image" />
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/ef022762-b68e-4b72-bd5c-0b9891372730" alt="image" /></p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/46fcc40a-5a3c-4dd7-8c96-1360f393784d" alt="image" />
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/edf1a8b4-712f-4355-b314-db34cbc6ece9" alt="image" />
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b03f92a3-70f7-4ebc-9c94-8332207d584e" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/92"/><category term="notes"/><published>2024-03-19T06:19:46+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/91</id><title>SpringBoot学习笔记：拦截器</title><updated>2024-07-19T07:24:53.997437+00:00</updated><content type="html"><![CDATA[<p><strong>拦截器（Interceptor）是用来拦截进入Controller方法之前或之后的请求的。
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/92"/><category term="notes"/><published>2024-03-19T06:19:46+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/91</id><title>SpringBoot学习笔记：拦截器</title><updated>2024-07-22T14:45:49.403147+00:00</updated><content type="html"><![CDATA[<p><strong>拦截器（Interceptor）是用来拦截进入Controller方法之前或之后的请求的。
 它们常用于日志记录、身份验证、权限检查、或者添加通用的请求或响应的头信息等场景。</strong></p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/1bdc09ec-ce55-4cf0-9c4e-684795045958" alt="image" /></p>
 <p>用的最多的是preHandle</p>
@@ -71,7 +172,7 @@ public class WebConfig implements WebMvcConfigurer {
     }
 }
 </code></pre>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/91"/><category term="notes"/><published>2024-03-19T05:35:30+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/90</id><title>Java学习笔记14：String类 ，StringBuffer以及StringBuilder</title><updated>2024-07-19T07:24:54.083325+00:00</updated><content type="html"><![CDATA[<h4>继承关系</h4>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/91"/><category term="notes"/><published>2024-03-19T05:35:30+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/90</id><title>Java学习笔记14：String类 ，StringBuffer以及StringBuilder</title><updated>2024-07-22T14:45:49.507255+00:00</updated><content type="html"><![CDATA[<h4>继承关系</h4>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/e055865d-2ff8-41c3-913d-94e306bccefc" alt="image" /></p>
 <p>说明，可以串行化，数据可以网络传输，String对象可以比较相互比较大小</p>
 <p>本质是一个final 类型的char 数组[ ]</p>
@@ -93,7 +194,7 @@ public class WebConfig implements WebMvcConfigurer {
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/c1d47706-1087-450b-b000-9e3f6b3d40ab" alt="image" /></p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b4170a28-8027-4108-a04a-91c0e23da88c" alt="image" /></p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f89beb90-7214-4501-8393-776355aae8c9" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/90"/><category term="notes"/><published>2024-03-18T15:42:26+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/89</id><title>Java学习笔记13：包装类</title><updated>2024-07-19T07:24:54.180775+00:00</updated><content type="html"><![CDATA[<h4>什么是包装类</h4>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/90"/><category term="notes"/><published>2024-03-18T15:42:26+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/89</id><title>Java学习笔记13：包装类</title><updated>2024-07-22T14:45:49.620726+00:00</updated><content type="html"><![CDATA[<h4>什么是包装类</h4>
 <p>即八大基本类型的封装类，为了用类的方法</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/1a1ac88b-c24b-450a-99bd-afb34352e6dc" alt="image" /></p>
 <h4>自动装箱和自动拆箱：</h4>
@@ -110,7 +211,7 @@ int n3 =  integer2 //底层仍然使用的是 intValue()方法
 <p><strong>三元运算符与等价的if else的区别：</strong></p>
 <p>三元运算符是作为整体来看的，suo所以第一种情况下，精度提升为Double，1==&gt; 1.0</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/870fe21b-4fdc-4552-841c-408bae34938e" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/89"/><category term="notes"/><published>2024-03-18T11:44:17+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/88</id><title>Springboot学习笔记：@RequestMapping</title><updated>2024-07-19T07:24:54.289416+00:00</updated><content type="html"><![CDATA[<p>一句话介绍：@RequestMapping就是用来做路由映射的，即在Controller中，处理url地址以及前端发送的方法，进一步转到不同的方法中进行下一步的处理。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/89"/><category term="notes"/><published>2024-03-18T11:44:17+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/88</id><title>Springboot学习笔记：@RequestMapping</title><updated>2024-07-22T14:45:49.802064+00:00</updated><content type="html"><![CDATA[<p>一句话介绍：@RequestMapping就是用来做路由映射的，即在Controller中，处理url地址以及前端发送的方法，进一步转到不同的方法中进行下一步的处理。</p>
 <p>（补充：当然不仅限于URL路径，还可以设置（可选地）请求方法（如GET、POST等）、请求参数、请求头等条件）</p>
 <pre><code>@RequestMapping(value = &quot;/users&quot;, method = RequestMethod.GET)
 public List&lt;User&gt; getUsers() {
@@ -193,7 +294,7 @@ public User addUser(@RequestBody User user) {
     }
 </code></pre>
 <p>前提是该javaBean中有相应的属性</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/88"/><category term="notes"/><published>2024-03-18T05:55:53+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/87</id><title>Springboot学习笔记：@Controller、@RestController以及@RequestBody</title><updated>2024-07-19T07:24:54.386853+00:00</updated><content type="html"><![CDATA[<h3>1.@Controller与@RestController</h3>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/88"/><category term="notes"/><published>2024-03-18T05:55:53+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/87</id><title>Springboot学习笔记：@Controller、@RestController以及@RequestBody</title><updated>2024-07-22T14:45:49.915891+00:00</updated><content type="html"><![CDATA[<h3>1.@Controller与@RestController</h3>
 <p>涉及MVC模型：</p>
 <h5>MVC模型</h5>
 <ul>
@@ -219,7 +320,7 @@ public User addUser(@RequestBody User user) {
 <p>@RestController注解是@Controller和@ResponseBody的结合，这意味着它既将类标记为控制器，又表明类中的所有方法都会自动以@ResponseBody的方式处理。这使得@RestController非常适合用于构建RESTful API，其中所有的响应都是数据（如JSON或XML），而不是视图或模板页面。</p>
 <p>这种方式简化了开发过程，因为你不需要在每个方法上重复使用@ResponseBody注解，从而让代码更加简洁和直观。总的来说，如果你的应用主要是服务于HTTP API的，使用@RestController会更方便。</p>
 <p>前后端分离项目中，主要使用的就是:<strong>@RestController</strong></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/87"/><category term="notes"/><published>2024-03-18T04:49:55+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/86</id><title>SpringBoot学习笔记：与数据库打交道的方式(MyBatis和JPA)</title><updated>2024-07-19T07:24:54.494047+00:00</updated><content type="html"><![CDATA[<blockquote>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/87"/><category term="notes"/><published>2024-03-18T04:49:55+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/86</id><title>SpringBoot学习笔记：与数据库打交道的方式(MyBatis和JPA)</title><updated>2024-07-22T14:45:50.054489+00:00</updated><content type="html"><![CDATA[<blockquote>
 <p>之前的项目是用的Mybatis，新的项目是用到了JPA(Java Persistence API),两者均是跟数据库相关的，比较好奇两者的区别，整理部分资料。</p>
 </blockquote>
 <h3>为什么要用Mybatis或者JPA？</h3>
@@ -253,7 +354,7 @@ public User addUser(@RequestBody User user) {
 <h3>在MVC中的体现</h3>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f724ece8-e56a-4fd8-8c20-8e6b5756b8e5" alt="image" /></p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/6cb6191b-544a-4602-8e68-8ccbc4610a7e" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/86"/><category term="notes"/><published>2024-03-16T05:48:39+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/85</id><title>第一次技术面试复盘</title><updated>2024-07-19T07:24:54.600591+00:00</updated><content type="html"><![CDATA[<p>下午刚刚结束了学计算机以来的第一次技术面试，给自己打个6/10分吧。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/86"/><category term="notes"/><published>2024-03-16T05:48:39+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/85</id><title>第一次技术面试复盘</title><updated>2024-07-22T14:45:50.176344+00:00</updated><content type="html"><![CDATA[<p>下午刚刚结束了学计算机以来的第一次技术面试，给自己打个6/10分吧。</p>
 <p>结果大概一周左右出来，第一次正式的技术面试，算是两年的转码学习以来迈出的第一步了。</p>
 <p>趁着结果还没出来，趁着现在还不至于被不好的结果吓到：),记忆还算鲜活，写下一些面试复盘，也算是对近期学习复习的一个总结。</p>
 <p>先说这次面试好的方面：
@@ -277,7 +378,7 @@ public User addUser(@RequestBody User user) {
 <p>（第一次技术面试，但根据我之前看到的帖子，大概很少有这样耐心的面试官吧）</p>
 <p>不知道自己能不能足够幸运面试通过了，但足够幸运获得了这次面试的机会，一是，虽然让我 在焦虑不安中度过了差不多一星期，但也是在这一星期复习了差不多以往要一个月才复习完的东西；二是，这次面试机会收获了陌生人的善意，遇到了很好的面试官，同时也对我的自身技术有了进一步的认识，该弥补的地方抓紧弥补，该加强的地方赶紧加强。</p>
 <p>最重要的启发是：担心焦虑的大部分事，不会发生的，行动起来，付出总会有痕迹的。</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/85"/><category term="daily"/><published>2024-03-07T10:57:52+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/84</id><title>从研究生退学之后的两年</title><updated>2024-07-19T07:24:54.721174+00:00</updated><content type="html"><![CDATA[<blockquote>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/85"/><category term="daily"/><published>2024-03-07T10:57:52+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/84</id><title>从研究生退学之后的两年</title><updated>2024-07-22T14:45:50.290480+00:00</updated><content type="html"><![CDATA[<blockquote>
 <p>本文原本是某天心血来潮搜自己的名字，无意间发现了某项专利竟然挂着自己的名字，遂点进去看了下，竟是自己在本科实验时做的工作，当时提出的理论设想被导师和师妹实现了，发了专利，竟然还把我的名字也挂上了。  感慨良多，又想到自己已经是研究生退学转行计算机快两年了，没想到两年的时间竟然能发生这么多的事情，有时也不禁会想，如果当初留在原来的学校继续读研而不是非得去一个985，恐怕命运又将把我带向另一条路了，于是写下了这篇半叙半议的文字，现在看来，也可以当成对过去两年的一点总结吧。</p>
 </blockquote>
 <p>当你高强度的搜索自己的名字时：浏览器里藏着你过去的历史</p>
@@ -319,7 +420,7 @@ public User addUser(@RequestBody User user) {
 <p>现在，我们室外也可以了。</p>
 <pre><code>                                                                                                                                                                    写于2023年12.30
 </code></pre>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/84"/><category term="daily"/><category term="Top"/><published>2024-02-28T04:36:24+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/83</id><title>Java的一些基础知识点复习</title><updated>2024-07-19T07:24:54.822518+00:00</updated><content type="html"><![CDATA[<p><strong>方法的重载 overload</strong></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/84"/><category term="daily"/><category term="Top"/><published>2024-02-28T04:36:24+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/83</id><title>Java的一些基础知识点复习</title><updated>2024-07-22T14:45:50.418900+00:00</updated><content type="html"><![CDATA[<p><strong>方法的重载 overload</strong></p>
 <p>定义：一个类中方法名字相同，但是参数列表不同的方法。</p>
 <blockquote>
 <p>注意：重载的方法，就是不同的方法，只是名称相同而已。
@@ -387,8 +488,8 @@ public User addUser(@RequestBody User user) {
 <li>可变参数可以和普通类型参数放在一起传参，但是必须保证可变参数放在最后</li>
 <li>一个形参列表只允许出现一个可变参数，不可以多个可变参数一块。</li>
 </ul>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/83"/><category term="notes"/><published>2024-02-28T03:49:14+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/82</id><title>哈佛大学cs50x-cs50-full-stack全栈项目学习记录</title><updated>2024-07-19T07:24:54.926208+00:00</updated><content type="html"><![CDATA[<p>项目仓库地址：<a href="https://github.com/QiYongchuan/cs50-full-stack">https://github.com/QiYongchuan/cs50-full-stack</a></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/82"/><category term="Top"/><category term="项目记录"/><published>2024-02-24T13:53:39+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/81</id><title>JavaScript Full Course - Beginner to Pro</title><updated>2024-07-19T07:24:55.042653+00:00</updated><content type="html"><![CDATA[<p>Function
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/83"/><category term="notes"/><published>2024-02-28T03:49:14+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/82</id><title>哈佛大学cs50x-cs50-full-stack全栈项目学习记录</title><updated>2024-07-22T14:45:50.557834+00:00</updated><content type="html"><![CDATA[<p>项目仓库地址：<a href="https://github.com/QiYongchuan/cs50-full-stack">https://github.com/QiYongchuan/cs50-full-stack</a></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/82"/><category term="Top"/><category term="项目记录"/><published>2024-02-24T13:53:39+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/81</id><title>JavaScript Full Course - Beginner to Pro</title><updated>2024-07-22T14:45:50.668423+00:00</updated><content type="html"><![CDATA[<p>Function
 why we use function?
 let us reuse code</p>
 <p>return与parameter的区别
@@ -397,7 +498,7 @@ let us reuse code</p>
 比如：console是对象，console.log则是方法（function）</p>
 <p>内置对象 Json与localStorage</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/0db54f33-2378-4d33-beb3-b4a20eda82ed" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/81"/><category term="notes"/><published>2024-02-22T06:10:35+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/80</id><title>Django学习记录：如何创建一个项目</title><updated>2024-07-19T07:24:55.145409+00:00</updated><content type="html"><![CDATA[<h1>Django</h1>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/81"/><category term="notes"/><published>2024-02-22T06:10:35+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/80</id><title>Django学习记录：如何创建一个项目</title><updated>2024-07-22T14:45:50.788847+00:00</updated><content type="html"><![CDATA[<h1>Django</h1>
 <h3>一、创建项目的流程</h3>
 <p>1.创建整体项目-项目名称</p>
 <pre><code>django-admin startproject airline
@@ -525,7 +626,7 @@ Flight.objects.all()
 
 </code></pre>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/dec2af59-abbe-4e23-a59d-de020bc8d3a7" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/80"/><category term="notes"/><published>2024-02-04T08:07:06+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/79</id><title>python中的数据类型</title><updated>2024-07-19T07:24:55.260926+00:00</updated><content type="html"><![CDATA[<h3>python中的数据结构：</h3>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/80"/><category term="notes"/><published>2024-02-04T08:07:06+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/79</id><title>python中的数据类型</title><updated>2024-07-22T14:45:50.903760+00:00</updated><content type="html"><![CDATA[<h3>python中的数据结构：</h3>
 <p>Data stractures</p>
 <ul>
 <li>list - sequences of mutable values   //列表可以改变[]</li>
@@ -571,7 +672,7 @@ s.remove(1)
 print(s)   // 234
 
 </code></pre>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/79"/><category term="notes"/><published>2024-02-03T18:08:16+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/78</id><title>Python中面向对象编程</title><updated>2024-07-19T07:24:55.356027+00:00</updated><content type="html"><![CDATA[<h3>Python中的面向对象</h3>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/79"/><category term="notes"/><published>2024-02-03T18:08:16+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/78</id><title>Python中面向对象编程</title><updated>2024-07-22T14:45:51.027971+00:00</updated><content type="html"><![CDATA[<h3>Python中的面向对象</h3>
 <pre><code>class Point():
   def __init__(self,input1,input2):
       self.x = input1
@@ -672,7 +773,7 @@ animal_make_sound(cat)  # 输出：喵喵喵！
 在这个例子中，Animal类是一个基类，定义了动物的基本特征和行为。然后，Dog类和Cat类分别继承了Animal类，重写了make_sound方法，实现了多态。最后，通过animal_make_sound函数，传入不同的动物对象，实现了对不同动物对象的统一操作。
 
 </code></pre>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/78"/><category term="notes"/><published>2024-02-03T18:05:25+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/77</id><title>Git-在已经建好的仓库中，将其中一部分文件夹单独上传到新的仓库中</title><updated>2024-07-19T07:24:55.468271+00:00</updated><content type="html"><![CDATA[<blockquote>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/78"/><category term="notes"/><published>2024-02-03T18:05:25+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/77</id><title>Git-在已经建好的仓库中，将其中一部分文件夹单独上传到新的仓库中</title><updated>2024-07-22T14:45:51.144136+00:00</updated><content type="html"><![CDATA[<blockquote>
 <p>使用场景：是在cs50的学习中，创建了一个大的仓库，记录不同章节的学习代码和笔记。但遇到了一个情况是，学校的安排上：CI/CD中，单独这一块是一个仓库的。就需要将这一部分的代码单独上传到一个新的仓库了，问题是，这部分已经处于一个仓库中了，还能再新上传吗？</p>
 </blockquote>
 <blockquote>
@@ -715,7 +816,7 @@ git push -u origin main
 <blockquote>
 <p>总的来说，将现有项目文件夹上传到新创建的仓库中，不会直接影响原来的仓库，原来的仓库将保持不变。</p>
 </blockquote>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/77"/><category term="notes"/><published>2024-02-01T17:18:40+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/76</id><title>实现无限滚动遇到的坑—document.body.offsetHeight 的值一直不变？</title><updated>2024-07-19T07:24:55.558207+00:00</updated><content type="html"><![CDATA[<h3>实现无限滚动遇到的坑 --css样式设置</h3>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/77"/><category term="notes"/><published>2024-02-01T17:18:40+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/76</id><title>实现无限滚动遇到的坑—document.body.offsetHeight 的值一直不变？</title><updated>2024-07-22T14:45:51.233260+00:00</updated><content type="html"><![CDATA[<h3>实现无限滚动遇到的坑 --css样式设置</h3>
 <p>遇到的最大的问题是，</p>
 <pre><code>      if (window.innerHeight + window.scrollY &gt; document.body.offsetHeight &amp;&amp; !isLoading) {
         isLoading = true; // 设置标志变量为true，表示加载操作开始
@@ -770,7 +871,7 @@ width: 100%;
     }
 </code></pre>
 <p>问题解决。</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/76"/><category term="Kill-bugs"/><published>2024-01-30T10:35:17+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/75</id><title>响应式页面实现的几种方式</title><updated>2024-07-19T07:24:55.666650+00:00</updated><content type="html"><![CDATA[<h2>Responsive Desive</h2>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/76"/><category term="Kill-bugs"/><published>2024-01-30T10:35:17+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/75</id><title>响应式页面实现的几种方式</title><updated>2024-07-22T14:45:51.384782+00:00</updated><content type="html"><![CDATA[<h2>Responsive Desive</h2>
 <ul>
 <li>viewport</li>
 <li>Media Queries</li>
@@ -843,7 +944,7 @@ width: 100%;
     &lt;/div&gt;
 
 </code></pre>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/75"/><category term="notes"/><published>2024-01-16T02:14:59+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/74</id><title>SCSS-增加变量的CSS</title><updated>2024-07-19T07:24:55.759309+00:00</updated><content type="html"><![CDATA[<h2>scss - 增加变量的css形式</h2>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/75"/><category term="notes"/><published>2024-01-16T02:14:59+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/74</id><title>SCSS-增加变量的CSS</title><updated>2024-07-22T14:45:51.505963+00:00</updated><content type="html"><![CDATA[<h2>scss - 增加变量的css形式</h2>
 <h3>1.为css增加变量，让其更好的修改重复的属性，更简洁的代码</h3>
 <pre><code>$color:red;
 
@@ -896,7 +997,7 @@ ol{
   font-size: 30px;
 }
 </code></pre>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/74"/><category term="notes"/><published>2024-01-16T02:12:29+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/73</id><title> Git 的简单用法-cs50x</title><updated>2024-07-19T07:24:55.876206+00:00</updated><content type="html"><![CDATA[<h1>Git 的简单用法</h1>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/74"/><category term="notes"/><published>2024-01-16T02:12:29+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/73</id><title> Git 的简单用法-cs50x</title><updated>2024-07-22T14:45:51.667276+00:00</updated><content type="html"><![CDATA[<h1>Git 的简单用法</h1>
 <h3>keep track of changes to code</h3>
 <ul>
 <li>Synchronizes code between diffenent people</li>
@@ -961,12 +1062,12 @@ git merge feature   // 将feature分支上的内容 merge到当前分支
 （理解成更大的协作）</p>
 <h2>Github pages</h2>
 <p>生成一个网址，可以部署自己的静态页面</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/73"/><category term="notes"/><published>2024-01-16T02:09:31+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/72</id><title>2024一些完成的小事情</title><updated>2024-07-19T07:24:56.016605+00:00</updated><content type="html"><![CDATA[<ul>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/73"/><category term="notes"/><published>2024-01-16T02:09:31+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/72</id><title>2024一些完成的小事情</title><updated>2024-07-22T14:45:51.816975+00:00</updated><content type="html"><![CDATA[<ul>
 <li>1.修好了之前的电脑，找到了老照片</li>
 <li>2.完成了对键盘的清洁，现在和新的一样了、</li>
 <li>3.两门实训课的成绩出来了，JavaEE的课竟然拿到了全班最高的分数，对得起敲了一夜的代码了</li>
 </ul>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/72"/><category term="记录"/><published>2024-01-14T08:41:51+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/71</id><title>有趣的文章</title><updated>2024-07-19T07:24:56.123001+00:00</updated><content type="html"><![CDATA[<table>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/72"/><category term="记录"/><published>2024-01-14T08:41:51+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/71</id><title>有趣的文章</title><updated>2024-07-22T14:45:51.933027+00:00</updated><content type="html"><![CDATA[<table>
 <thead>
 <tr>
 <th>文章</th>
@@ -1018,7 +1119,7 @@ git merge feature   // 将feature分支上的内容 merge到当前分支
 <td>2024.3.30</td>
 <td>有趣的人</td>
 </tr>
-</tbody></table>]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/71"/><category term="收藏"/><published>2024-01-11T11:10:18+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/69</id><title>GPTs的学习记录</title><updated>2024-07-19T07:24:56.220786+00:00</updated><content type="html"><![CDATA[<p>背景：尝试创建GPTs的时候，离不开action的API</p>
+</tbody></table>]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/71"/><category term="收藏"/><published>2024-01-11T11:10:18+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/69</id><title>GPTs的学习记录</title><updated>2024-07-22T14:45:52.043191+00:00</updated><content type="html"><![CDATA[<p>背景：尝试创建GPTs的时候，离不开action的API</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/3103a2bb-b4fb-4914-a7a5-1c4d79465a68" alt="image" />
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/8c85c3e7-a8e2-4c65-92d6-639c67ae18da" alt="image" /></p>
 <p><strong>来源：https://twitter.com/Yangyixxxx/status/1744196785227362744</strong></p>
@@ -1040,8 +1141,8 @@ git merge feature   // 将feature分支上的内容 merge到当前分支
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f1b5f098-d132-4e79-ba29-aa9de88245bd" alt="image" />
 <a href="https://mojju.com/blog/how-to-create-complex-gpts-with-api-actions-and-a-node-js-backend">https://mojju.com/blog/how-to-create-complex-gpts-with-api-actions-and-a-node-js-backend</a></p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/3641ce81-56d7-4734-8af8-2efeb2f9d7c6" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/69"/><category term="notes"/><category term="项目记录"/><category term="记录"/><published>2024-01-08T09:39:20+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/68</id><title>2024找工作的尝试</title><updated>2024-07-19T07:24:56.326659+00:00</updated><content type="html"><![CDATA[<h2>仅以本帖持续记录找工作的过程。</h2>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/68"/><published>2024-01-08T08:47:35+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/67</id><title>在挂梯子的情况下pip install xx 失败以及git push失败的解决方案（443以及10087等）</title><updated>2024-07-19T07:24:56.574082+00:00</updated><content type="html"><![CDATA[<p>这个问题算是一个长期问题了，常见的症状表现在：
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/69"/><category term="notes"/><category term="项目记录"/><category term="记录"/><published>2024-01-08T09:39:20+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/68</id><title>2024找工作的尝试</title><updated>2024-07-22T14:45:52.304626+00:00</updated><content type="html"><![CDATA[<h2>仅以本帖持续记录找工作的过程。</h2>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/68"/><published>2024-01-08T08:47:35+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/67</id><title>在挂梯子的情况下pip install xx 失败以及git push失败的解决方案（443以及10087等）</title><updated>2024-07-22T14:45:52.408651+00:00</updated><content type="html"><![CDATA[<p>这个问题算是一个长期问题了，常见的症状表现在：
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/18ed6ca2-01b1-47ff-8b2c-c9189fc4a634" alt="image" /></p>
 <p>在连接梯子（VPN)之后，pip install xx，无法安装；
 断开梯子之后，安装成功；</p>
@@ -1091,7 +1192,7 @@ git config --global --unset http.proxy</p>
 <blockquote>
 <p>之前同样的问题，解决方法：<a href="https://github.com/QiYongchuan/MyGitBlog/issues/24">Git push时遇到10054问题 #24</a></p>
 </blockquote>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/67"/><category term="Kill-bugs"/><category term="notes"/><published>2024-01-07T13:13:56+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/66</id><title>算法学习初体验：慢慢来，原来我也可以</title><updated>2024-07-19T07:24:56.695737+00:00</updated><content type="html"><![CDATA[<p>算法考试考完了，走出考场后，一片哀鸿遍野，都在担心会不会挂科。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/67"/><category term="Kill-bugs"/><category term="notes"/><published>2024-01-07T13:13:56+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/66</id><title>算法学习初体验：慢慢来，原来我也可以</title><updated>2024-07-22T14:45:52.540760+00:00</updated><content type="html"><![CDATA[<p>算法考试考完了，走出考场后，一片哀鸿遍野，都在担心会不会挂科。</p>
 <p>我还好，虽说并没有所有的题都有把握答对，但我应该不至于挂科的。虽说也忘了好多本应该写上的题目，但也没有非得考多少分的目标，反而轻松心态很放平，考完走出教室，心里倒是很放松以及有种抑制不住的高兴。</p>
 <p>算法，原来也不少那么难啊，原来我也可以的。</p>
 <p>大概是想表达：考试结束不是结束，是学习的新开始？(yes?👍: 👎 )</p>
@@ -1116,8 +1217,8 @@ git config --global --unset http.proxy</p>
 <p>在没有学会之前，耐心就很重要了。即在没有找到合适的方法和资料之前，只有多尝试，才能慢慢找到合适的。</p>
 <p>所有，就得保持耐心，不要太早放弃。</p>
 <p>另一点的话，学习过程重要的一点是自己的身体状态，精力管理。如果状态不好（指饿了、前一天熬夜困了/学习前刷了太多无关的东西浪费了大量的精力和注意力了），那就很难保持耐心了，很难坐的住一直学到有所突破了。</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/66"/><category term="daily"/><published>2024-01-07T08:31:51+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/65</id><title>git远程分支：如何将本地分支与远程分支相关联</title><updated>2024-07-19T07:24:56.804493+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/Algorithm-learn/assets/105039020/cb74f1ae-8bf1-4861-8d4c-5f14eb4902b0" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/65"/><category term="notes"/><published>2024-01-06T15:03:26+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/64</id><title>GitHubPoster项目折腾记录：withings-sync 依赖下载失败到网络问题</title><updated>2024-07-19T07:24:56.960369+00:00</updated><content type="html"><![CDATA[<p>在安装过程中遇到了几个问题：
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/66"/><category term="daily"/><published>2024-01-07T08:31:51+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/65</id><title>git远程分支：如何将本地分支与远程分支相关联</title><updated>2024-07-22T14:45:52.650201+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/Algorithm-learn/assets/105039020/cb74f1ae-8bf1-4861-8d4c-5f14eb4902b0" alt="image" /></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/65"/><category term="notes"/><published>2024-01-06T15:03:26+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/64</id><title>GitHubPoster项目折腾记录：withings-sync 依赖下载失败到网络问题</title><updated>2024-07-22T14:45:52.804445+00:00</updated><content type="html"><![CDATA[<p>在安装过程中遇到了几个问题：
 1.withings-sync 依赖的安装问题上：withings-sync 安装失败的原因是 UnicodeDecodeError，并提供了一系列可能的解决方案，最终通过手动下载、修改 setup.py 中的编码设置，并重新安装成功。  原因可能是编码方式设置问题？</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/406db6e6-ea6c-4243-9c60-fa1a0dfff20d" alt="image" /></p>
 <p>2.安装成功之后，依然从远程仓库下载其余的依赖，用不上手动下载的依赖：</p>
@@ -1145,23 +1246,23 @@ git config --global --unset http.proxy</p>
 但应该不是虚拟环境的原因？</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/43c6dd95-e609-4e1d-bdd7-4600db380821" alt="image" /></p>
 <p>后续考虑：如何把下载生成的图片动态插入到博客页？</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/64"/><category term="Kill-bugs"/><category term="项目记录"/><published>2024-01-04T17:25:19+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/63</id><title>朋友信息</title><updated>2024-07-19T07:24:57.090215+00:00</updated><content type="html"><![CDATA[<p>| 新朋友的名字 | <a href="http://example.com">新朋友的链接</a> | 新朋友的描述 |</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/63"/><published>2024-01-04T11:01:35+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/61</id><title>博客功能完善计划</title><updated>2024-07-19T07:24:57.221833+00:00</updated><content type="html"><![CDATA[<ul>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/64"/><category term="Kill-bugs"/><category term="项目记录"/><published>2024-01-04T17:25:19+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/63</id><title>朋友信息</title><updated>2024-07-22T14:45:52.912312+00:00</updated><content type="html"><![CDATA[<p>| 新朋友的名字 | <a href="http://example.com">新朋友的链接</a> | 新朋友的描述 |</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/63"/><published>2024-01-04T11:01:35+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/61</id><title>博客功能完善计划</title><updated>2024-07-22T14:45:53.026434+00:00</updated><content type="html"><![CDATA[<ul>
 <li><input disabled="" type="checkbox"> 增加友链模块</li>
 <li><input disabled="" type="checkbox"> 增加收藏的文章模块</li>
 <li><input disabled="" type="checkbox"> 增加每日单词-句子-图片模块</li>
 <li><input checked="" disabled="" type="checkbox"> 引入自动生成svg的github贡献</li>
 </ul>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/61"/><category term="TODO"/><published>2024-01-04T10:10:21+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/60</id><title>转瞬即逝的小想法</title><updated>2024-07-19T07:24:57.317835+00:00</updated><content type="html"><![CDATA[<blockquote>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/61"/><category term="TODO"/><published>2024-01-04T10:10:21+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/60</id><title>转瞬即逝的小想法</title><updated>2024-07-22T14:45:53.130154+00:00</updated><content type="html"><![CDATA[<blockquote>
 <p><em>仅作为一个空间，记下某一瞬间想到的点子</em></p>
 </blockquote>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/60"/><category term="TODO"/><published>2024-01-04T05:31:59+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/59</id><title>2024周记</title><updated>2024-07-19T07:24:57.400459+00:00</updated><content type="html"><![CDATA[<h3>2024计划要做的小事</h3>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/60"/><category term="TODO"/><published>2024-01-04T05:31:59+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/59</id><title>2024周记</title><updated>2024-07-22T14:45:53.251847+00:00</updated><content type="html"><![CDATA[<h3>2024计划要做的小事</h3>
 <ul>
 <li>在1点之前上床睡觉</li>
 <li>每天早上醒来打开经济学人看1分钟</li>
 <li>记录下想法来</li>
 </ul>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/59"/><category term="记录"/><published>2023-12-31T17:37:56+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/58</id><title>2023年年度总结</title><updated>2024-07-19T07:24:57.486764+00:00</updated><content type="html"><![CDATA[<p><em>第一次打算好好复盘一下一年，写一个年终总结的，就还是先简单写一下，毕竟完成比完美更重要，大概很长一段时间读者也只有我一个人会看，所以，不重要，写下来就好。</em>  </p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/59"/><category term="记录"/><published>2023-12-31T17:37:56+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/58</id><title>2023年年度总结</title><updated>2024-07-22T14:45:53.362713+00:00</updated><content type="html"><![CDATA[<p><em>第一次打算好好复盘一下一年，写一个年终总结的，就还是先简单写一下，毕竟完成比完美更重要，大概很长一段时间读者也只有我一个人会看，所以，不重要，写下来就好。</em>  </p>
 <p>总的来说，这一年过的算是慢慢稳定下来的一年，回想22年，经历了研究生退学，然后上班进了招转培的公司，学不到东西算是及时止损交了近7k多离开，后无奈回家，实在找不到路了，最终找到一个学校重新读本科二学位，然后又是经历了封校一学期的22年下半年，之后便是突然的解封，狼狈的逃回女朋友那，便从12月初，一直待到了快1月底，这就算来到了2023年了。</p>
 <p>1月份，跨年时和女朋友在出租屋里打游戏，我看她玩《模拟人生》，一起听着网易云，那天的网易云音乐推荐的歌格外的好听，我甚至专门将那天的歌创建了一个歌单。</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/07c7b078-ed59-4f0d-acd5-5741ed683eca" alt="e510c5ef2d744619b88298218024f89" /></p>
@@ -1186,12 +1287,12 @@ git config --global --unset http.proxy</p>
 <p>9-10月：兼职，准备攒钱去澳洲，后又参加秋招，拿了外贸的offer，面试非洲外派等。</p>
 <p>11月：停课一个月，搞了Chatgpt4.0，做毕设，写代码。
 12月：疯狂补课上课的一个月，学了嵌入式，之前想做的东西感觉自己有能力做了，同时又涌现出了很多新的想法，重新编程。</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/58"/><category term="总结"/><published>2023-12-31T13:11:22+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/57</id><title>算法知识补充：递归与尾递归</title><updated>2024-07-19T07:24:57.581007+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/ff556763-f40f-4e46-9993-8d8066fe819c" alt="image" />
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/58"/><category term="总结"/><published>2023-12-31T13:11:22+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/57</id><title>算法知识补充：递归与尾递归</title><updated>2024-07-22T14:45:53.509825+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/ff556763-f40f-4e46-9993-8d8066fe819c" alt="image" />
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/46f772dc-a2fd-4338-9a3d-8dbe7215f464" alt="image" />
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/fbfe54e7-1067-4cc4-a873-e56473a059bb" alt="image" />
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/bf58e91c-2d7c-4496-bb42-6df2c5d9b8d0" alt="image" />
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/d6cd3bff-abaa-4d5f-abcf-89c7ca3c18a7" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/57"/><category term="notes"/><published>2023-12-31T08:08:11+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/56</id><title>2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考</title><updated>2024-07-19T07:24:57.692790+00:00</updated><content type="html"><![CDATA[<p><code>_没有写读书年度总结的习惯，但是前几天微信读书自己生成了一个，看了下，今天相比去年，读书时间下降了56%，想了想，今年也就完完整整读了几本书，《丰乳肥臀》、《百年孤独》，其实还有一本《82年生的金智英》，但这本我不好写什评价，也不敢乱写，索性就先放下不表，等将来有了更深的感悟了再写也不迟。_ </code></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/57"/><category term="notes"/><published>2023-12-31T08:08:11+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/56</id><title>2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考</title><updated>2024-07-22T14:45:53.635166+00:00</updated><content type="html"><![CDATA[<p><code>_没有写读书年度总结的习惯，但是前几天微信读书自己生成了一个，看了下，今天相比去年，读书时间下降了56%，想了想，今年也就完完整整读了几本书，《丰乳肥臀》、《百年孤独》，其实还有一本《82年生的金智英》，但这本我不好写什评价，也不敢乱写，索性就先放下不表，等将来有了更深的感悟了再写也不迟。_ </code></p>
 <p>下面是之前写的正文：</p>
 <p>2023年，大部分时间静不下心来，书坦白讲只读了大概两本书。</p>
 <p>一本是莫言的《丰乳肥臀》，剩下的一本是《百年孤独》。</p>
@@ -1216,7 +1317,7 @@ git config --global --unset http.proxy</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/180e1cee-9f53-4bd0-9eee-8326bbffb21a" alt="e06a74f50bcfd88e7be67abb87ea48f" />
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/4c4e8dc3-d888-4e74-af78-b51296994eff" alt="ec0c31c1063476e346b67c2b0fb0de5" />
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/eb308ac5-5562-47b7-9c1a-dfa26b49027a" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/56"/><category term="总结"/><category term="Top"/><published>2023-12-29T13:56:46+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/55</id><title>issue中发帖子的图片无法显示问题</title><updated>2024-07-19T07:24:57.787043+00:00</updated><content type="html"><![CDATA[<p>在issue中写文章，插进了图片，分享出去之后，文章可以正常显示，但是图片缺无法加载。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/56"/><category term="总结"/><category term="Top"/><published>2023-12-29T13:56:46+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/55</id><title>issue中发帖子的图片无法显示问题</title><updated>2024-07-22T14:45:53.752078+00:00</updated><content type="html"><![CDATA[<p>在issue中写文章，插进了图片，分享出去之后，文章可以正常显示，但是图片缺无法加载。</p>
 <p>发给朋友测试，无论是开代理还是没开代理，图片均无法加载。</p>
 <p>在csdn上搜相关问题时，基本上是在自己电脑端无法显示，原因是DNS污染。</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/595616e3-b773-4cde-a34d-ca130b1f02e8" alt="image" />
@@ -1227,7 +1328,7 @@ git config --global --unset http.proxy</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/49edb418-2f8a-4cd3-88ba-edbf52fe0be8" alt="image" /></p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/a2cf5d5c-648d-4b7b-8712-2330186ebce5" alt="image" /></p>
 <p>最终问题解决，原因是之前的帖子是写在了私人仓库里，供自己记一下的，后来想创建成公开的帖子，供我朋友参考的，图省事，直接将私有仓库的issue直接全文复制过来了。但是图片是存在私有仓库的，所以无法访问到，重新传了一次就好了。</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/55"/><category term="Kill-bugs"/><published>2023-12-29T13:11:05+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/54</id><title>扫盲：科学上网（请不要转发分享）</title><updated>2024-07-19T07:24:57.876923+00:00</updated><content type="html"><![CDATA[<p>12.29更新：
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/55"/><category term="Kill-bugs"/><published>2023-12-29T13:11:05+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/54</id><title>扫盲：科学上网（请不要转发分享）</title><updated>2024-07-22T14:45:53.858991+00:00</updated><content type="html"><![CDATA[<p>12.29更新：
 <strong>目前有的订阅节点</strong></p>
 <ol>
 <li><strong>一元机场：</strong> 500G 到明年11.2号到期:
@@ -1270,9 +1371,9 @@ ps：有相应的手机版和电脑版，均在官网下载即可。
 <p>但有一个原则不会变：<strong>越贵的，越稳定，越不容易跑路。</strong>
 当然反过来一样，所以不建议使用免费的节点。</p>
 <p>最后，欢迎来到真正的互联网，但别忘了，Big Brother is watching you.</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/54"/><category term="notes"/><category term="Top"/><published>2023-12-29T12:16:12+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/53</id><title>算法设计与分析期末复习</title><updated>2024-07-19T07:24:58.044002+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/08f3d82d-c418-4131-bc28-1910499e4110" alt="image" /></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/54"/><category term="notes"/><category term="Top"/><published>2023-12-29T12:16:12+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/53</id><title>算法设计与分析期末复习</title><updated>2024-07-22T14:45:53.992634+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/08f3d82d-c418-4131-bc28-1910499e4110" alt="image" /></p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/eef1bd18-3732-4484-9342-0a9bfdbd9a9c" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/53"/><category term="notes"/><published>2023-12-29T09:00:41+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/52</id><title>开题答辩拿了高分，但关于未来很迷茫</title><updated>2024-07-19T07:24:58.138694+00:00</updated><content type="html"><![CDATA[<p>今天开题答辩结束了，本来我们二学位是前面5个的，结果顺序来了个调转，整成最后了。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/53"/><category term="notes"/><published>2023-12-29T09:00:41+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/52</id><title>开题答辩拿了高分，但关于未来很迷茫</title><updated>2024-07-22T14:45:54.128761+00:00</updated><content type="html"><![CDATA[<p>今天开题答辩结束了，本来我们二学位是前面5个的，结果顺序来了个调转，整成最后了。</p>
 <p>最后结果还算满意，前面老师严格限定了时间，每个人最多5分钟，甚至没有讲完就听不下去了，老师直接打断问问题了。
 但一场答辩听下来，40多个人里，除了几人水平高一点外，剩下的基本做的太差了。自己做的什么不清楚，用了什么算法说不清，数据集怎么获取，也不清楚，总之，老师不耐烦的打断，甚至不让讲研究背景，直接跳到最后，看来真是明智的选择了。</p>
 <p>真是同情老师了，我期间一度听不下去了，溜出教师了好几次。</p>
@@ -1313,10 +1414,10 @@ ps：有相应的手机版和电脑版，均在官网下载即可。
 <p>前端时间小红书刷到一个自学了三个月前端，从头到尾跟着jason学html、css、js，然后是React，找到了实习；也有一个博主，总归实际工作经验才两个月，剩下的十多个月是靠自己自学的，拿到了欧洲的远程工作offer。</p>
 <p>我是不是也要再义无反顾的再重新学一下呢，毕竟两年前退学时的梦想就是这个，距离明年毕业也还有整整6个月的时间，他们可以，为什么我不行呢？  </p>
 <p>那就再一次出发？  重新来过嘛。</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/52"/><category term="daily"/><published>2023-12-28T16:50:20+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/51</id><title>Get和post的区别在哪里？</title><updated>2024-07-19T07:24:58.276427+00:00</updated><content type="html"><![CDATA[<p>因为毕设中涉及到了一个场景，向同一个api发送两次请求，先发一次post后发get，结合场景，多少理解了些。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/52"/><category term="daily"/><published>2023-12-28T16:50:20+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/51</id><title>Get和post的区别在哪里？</title><updated>2024-07-22T14:45:54.275731+00:00</updated><content type="html"><![CDATA[<p>因为毕设中涉及到了一个场景，向同一个api发送两次请求，先发一次post后发get，结合场景，多少理解了些。</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/db612465-2690-4899-84b8-0f643f47e21c" alt="image" />
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/fa41829f-eebd-46e7-b7b6-fa8c540b58a5" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/51"/><category term="notes"/><published>2023-12-27T07:30:08+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/50</id><title>除了想象力，没有什么是限制</title><updated>2024-07-19T07:24:58.382648+00:00</updated><content type="html"><![CDATA[<p>嵌入式开发的课程就要结课了，虽然课程缩减了很多很多，实际玩的项目只简单接触到了温湿度传感器、遥感测控、ELOD显示器、蜂鸣器、电机()，以及蓝牙和wifi连接esp32，在老师的带领下简单做了一些小项目，但还是感觉很有趣，似乎一切才刚刚开始的样子。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/51"/><category term="notes"/><published>2023-12-27T07:30:08+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/50</id><title>除了想象力，没有什么是限制</title><updated>2024-07-22T14:45:54.389012+00:00</updated><content type="html"><![CDATA[<p>嵌入式开发的课程就要结课了，虽然课程缩减了很多很多，实际玩的项目只简单接触到了温湿度传感器、遥感测控、ELOD显示器、蜂鸣器、电机()，以及蓝牙和wifi连接esp32，在老师的带领下简单做了一些小项目，但还是感觉很有趣，似乎一切才刚刚开始的样子。</p>
 <p>最后我们要做一个结课的大作业，随着我对这些技术的掌握，发现，最后限制自己做出来的，只剩下好的创意和想象力了。</p>
 <p>技术我们都会堆叠，但是一个好的创意，一个好的应用场景并不容易，很容易做成技术的堆叠，最后变成程序员的自嗨了。</p>
 <p>当然，我觉得在刚刚学会一个新技术的时候，自己拼装各种组合很爽。</p>
@@ -1325,7 +1426,7 @@ ps：有相应的手机版和电脑版，均在官网下载即可。
 <p>这种感觉还是很爽的，倘若找一个时刻，两年前研究生退学，重新学计算机，不后悔的瞬间，大概就是这时候了。</p>
 <p>以前也有很多想法，想搞遥控小车，搞各种稀奇古怪好玩的东西，但完全没有头绪，不知道从哪里下手，但现在，有了一点点的技术基础，觉得技术原来也不是那么难，剩下的，只有想象力的限制了。</p>
 <p>最终的结课大作业，打算用esp32搞一个蜂鸣器钢琴项目，以及用蜂鸣器播放各种音乐。</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/50"/><category term="daily"/><category term="notes"/><published>2023-12-23T05:17:31+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/48</id><title>“既然这样，不如我们重新来过。”--考前押题复习的老师</title><updated>2024-07-19T07:24:58.482304+00:00</updated><content type="html"><![CDATA[<p>一个学期没怎么听课的编译原理和算法课要结束了，今天是最后的一节课。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/50"/><category term="daily"/><category term="notes"/><published>2023-12-23T05:17:31+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/48</id><title>“既然这样，不如我们重新来过。”--考前押题复习的老师</title><updated>2024-07-22T14:45:54.486254+00:00</updated><content type="html"><![CDATA[<p>一个学期没怎么听课的编译原理和算法课要结束了，今天是最后的一节课。</p>
 <p>考前划重点，传统项目了。</p>
 <p>但没想到的是，老师画重点简直了，基本上每一章考哪一题都说到了，就差直接告诉我们原题了。</p>
 <p>很感慨的一点在于，最后一节课了，每个人都听的格外认真，似乎此时的老师讲课也有了特别的魔力，平时云里雾里的课讲的也清晰了起来。</p>
@@ -1345,9 +1446,9 @@ ps：有相应的手机版和电脑版，均在官网下载即可。
 <p>但转念一想，我与大家其实也没有什么不同罢了，我也是靠着在集体中，靠着我们所谓的”弱势“的地位，才获得的那么多的利益。如今在我认为自己”不再弱势了“，便不想让”更弱势“的人获利的想法，恐怕也没有高尚到哪里去。</p>
 <p>这恐怕是大学生涯最后一次考试周了，祝我们都顺利。</p>
 <p>（实在不行，我们重新来过吧：）</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/48"/><category term="daily"/><published>2023-12-22T10:09:21+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/47</id><title>Hope&amp;Love网页作品</title><updated>2024-07-19T07:24:58.591358+00:00</updated><content type="html"><![CDATA[<p>网站：<a href="https://qiyongchuan.github.io/Hope_Love/">https://qiyongchuan.github.io/Hope_Love/</a>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/48"/><category term="daily"/><published>2023-12-22T10:09:21+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/47</id><title>Hope&amp;Love网页作品</title><updated>2024-07-22T14:45:54.614453+00:00</updated><content type="html"><![CDATA[<p>网站：<a href="https://qiyongchuan.github.io/Hope_Love/">https://qiyongchuan.github.io/Hope_Love/</a>
 开发记录：<a href="https://github.com/QiYongchuan/Hope_Love/issues/1">https://github.com/QiYongchuan/Hope_Love/issues/1</a></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/47"/><category term="项目记录"/><published>2023-12-20T07:18:07+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/46</id><title>只要太阳出来了，一切都会好起来的</title><updated>2024-07-19T07:24:58.698570+00:00</updated><content type="html"><![CDATA[<p>12.20日，开课后连续18天阴天下雨下雪后，终于又迎来了太阳，终于又见到了阳光。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/47"/><category term="项目记录"/><published>2023-12-20T07:18:07+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/46</id><title>只要太阳出来了，一切都会好起来的</title><updated>2024-07-22T14:45:54.731761+00:00</updated><content type="html"><![CDATA[<p>12.20日，开课后连续18天阴天下雨下雪后，终于又迎来了太阳，终于又见到了阳光。</p>
 <p>昨天其实就见到了太阳，只是不像今天，昨天一天满课，从早八上到晚八——两周前这样的周二是刚开课，直接强度拉满，晚上就回来发烧咳嗦，开启了黑暗的复课时光。</p>
 <p>昨天终于晴天了，可以说是一扫这段时间的灰暗：整日阴天，不是下雨，最重要的还是天天的低温，手冷脚冷，坐也坐不住，连未来也变得灰暗，各种的焦虑又弥漫在心头，看不到未来……</p>
 <p>但似乎，只要太阳出来了，一切都好了一样。</p>
@@ -1360,7 +1461,7 @@ ps：有相应的手机版和电脑版，均在官网下载即可。
 <p>现在我还有最后的机会了，趁着没毕业之前，最后可以心无旁骛学习的时间。
 期间就只用顾及两件事就好了，一是毕业设计，这个我也打算用react正好可以练习，二是学习Python的esp32开发，这个可以明年3.4月份的兼职收入，以防明年外贸的实习不顺利。</p>
 <p>上午睡了美美的一觉，一直睡到10点，醒来，宿舍靠窗的一边，阳光灿烂，真是美好。梦里，一上午做了三个春梦.....</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/46"/><category term="daily"/><published>2023-12-20T07:06:26+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/45</id><title>迷失在寒冷的冬天</title><updated>2024-07-19T07:24:58.806388+00:00</updated><content type="html"><![CDATA[<p>鼠标丢了，或者说是消失了。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/46"/><category term="daily"/><published>2023-12-20T07:06:26+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/45</id><title>迷失在寒冷的冬天</title><updated>2024-07-22T14:45:54.860104+00:00</updated><content type="html"><![CDATA[<p>鼠标丢了，或者说是消失了。</p>
 <p>这一次和之前两次找不到不同，上次是忘在实验楼，紧着着就找回来了。这一次，到了晚上想打游戏时，才发现鼠标不见了。</p>
 <p>第二天我去实验室找了找，大概永远的消失了。</p>
 <p>没了鼠标再用电脑，右手总是空落落的，就像最近的生活一样，好像失去了某种锚。</p>
@@ -1368,25 +1469,25 @@ ps：有相应的手机版和电脑版，均在官网下载即可。
 <p>今天是2023.12.13，重新开始上课的第二周的周三，今天没课的，最近一直阴天和下雨，太冷了，也不见阳光。
 重新开始上课的第二天，周二测试了一天就开始生病了，接连躺了大概三四天，一直到周六才勉强好了爬起来去上课。</p>
 <p>测试搞不明白，嵌入式也迷迷糊糊的，别的课也稀里糊涂，算法不明白，编译原理不知道讲的什么，这样的日子还得持续两周。</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/45"/><category term="daily"/><published>2023-12-13T10:27:11+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/44</id><title>漫长的冬天</title><updated>2024-07-19T07:24:58.956642+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/152c778e-7beb-4c8f-ae9d-a89216df04ff" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/44"/><category term="daily"/><published>2023-12-13T03:32:11+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/43</id><title>嵌入式开发实训记录</title><updated>2024-07-19T07:24:59.103705+00:00</updated><content type="html"><![CDATA[<p>芯片  esp32</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/45"/><category term="daily"/><published>2023-12-13T10:27:11+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/44</id><title>漫长的冬天</title><updated>2024-07-22T14:45:54.974130+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/152c778e-7beb-4c8f-ae9d-a89216df04ff" alt="image" /></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/44"/><category term="daily"/><published>2023-12-13T03:32:11+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/43</id><title>嵌入式开发实训记录</title><updated>2024-07-22T14:45:55.082758+00:00</updated><content type="html"><![CDATA[<p>芯片  esp32</p>
 <h3>实验项目1：  ESP32 Arduino开发环境搭建</h3>
 <p>如果是connecting问题时，按Boot</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/43"/><category term="notes"/><published>2023-12-09T02:05:13+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/42</id><title>Github 的action学习笔记</title><updated>2024-07-19T07:24:59.241918+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/5be0222c-1958-4c7e-a6f1-9286d1a916db" alt="image" /></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/43"/><category term="notes"/><published>2023-12-09T02:05:13+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/42</id><title>Github 的action学习笔记</title><updated>2024-07-22T14:45:55.188449+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/5be0222c-1958-4c7e-a6f1-9286d1a916db" alt="image" /></p>
 <p>结果：成功了！</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/4bf9332d-2cbd-4c92-b6d4-d1ad4dd43201" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/42"/><published>2023-12-05T15:08:34+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/41</id><title>听了印度老哥的建议后修改权限，最终成功了！</title><updated>2024-07-19T07:24:59.355261+00:00</updated><content type="html"><![CDATA[<p>视频链接：<a href="https://www.youtube.com/watch?v=0pRSFaQYr50">https://www.youtube.com/watch?v=0pRSFaQYr50</a></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/41"/><category term="Kill-bugs"/><published>2023-12-05T15:05:33+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/39</id><title>修改仓库的权限</title><updated>2024-07-19T07:24:59.454371+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/59e8cebf-ff95-40f8-857b-fab74548b262" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/39"/><category term="Kill-bugs"/><published>2023-12-05T02:03:57+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/38</id><title>增加了两条代码，试图解决push权限问题</title><updated>2024-07-19T07:24:59.566186+00:00</updated><content type="html"><![CDATA[<p>设置 Git 远程 URL </p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/42"/><published>2023-12-05T15:08:34+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/41</id><title>听了印度老哥的建议后修改权限，最终成功了！</title><updated>2024-07-22T14:45:55.286767+00:00</updated><content type="html"><![CDATA[<p>视频链接：<a href="https://www.youtube.com/watch?v=0pRSFaQYr50">https://www.youtube.com/watch?v=0pRSFaQYr50</a></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/41"/><category term="Kill-bugs"/><published>2023-12-05T15:05:33+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/39</id><title>修改仓库的权限</title><updated>2024-07-22T14:45:55.384918+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/59e8cebf-ff95-40f8-857b-fab74548b262" alt="image" /></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/39"/><category term="Kill-bugs"/><published>2023-12-05T02:03:57+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/38</id><title>增加了两条代码，试图解决push权限问题</title><updated>2024-07-22T14:45:55.633524+00:00</updated><content type="html"><![CDATA[<p>设置 Git 远程 URL </p>
 <p><code>- name: Set Git Remote URL with Token run: git remote set-url origin https://x-access-token:${{ secrets.G_T }}@github.com/YOUR_USERNAME/YOUR_REPOSITORY.git </code></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/38"/><category term="notes"/><published>2023-12-04T16:43:21+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/37</id><title>创建一个空标签的会怎样</title><updated>2024-07-19T07:24:59.834723+00:00</updated><content type="html"><![CDATA[<p>这还是一个测试用例，不过似乎快要成功了</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/37"/><published>2023-12-04T16:32:51+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/36</id><title>测试，看是否能顺利更新</title><updated>2024-07-19T07:24:59.923209+00:00</updated><content type="html"><![CDATA[<p>测试我的博客自动化更新功能</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/36"/><category term="daily"/><published>2023-12-04T16:02:30+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/35</id><title>自动化博客更新部署折腾日志</title><updated>2024-07-19T07:25:00.018975+00:00</updated><content type="html"><![CDATA[<p>似乎目前仍然没有成功，但相比于上一次，有gpt4的帮助下，对整个的框架有了进一步的理解。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/38"/><category term="notes"/><published>2023-12-04T16:43:21+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/37</id><title>创建一个空标签的会怎样</title><updated>2024-07-22T14:45:55.726772+00:00</updated><content type="html"><![CDATA[<p>这还是一个测试用例，不过似乎快要成功了</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/37"/><published>2023-12-04T16:32:51+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/36</id><title>测试，看是否能顺利更新</title><updated>2024-07-22T14:45:55.860709+00:00</updated><content type="html"><![CDATA[<p>测试我的博客自动化更新功能</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/36"/><category term="daily"/><published>2023-12-04T16:02:30+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/35</id><title>自动化博客更新部署折腾日志</title><updated>2024-07-22T14:45:55.966037+00:00</updated><content type="html"><![CDATA[<p>似乎目前仍然没有成功，但相比于上一次，有gpt4的帮助下，对整个的框架有了进一步的理解。</p>
 <p>目前把代码都“复制”了过来，真的是手动复制添加上去的。</p>
 <p>已知没有做的工作：环境配置中的API等没有添加设置</p>
 <p>已知可能需要做的：跑一下GitHub的action，做一个简单的demo？</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/08cd8115-f0d6-4f21-87d4-8551e91b296b" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/35"/><category term="Top"/><published>2023-12-04T15:40:02+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/34</id><title>软件测试笔记备份</title><updated>2024-07-19T07:25:00.132128+00:00</updated><content type="html"><![CDATA[<p>课程：
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/35"/><category term="Top"/><published>2023-12-04T15:40:02+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/34</id><title>软件测试笔记备份</title><updated>2024-07-22T14:45:56.070401+00:00</updated><content type="html"><![CDATA[<p>课程：
 <strong>考察方式：重点考察思想，因为技术工具会变，但是思想不会变</strong></p>
 <ul>
 <li>
@@ -1400,7 +1501,7 @@ T为测试覆盖项的总数，N为测试用例。</p>
 <p>是否越高越好？
 在T选定的情况下，越高越好。</p>
 <p>笔记定义：</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/34"/><category term="notes"/><published>2023-12-04T00:52:57+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/33</id><title>AI创造：疯狂的蔬菜一家人     </title><updated>2024-07-19T07:25:00.226875+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/3f6e2a38-334b-4f41-8f73-1d81b90aeb28" alt="image" /></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/34"/><category term="notes"/><published>2023-12-04T00:52:57+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/33</id><title>AI创造：疯狂的蔬菜一家人     </title><updated>2024-07-22T14:45:56.206651+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/3f6e2a38-334b-4f41-8f73-1d81b90aeb28" alt="image" /></p>
 <p>蔬菜和水果家族正在一起聚餐的场景，桌上摆放着同样风格的各种昆虫。
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/a015c068-3852-47fb-b5b3-52f625a2b6ee" alt="image" />
 蔬菜角色被赋予了夸张的特征和哥特式元素，营造出一种独特而略带黑暗的氛围。
@@ -1409,7 +1510,7 @@ T为测试覆盖项的总数，N为测试用例。</p>
 <p>现在，西兰花、草莓、芒果小姐和茄子爷爷也加入了这个独特的家庭。</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/4e213b33-a389-4aad-9108-4df38acb875b" alt="image" />
 在这幅画中，包括胡萝卜巫师、番茄骑士、茄子巫婆、豌豆小精灵、洋葱长老、辣椒小鬼、黄瓜女士、蘑菇术士、玉米勇士以及南瓜妈妈和她的孩子们。每个角色都体现了波顿风格的夸张和奇特特征，他们在一个奇异的迷人森林中聚集在一起，展示了这些多样化的蔬菜和水果角色之间的团结和家庭感。</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/33"/><category term="项目记录"/><published>2023-12-03T08:43:27+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/32</id><title>AI作图的一些尝试</title><updated>2024-07-19T07:25:00.342383+00:00</updated><content type="html"><![CDATA[<p>1.经典IP形象</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/33"/><category term="项目记录"/><published>2023-12-03T08:43:27+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/32</id><title>AI作图的一些尝试</title><updated>2024-07-22T14:45:56.336223+00:00</updated><content type="html"><![CDATA[<p>1.经典IP形象</p>
 <p>类似天线宝宝，哆啦A梦，樱桃小丸子，<strong>海绵宝宝</strong>，蜡笔小新，大头儿子和小头爸爸</p>
 <p>该想法直接使用gpt4，不会生成</p>
 <p>2.蔬菜人物风格化，或者昆虫战甲化</p>
@@ -1428,7 +1529,7 @@ T为测试覆盖项的总数，N为测试用例。</p>
 <p>3.新的idea：<strong>生成迪士尼风格或者漫画风格的名人人物头像</strong></p>
 <p>比如Taylor Swift 或者蔡徐坤等中国常见的名人形象等</p>
 <p>策略，通过</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/32"/><category term="项目记录"/><published>2023-12-02T15:21:43+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/31</id><title>关于YouTube自媒体</title><updated>2024-07-19T07:25:00.454074+00:00</updated><content type="html"><![CDATA[<ol>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/32"/><category term="项目记录"/><published>2023-12-02T15:21:43+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/31</id><title>关于YouTube自媒体</title><updated>2024-07-22T14:45:56.462786+00:00</updated><content type="html"><![CDATA[<ol>
 <li>
 <p>Directly transport station B up to the tubing</p>
 </li>
@@ -1442,7 +1543,7 @@ T为测试覆盖项的总数，N为测试用例。</p>
 </ol>
 <p>1.GPT的API过期了，需要再申请一个账号。
 2.申请几个YouTube账号</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/31"/><published>2023-07-28T15:30:05+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/30</id><title>721面试复盘（外贸）</title><updated>2024-07-19T07:25:00.568851+00:00</updated><content type="html"><![CDATA[<p>7.21下午，面试外贸员实习生岗位，趁着记忆新鲜赶紧写一写。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/31"/><published>2023-07-28T15:30:05+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/30</id><title>721面试复盘（外贸）</title><updated>2024-07-22T14:45:56.585251+00:00</updated><content type="html"><![CDATA[<p>7.21下午，面试外贸员实习生岗位，趁着记忆新鲜赶紧写一写。</p>
 <p>问题：
 1.你之前是农业，现在是计算机专业，现在为什么想做外贸销售的工作？
 2.什么时候可以入职？
@@ -1471,10 +1572,10 @@ My name is Qi, i am currently an undergraduate student pursing a second bachelor
 <p>Cultivate good professional ethics and establish correct work values.</p>
 <p>Broaden my horizons, learn business management knowledge, accumate background knowledge for becoming a department manager in the future.</p>
 <p>I will step by step, start from the basic work, and strive to become the mainstay of the company. I believe that through my unremitting efforts, I will be able to achieve my career goals in your company. Thank you for giving me this valuable development opportunity. I will work hard to create greater value for the company.</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/30"/><category term="daily"/><published>2023-07-21T08:29:51+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/29</id><title>Git创建新的分支，开发新功能</title><updated>2024-07-19T07:25:00.687680+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/824afb9c-1055-4039-a162-6b74f6ccf650" alt="image" />
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/30"/><category term="daily"/><published>2023-07-21T08:29:51+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/29</id><title>Git创建新的分支，开发新功能</title><updated>2024-07-22T14:45:56.708919+00:00</updated><content type="html"><![CDATA[<p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/824afb9c-1055-4039-a162-6b74f6ccf650" alt="image" />
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/a65262eb-c6f1-4034-af5f-d0fd68729972" alt="image" />
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/1aa9b76e-6707-4425-a75a-dd3239f50fd4" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/29"/><category term="Kill-bugs"/><published>2023-07-08T07:51:59+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/28</id><title>快乐释放胶囊</title><updated>2024-07-19T07:25:00.805590+00:00</updated><content type="html"><![CDATA[<h3>(一) 心理健康同身体健康一样，我们需要像重视身体健康一样重视身体健康。</h3>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/29"/><category term="Kill-bugs"/><published>2023-07-08T07:51:59+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/28</id><title>快乐释放胶囊</title><updated>2024-07-22T14:45:56.819987+00:00</updated><content type="html"><![CDATA[<h3>(一) 心理健康同身体健康一样，我们需要像重视身体健康一样重视身体健康。</h3>
 <p>[TED演讲】怎样打败孤独和负能量？（中英字幕）-哔哩] (<a href="https://b23.tv/1xG4SwJ">https://b23.tv/1xG4SwJ</a>)</p>
 <ul>
 <li>”关注你的情绪，保护好你的情绪“</li>
@@ -1488,7 +1589,7 @@ My name is Qi, i am currently an undergraduate student pursing a second bachelor
 <p>你只需要采取行动，采取一点点行动就好了。<del>（哪怕让人分一点爱？=&gt;”一切的爱怎么都送给他，一颗心分一半好吗？&quot; </del> 此处应该对应背景音乐，<a href="https://www.youtube.com/watch?v=yowaFDawSs8">半点心-草蜢</a>）
 朋友和家人是爱你的，世界是爱你的，你总会有人爱你的。
 就像视频里被踢断的那个电话线，电话那头的人也在等你的电话呢。</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/28"/><category term="daily"/><published>2023-07-07T11:43:38+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/27</id><title>Python文件 xx.py如何打包成.exe格式文件，发给非程序员朋友玩</title><updated>2024-07-19T07:25:00.965568+00:00</updated><content type="html"><![CDATA[<p>前言：我花了一个上午的时间将在命令行中查询天气的接口封装成一个 Python 文件，并通过 Python 的 requests 库直接发送请求。但我想将其发送给没有 Python 编译器的朋友们使用，所以只能将 Python 打包成 exe格式的文件。在此之前，我有过打包自己python程序到exe的经验，将python画的爱心打包成exe格式程序发给朋友。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/28"/><category term="daily"/><published>2023-07-07T11:43:38+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/27</id><title>Python文件 xx.py如何打包成.exe格式文件，发给非程序员朋友玩</title><updated>2024-07-22T14:45:56.939708+00:00</updated><content type="html"><![CDATA[<p>前言：我花了一个上午的时间将在命令行中查询天气的接口封装成一个 Python 文件，并通过 Python 的 requests 库直接发送请求。但我想将其发送给没有 Python 编译器的朋友们使用，所以只能将 Python 打包成 exe格式的文件。在此之前，我有过打包自己python程序到exe的经验，将python画的爱心打包成exe格式程序发给朋友。</p>
 <p>具体的过程不复杂，可以概括为以下几个步骤：1. 安装 Python 的专用打包工具 PyInstaller。  2.在命令行输入pyinstaller -F py文件路径 就完成了。  （在倒数第二行查看生成的dist文件夹，去看exe文件就可以了。</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/bbd1e960-cc22-4385-a9f0-e463c8931a65" alt="image" />
 <img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/785d9937-b54a-46e8-809b-a399c2c9d12f" alt="image" /></p>
@@ -1511,7 +1612,7 @@ My name is Qi, i am currently an undergraduate student pursing a second bachelor
 <p>再进行第二步，将缺少的依赖重新打包，这里感觉是在加上这部分后重新打包一份py到exe</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b32ad3f9-64de-485c-8145-6747b19fb005" alt="image" /></p>
 <p>此上，所有的打包工作完成，成功将写好的waether.py转成了weather.exe程序了，理论上朋友们可以在自己电脑上运行我的查询天气的程序了。</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/27"/><category term="Kill-bugs"/><published>2023-07-07T10:05:54+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/26</id><title>Python中requests库发送请求时遇到的443问题</title><updated>2024-07-19T07:25:01.073089+00:00</updated><content type="html"><![CDATA[<p>报错信息：</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/27"/><category term="Kill-bugs"/><published>2023-07-07T10:05:54+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/26</id><title>Python中requests库发送请求时遇到的443问题</title><updated>2024-07-22T14:45:57.072407+00:00</updated><content type="html"><![CDATA[<p>报错信息：</p>
 <pre><code>    raise SSLError(e, request=request)
 requests.exceptions.SSLError: HTTPSConnectionPool(host=&#x27;wttr.in&#x27;, port=443): Max retries exceeded with url: /%E5%A4%A9%E6%B4%A5?lang=zh (Caused by SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:997)&#x27;)))
 </code></pre>
@@ -1523,7 +1624,7 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host=&#x27;wttr.in&#x27;, port
 在发送请求的同时，关闭SSL验证，以及添加配置代理服务器设置。
 仍无法解决。</p>
 <p>最后解决方法：关闭梯子</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/26"/><category term="Kill-bugs"/><published>2023-07-07T09:36:00+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/25</id><title>Git 如何将本地仓库中上传一个本地有但是远程没有的分支？</title><updated>2024-07-19T07:25:01.156731+00:00</updated><content type="html"><![CDATA[<p>问题描述：</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/26"/><category term="Kill-bugs"/><published>2023-07-07T09:36:00+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/25</id><title>Git 如何将本地仓库中上传一个本地有但是远程没有的分支？</title><updated>2024-07-22T14:45:57.182807+00:00</updated><content type="html"><![CDATA[<p>问题描述：</p>
 <p>我在本地有一个仓库StydyPy，用来记录我的学习代码，我要上传到我的远程项目仓库Let’s Run中。</p>
 <p>思路：本地有master分支，远程则是main分支，现在我要建一个StudyPy上去，一是我直接把我的master分支改名字，然后上传到远程仓库，或者我在本地新建一个StudyPy分支，然后将master分支里的内容，merge过去，再上传到远程仓库。</p>
 <p>因为远程仓库并没有StudyPy的分支，无论哪种方法，也需要在远程新建一个分支，即原来不存在的分支。</p>
@@ -1536,7 +1637,7 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host=&#x27;wttr.in&#x27;, port
 <p>以上是说，当远程有仓库的时候，git push origin StudyPy 就可以；如果远程没有，那就git push -u origin StudyPy，意思是先建一个，再传过去。</p>
 <p>当然，把本地仓库push到远程的前提是，两者建立了关联：</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/2f5d0fa8-532a-4073-8cc2-0b3c9b6ddc39" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/25"/><category term="Kill-bugs"/><published>2023-06-30T03:30:24+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/24</id><title>Git push时遇到10054问题</title><updated>2024-07-19T07:25:01.258059+00:00</updated><content type="html"><![CDATA[<p>问题描述：</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/25"/><category term="Kill-bugs"/><published>2023-06-30T03:30:24+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/24</id><title>Git push时遇到10054问题</title><updated>2024-07-22T14:45:57.280724+00:00</updated><content type="html"><![CDATA[<p>问题描述：</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/b6fa27b8-72ab-439a-bad6-12685ce12aea" alt="image" /></p>
 <p>可能的原因：</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/cd3f9ed7-6442-474b-8e63-b699254e5424" alt="image" /></p>
@@ -1550,7 +1651,7 @@ git config --global http.sslVerify &quot;false&quot;</p>
 <li>把wifi换成数据流量上网，解决。</li>
 </ol>
 <p>大概还是因为网速的原因，上次出现这个问题也是在家里，连的家里的宽带，切换手机开热点后就成功push上去。在学校反而没遇到过10054的情况。</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/24"/><category term="Kill-bugs"/><published>2023-06-30T03:17:21+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/23</id><title>2023 第一学年结束的总结</title><updated>2024-07-19T07:25:01.369427+00:00</updated><content type="html"><![CDATA[<p><em>虽说是第一学年，但本篇的侧重点更多的放在刚刚结束的第二学期。原因大概在于，当想提笔写下一篇回顾性的总结时，才发现上学期太空了，对于上学期的印象：开学、疫情、封校、无休止核酸检测、漫长的季节，又突然的放开，惊慌的逃窜，感染新冠又申请缓考，一切的一切，关于上学期的记忆，就跟同过去三年的记忆一样，突然被抹去。 而在我这里，那一切又成了那么遥远的过去，以至于我在回想起这一切时，我开学，来到这个学校，更像是几年前那么遥远，而非仅仅才过去了一年。</em></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/24"/><category term="Kill-bugs"/><published>2023-06-30T03:17:21+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/23</id><title>2023 第一学年结束的总结</title><updated>2024-07-22T14:45:57.381370+00:00</updated><content type="html"><![CDATA[<p><em>虽说是第一学年，但本篇的侧重点更多的放在刚刚结束的第二学期。原因大概在于，当想提笔写下一篇回顾性的总结时，才发现上学期太空了，对于上学期的印象：开学、疫情、封校、无休止核酸检测、漫长的季节，又突然的放开，惊慌的逃窜，感染新冠又申请缓考，一切的一切，关于上学期的记忆，就跟同过去三年的记忆一样，突然被抹去。 而在我这里，那一切又成了那么遥远的过去，以至于我在回想起这一切时，我开学，来到这个学校，更像是几年前那么遥远，而非仅仅才过去了一年。</em></p>
 <p>但简单来讲，第一学期稀里糊涂学了C、Java，然后是学不太明白的数据结构，以及究极恐怖的离散数学和数字电路（虽然听着有趣，但数字电路一直跟不上的痛苦太难忘了）</p>
 <p>这学期考试课程主要有操作系统、计算机组成原理、计算机网络。
 考试周分别整理了三门科目的笔记：
@@ -1566,7 +1667,7 @@ web课的项目在 <a href="url">Hope&amp;Love</a></p>
 <p><a href="#">JavaWeb的学习笔记</a></p>
 <p>此外，最后的实训课，是做一个基于java的商店，按理说应该是大二下学期学完java后紧跟着做的，但我们课程安排不合理。这个项目收获有，对git的操作又熟练了一些，学会了自己调试简单的代码，以及为我们后面三门考试提供了宝贵的自习室。</p>
 <p><a href="#">Java商城的代码仓库</a></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/23"/><category term="总结"/><category term="Top"/><published>2023-06-29T11:10:59+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/20</id><title>计算机组成原理期末复习</title><updated>2024-07-19T07:25:01.476542+00:00</updated><content type="html"><![CDATA[<p><a href="https://github.com/QiYongchuan/MyGitBlog/files/11795439/default.pptx">复习指导ppt期末复习.pptx</a></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/23"/><category term="总结"/><category term="Top"/><published>2023-06-29T11:10:59+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/20</id><title>计算机组成原理期末复习</title><updated>2024-07-22T14:45:57.505212+00:00</updated><content type="html"><![CDATA[<p><a href="https://github.com/QiYongchuan/MyGitBlog/files/11795439/default.pptx">复习指导ppt期末复习.pptx</a></p>
 <h3>需要复习的点</h3>
 <ul>
 <li><input disabled="" type="checkbox"> #21</li>
@@ -1576,7 +1677,7 @@ web课的项目在 <a href="url">Hope&amp;Love</a></p>
 <li><input disabled="" type="checkbox"> 微程序设计</li>
 <li><input disabled="" type="checkbox"> 流水线CPU计算加速比</li>
 </ul>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/20"/><category term="notes"/><published>2023-06-20T03:16:25+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/19</id><title>计算机网络期末复习</title><updated>2024-07-19T07:25:01.610846+00:00</updated><content type="html"><![CDATA[<h3>第一章 概述</h3>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/20"/><category term="notes"/><published>2023-06-20T03:16:25+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/19</id><title>计算机网络期末复习</title><updated>2024-07-22T14:45:57.616319+00:00</updated><content type="html"><![CDATA[<h3>第一章 概述</h3>
 <p><strong>1-03 试从多个方面比较电路交换、报文交换和分组交换的主要优缺点。</strong></p>
 <p>电路交换特点：面向连接的，优点是实时性好，缺点是资源利用率低，费用高
 分组交换特点：分组交换技术，网络线路利用率高，缺点是实时性差一点。
@@ -1616,7 +1717,7 @@ U=90%;D=D0/(1-U)----&gt;D/ D0=10
 <p>_语法：在网络协议中，语法指的是数据与控制信息的结构或格式。类比到餐厅中，语法就相当于菜品的制作方法和配料清单。它规定了数据的组织方式，确保通信双方能够理解和解析传输的数据。</p>
 <p>语义：在网络协议中，语义指的是需要发出何种控制信息，完成何种动作以及做出何种响应。类比到餐厅中，语义就相当于服务员的指示和顾客的需求。它规定了通信双方之间的交互行为，确保数据的正确处理和响应。</p>
 <p>同步：在网络协议中，同步指的是事件实现顺序的详细说明。类比到餐厅中，同步就相当于服务员和厨师之间的协调和配合。它确保了数据的传输和处理按照一定的顺序进行，避免混乱和错误。_</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/19"/><category term="notes"/><published>2023-06-18T08:10:51+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/18</id><title>实训项目（10天）</title><updated>2024-07-19T07:25:01.710187+00:00</updated><content type="html"><![CDATA[<h3>6.12 第一天</h3>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/19"/><category term="notes"/><published>2023-06-18T08:10:51+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/18</id><title>实训项目（10天）</title><updated>2024-07-22T14:45:57.729156+00:00</updated><content type="html"><![CDATA[<h3>6.12 第一天</h3>
 <p>1.明天下午汇报。ppt+需求分析  汇报（ppt+需求分析报告）
 2.3-7天开发阶段  （日志）
 3. 测试阶段           （日志）
@@ -1640,7 +1741,7 @@ U=90%;D=D0/(1-U)----&gt;D/ D0=10
 <p>参照外卖的参照，写用户需求分析报告。</p>
 <p><a href="https://github.com/QiYongchuan/MyGitBlog/files/11716557/1.md">1.设计分析.md</a> </p>
 <p><a href="http://t.csdn.cn/hkoYI">参考链接</a></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/18"/><category term="项目记录"/><published>2023-06-12T01:35:03+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/17</id><title>操作系统期末复习</title><updated>2024-07-19T07:25:01.832598+00:00</updated><content type="html"><![CDATA[<p><a href="https://github.com/QiYongchuan/MyGitBlog/files/11729893/default.pdf">操作系论课上.pdf</a></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/18"/><category term="项目记录"/><published>2023-06-12T01:35:03+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/17</id><title>操作系统期末复习</title><updated>2024-07-22T14:45:57.851844+00:00</updated><content type="html"><![CDATA[<p><a href="https://github.com/QiYongchuan/MyGitBlog/files/11729893/default.pdf">操作系论课上.pdf</a></p>
 <ul>
 <li>选择题 5题，10分</li>
 <li>简答题 4道    20分  【第7章文件系统  12/16题 5分  第三章 死锁 5分   </li>
@@ -1738,7 +1839,7 @@ U=90%;D=D0/(1-U)----&gt;D/ D0=10
 <p>第五章：虚拟内存 只考这一道 （10分）
 1.请求分页存储管理（页面置换算法）</p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/f3448016-0b96-4cd4-b40d-279ba9d2818a" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/17"/><category term="notes"/><published>2023-06-09T08:55:31+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/15</id><title>生活有无数种可能，这次决定先不想最坏的了</title><updated>2024-07-19T07:25:01.974521+00:00</updated><content type="html"><![CDATA[<p>#* 远离负面消息</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/17"/><category term="notes"/><published>2023-06-09T08:55:31+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/15</id><title>生活有无数种可能，这次决定先不想最坏的了</title><updated>2024-07-22T14:45:58.004531+00:00</updated><content type="html"><![CDATA[<p>#* 远离负面消息</p>
 <ul>
 <li>日本语言学习打工的推友大吉</li>
 <li>中国经济的英文文章</li>
@@ -1786,10 +1887,10 @@ U=90%;D=D0/(1-U)----&gt;D/ D0=10
 <blockquote>
 <p>然而，最有可能的情况是处于中间地带。过去二十年中国崛起的速度一直是不稳定的，迫使全球经济和地缘政治秩序做出调整。这一阶段的强烈经济扰动现在可能已经结束。尽管中国经济存在各种问题，但它不太可能萎缩，引发Brands和Beckley担心的那种虚无主义和破坏性思维。xxx的行为难以预测，但中国的长期经济前景既非胜利也非灾难。面对几十年来与美国接近的地位，中国有充分的理由避免骄傲自大以及侵略台湾(AI翻译注：在中国我们应该叫收复台湾)。一个关键的问题是超级大国是否能够避免误读彼此的意图，从而不会陷入冲突。下周我们将研究美国的全球领导地位以及它应该如何应对未来超级大国平衡时代的中国。</p>
 </blockquote>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/15"/><category term="daily"/><published>2023-05-12T17:09:15+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/14</id><title>实时聊天应用开发记录</title><updated>2024-07-19T07:25:02.090495+00:00</updated><content type="html"><![CDATA[<p>又开新坑，视频全程只需要8小时，基于nextjs开发的实时在线聊天的软件。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/15"/><category term="daily"/><published>2023-05-12T17:09:15+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/14</id><title>实时聊天应用开发记录</title><updated>2024-07-22T14:45:58.197842+00:00</updated><content type="html"><![CDATA[<p>又开新坑，视频全程只需要8小时，基于nextjs开发的实时在线聊天的软件。</p>
 <p>目前进度，完成了part1部分，跟着完成了第一个组件button的设置，现在开始注册数据库。</p>
 <p>遇到的第一个难题，没有下载yarn，通过npm运行的项目，命令为npm run dev 跑起来的项目。</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/14"/><category term="项目记录"/><published>2023-05-11T15:05:10+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/13</id><title>生活需要cookie</title><updated>2024-07-19T07:25:02.186654+00:00</updated><content type="html"><![CDATA[<p><strong>生活需要cookie</strong></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/14"/><category term="项目记录"/><published>2023-05-11T15:05:10+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/13</id><title>生活需要cookie</title><updated>2024-07-22T14:45:58.294844+00:00</updated><content type="html"><![CDATA[<p><strong>生活需要cookie</strong></p>
 <p><img src="https://github.com/QiYongchuan/MyGitBlog/assets/105039020/d486e770-0014-4114-b493-19b923004759" alt="b395e8adcbff239705fd2680ecfb8bc" /></p>
 <blockquote>
 <p>&quot;你与自己的关系是最复杂的，因为你不能离开你，你必须原谅你的每一个错误，你必须处理好你的，每一个缺点，你必须找到爱你的方式，即使你讨厌你。 </p>
@@ -1838,7 +1939,7 @@ U=90%;D=D0/(1-U)----&gt;D/ D0=10
 <p>懂了，或许该卸载掉让人焦虑的信息源了，看多了除了让自己一遍一遍的反复失望外，获取的有效信息并没有多少。</p>
 <p>就到这里吧，行动起来。</p>
 <p>2023.5.10</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/13"/><category term="daily"/><published>2023-05-10T14:18:09+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/12</id><title>《一个帖子解决所有的英语学习问题》</title><updated>2024-07-19T07:25:02.326204+00:00</updated><content type="html"><![CDATA[<p>来自我之前教培公司的教学专家的总结，借花献佛：
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/13"/><category term="daily"/><published>2023-05-10T14:18:09+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/12</id><title>《一个帖子解决所有的英语学习问题》</title><updated>2024-07-22T14:45:58.432794+00:00</updated><content type="html"><![CDATA[<p>来自我之前教培公司的教学专家的总结，借花献佛：
 语言是一种能量，人体震动发生基于某频段的能量，只要你和它同频就能接受到。问题是你的十几年教育，学习的都是语言的影子，一种符号文字。 你需要把这个符号文字用大脑重新解码加工成语音，重新大脑里复现它的震动。这个还原的过程会有无数的偏差，和语言的本质离的太远，这是我们苦苦挣扎于英语学习，难以取得进步的原因。</p>
 <p>1.语言是什么？ dog dog dog,  语言学家Steven Pinker 说这个单词看起来不像一条狗，读起来也不是汪汪汪，但是还是代表了狗的意思。 你给小孩指着一条🐶说，this is a dog . 然后这条狗冲过来时候，你给孩子说，stay away from the dog.   下一次门前经过一条黄色的🐶， 你指着那条🐶，说this is a yellow ______  小孩就会嘟囔出dog, 你说Stay ____ ,小孩就会说出Stay away。 很神奇吗？这是人的大脑🧠本能，经过一定的可理解的，受众参与的重复之后，人脑是可以自动习得语言的，孩子直到上小学或者幼儿园才知道 d + o + g = dog = 🐶。</p>
 <ol start="2">
@@ -1857,7 +1958,7 @@ U=90%;D=D0/(1-U)----&gt;D/ D0=10
 <p>来源：<a href="https://twitter.com/yiqifacai">yiqifacai.eth</a>
 <img src="https://user-images.githubusercontent.com/105039020/235140327-8c55a63a-269e-43e5-b6c9-f74412c481e4.png" alt="image" /></p>
 <p><a href="https://www.bilibili.com/video/BV1ns4y1A7fj/?spm_id_from=333.999.0.0&amp;vd_source=c9d625859374d820a57d72c6da935c00">视频：如何永远学会一个单词？</a></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/12"/><category term="总结"/><published>2023-04-28T11:52:45+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/11</id><title>暂未成功的扇贝背单词项目</title><updated>2024-07-19T07:25:02.460814+00:00</updated><content type="html"><![CDATA[<p><a href="https://i.aichat.la/#/chat/224">i.aichat.la</a></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/12"/><category term="总结"/><published>2023-04-28T11:52:45+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/11</id><title>暂未成功的扇贝背单词项目</title><updated>2024-07-22T14:45:58.553220+00:00</updated><content type="html"><![CDATA[<p><a href="https://i.aichat.la/#/chat/224">i.aichat.la</a></p>
 <p>借助ai搞了一晚上，目前暂未成功，但是大概搞清楚了路子：</p>
 <p>只需要修改自己setting中的四个secret，然后就可以了。</p>
 <p>目前出现过的错误，cookie获取错了；</p>
@@ -1866,7 +1967,7 @@ U=90%;D=D0/(1-U)----&gt;D/ D0=10
 <p>目前显示发送成功，但是打卡后，实现不了效果。</p>
 <p><img src="https://user-images.githubusercontent.com/105039020/234916199-d324c3f4-fc3e-4670-9827-b847026484ea.png" alt="image" /></p>
 <p><img src="https://user-images.githubusercontent.com/105039020/234915567-c900dfb7-4bad-4774-a52d-fed98e788782.png" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/11"/><category term="项目记录"/><published>2023-04-27T15:47:40+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/10</id><title>抢不到回家车票的概率是</title><updated>2024-07-19T07:25:02.591473+00:00</updated><content type="html"><![CDATA[<p>奶奶家的小狗在撒欢
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/11"/><category term="项目记录"/><published>2023-04-27T15:47:40+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/10</id><title>抢不到回家车票的概率是</title><updated>2024-07-22T14:45:58.660440+00:00</updated><content type="html"><![CDATA[<p>奶奶家的小狗在撒欢
 爷爷坐在沙发上看着一家人忙
 客厅里灯火通明
 爸爸在厨房
@@ -1877,8 +1978,8 @@ U=90%;D=D0/(1-U)----&gt;D/ D0=10
 我接连订了两张的候补车票
 百度说候补成功的概率在80%
 这一次我相信它的话</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/10"/><category term="daily"/><published>2023-04-26T15:00:33+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/9</id><title>当下一次迷路的时候，就回来看看</title><updated>2024-07-19T07:25:02.699765+00:00</updated><content type="html"><![CDATA[<p>现在是半夜的0:55分，应该睡了，明天周三，满课，但是我觉得</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/9"/><category term="daily"/><published>2023-04-26T01:07:28+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/8</id><title>奶奶家的小狗与生日聚餐</title><updated>2024-07-19T07:25:02.800767+00:00</updated><content type="html"><![CDATA[<p>在奶奶家，准确说是三叔家。其实是奶奶给三叔盖的，我小时候有一段时间是奶奶带的，住在那个家里，那时候三叔在山西，直到奶奶奶奶六十岁三叔决定带着山西的三婶和妹妹回来，那里又成了三叔家。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/10"/><category term="daily"/><published>2023-04-26T15:00:33+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/9</id><title>当下一次迷路的时候，就回来看看</title><updated>2024-07-22T14:45:58.761351+00:00</updated><content type="html"><![CDATA[<p>现在是半夜的0:55分，应该睡了，明天周三，满课，但是我觉得</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/9"/><category term="daily"/><published>2023-04-26T01:07:28+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/8</id><title>奶奶家的小狗与生日聚餐</title><updated>2024-07-22T14:45:59.013486+00:00</updated><content type="html"><![CDATA[<p>在奶奶家，准确说是三叔家。其实是奶奶给三叔盖的，我小时候有一段时间是奶奶带的，住在那个家里，那时候三叔在山西，直到奶奶奶奶六十岁三叔决定带着山西的三婶和妹妹回来，那里又成了三叔家。</p>
 <p>过生日的喜庆时候，老爸在厨房做饭，我带小狗出去玩，刚回来。</p>
 <p>那是一只很小的狗，一看就是聪明的小狗，但是一跟它出去，它就往胡同深处跑，旁边有两只大狗在虎视眈眈的巡逻他们的地盘。我那只小狗恐怕凶多吉少啊，小狗一下子跑出去l，我离得不算远，但是眼睛往那个地方看去，总是灰蒙蒙的，一片一片的，总感觉眼镜擦不干净。</p>
 <p>两个大狗一只盯着排水管道，不断的闻啊闻，我在不算很远也不敢靠太近的地方，着急的喊小狗的名字。
@@ -1906,21 +2007,21 @@ U=90%;D=D0/(1-U)----&gt;D/ D0=10
 <p>而在我相机里怎么也录不进去的爷爷，在疫情爆发的前夕，也已经离世了。</p>
 <pre><code>                                                                                                                                                                    ---写于2023.4.25梦
 </code></pre>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/8"/><category term="daily"/><published>2023-04-25T09:52:57+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/7</id><title>未被定义的</title><updated>2024-07-19T07:25:03.073484+00:00</updated><content type="html"><![CDATA[<p><img src="https://user-images.githubusercontent.com/105039020/234043132-b8ba0ad1-cd27-46b7-a8f0-fd49039edfbb.png" alt="image" />
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/8"/><category term="daily"/><published>2023-04-25T09:52:57+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/7</id><title>未被定义的</title><updated>2024-07-22T14:45:59.309347+00:00</updated><content type="html"><![CDATA[<p><img src="https://user-images.githubusercontent.com/105039020/234043132-b8ba0ad1-cd27-46b7-a8f0-fd49039edfbb.png" alt="image" />
 <img src="https://user-images.githubusercontent.com/105039020/234043203-5de8aa6f-702d-4b56-afaa-3d415bc262ba.png" alt="image" />
 <img src="https://user-images.githubusercontent.com/105039020/234043263-80ac2fae-62bc-48f6-968a-10d501c2764a.png" alt="image" />
 <img src="https://user-images.githubusercontent.com/105039020/234043309-abee0289-4856-4406-86d6-374e35e48cf8.png" alt="image" />
 <img src="https://user-images.githubusercontent.com/105039020/234043408-a230bb80-f8be-4276-83c1-309af13d30d4.png" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/7"/><published>2023-04-24T15:27:09+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/6</id><title>在今天，不断看不到希望的年轻人</title><updated>2024-07-19T07:25:03.160890+00:00</updated><content type="html"><![CDATA[<p><img src="https://user-images.githubusercontent.com/105039020/233902736-f01bd4f6-9e85-40f1-b372-81e9af5e5f24.jpg" alt="9fc0c0ed34b6ff9f458124a7b7e7d02" /></p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/7"/><published>2023-04-24T15:27:09+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/6</id><title>在今天，不断看不到希望的年轻人</title><updated>2024-07-22T14:45:59.422592+00:00</updated><content type="html"><![CDATA[<p><img src="https://user-images.githubusercontent.com/105039020/233902736-f01bd4f6-9e85-40f1-b372-81e9af5e5f24.jpg" alt="9fc0c0ed34b6ff9f458124a7b7e7d02" /></p>
 <p>又有三个年轻人自杀了，其实何止是三个呢，在网络的各个角落里，都充斥着大量的失落、迷茫、恐慌、焦虑。墙内简中是各种绝望，墙外则是战争风雨欲来的消息。</p>
 <p>说到风雨欲来的战争，特意买了《昭和上班族》来看，但对于一个已经生活在又一个昭和年代的人来说，没有逃离日本之前，看的愈多，似乎更让人失望。</p>
 <p>起风了，唯有努力生存。</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/6"/><published>2023-04-24T05:02:07+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/5</id><title>SICP 课程笔记</title><updated>2024-07-19T07:25:03.272241+00:00</updated><content type="html"><![CDATA[<blockquote>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/6"/><published>2023-04-24T05:02:07+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/5</id><title>SICP 课程笔记</title><updated>2024-07-22T14:45:59.557799+00:00</updated><content type="html"><![CDATA[<blockquote>
 <p>听说人生苦短，请用python。 刚玩git把写了两天的jsp代码搞没了，就来玩玩python吧。</p>
 </blockquote>
 <p>完成了lab00 配好了环境 </p>
 <p><img src="https://user-images.githubusercontent.com/105039020/233851344-e5fb3f78-7f9d-4c80-9ccc-e9bcf3b44b16.png" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/5"/><published>2023-04-23T14:34:39+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/4</id><title>原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程</title><updated>2024-07-19T07:25:03.377532+00:00</updated><content type="html"><![CDATA[<p>今天看偶然看到南大的计算机操作系统以及PA的课，有一点新的感触。</p>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/5"/><published>2023-04-23T14:34:39+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/4</id><title>原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程</title><updated>2024-07-22T14:45:59.663292+00:00</updated><content type="html"><![CDATA[<p>今天看偶然看到南大的计算机操作系统以及PA的课，有一点新的感触。</p>
 <p>对之前看到的一句话有了更深的理解：</p>
 <p>暂时没找到，大概是<strong>好的大学学习≠轻松≠简单</strong></p>
 <p>其次是，调整面对bug及困难的心态。
@@ -1930,7 +2031,7 @@ U=90%;D=D0/(1-U)----&gt;D/ D0=10
 <p><img src="https://user-images.githubusercontent.com/105039020/233699619-8212ee1d-1e30-453b-8d31-6599d3b177b8.png" alt="image" /></p>
 <p><a href="https://nju-projectn.github.io/ics-pa-gitbook/ics2022/FAQ.html">PA课程链接</a>
 <a href="https://nju-sicp.bitbucket.io/2021/">sicp</a></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/4"/><category term="daily"/><category term="Top"/><published>2023-04-21T17:34:49+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/3</id><title>南京大学操作系统学习笔记</title><updated>2024-07-19T07:25:03.477402+00:00</updated><content type="html"><![CDATA[<h1>第一节 开坑</h1>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/4"/><category term="daily"/><category term="Top"/><published>2023-04-21T17:34:49+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/3</id><title>南京大学操作系统学习笔记</title><updated>2024-07-22T14:45:59.758808+00:00</updated><content type="html"><![CDATA[<h1>第一节 开坑</h1>
 <p><a href="https://jyywiki.cn/">课程主页</a></p>
 <p>学任何东西的三个维度：Why、What、How</p>
 <h2>Why ？</h2>
@@ -1959,7 +2060,7 @@ sofeware</p>
 <p><img src="https://user-images.githubusercontent.com/105039020/233683345-01e5d051-42eb-41e3-aaab-07ba1d0244a2.png" alt="image" />
 <img src="https://user-images.githubusercontent.com/105039020/233683507-84e807da-a794-400c-a695-b833489fec43.png" alt="image" /></p>
 <p><img src="https://user-images.githubusercontent.com/105039020/233683580-a081fd97-26d8-4bc5-80e9-e9f98ca3eb23.png" alt="image" /></p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/3"/><published>2023-04-21T16:08:45+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/2</id><title>JSP学习笔记</title><updated>2024-07-19T07:25:03.586520+00:00</updated><content type="html"><![CDATA[<h2>1.如何配环境</h2>
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/3"/><published>2023-04-21T16:08:45+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/2</id><title>JSP学习笔记</title><updated>2024-07-22T14:45:59.892628+00:00</updated><content type="html"><![CDATA[<h2>1.如何配环境</h2>
 <p>“你是免费的还是付费的？” ---如何用社区版IntelliJ IDEA创建Servlet项目</p>
 <p>当我开始认真的读文档自己学jsp时，才想起了Javaweb课上老师面对我们各种各异的报错，重复问出的一句话：“你是免费的还是付费的？”</p>
 <p>课上稀里糊涂的配置过去，下次上课代码出不来时，老师依然重复同样的问题。直到我现在从头开始建一个Servlet项目时，我才意识到问题的严重性：</p>
@@ -1981,7 +2082,7 @@ sofeware</p>
 <p>当然在实验课上也出现过很多次经典404，但当时纯属黑盒调试，重启大法换电脑，纯纯玄学调试，不知道哪里错了：）</p>
 <p><img src="https://user-images.githubusercontent.com/105039020/233638376-82e52099-00f1-49e4-93e2-3e571d43a9b8.png" alt="image" /></p>
 <p>至此，第一部分创建项目到这里结束。但似乎还不算开始，一套操作猛如虎，一看进度刚配好环境：）</p>
-]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/2"/><category term="notes"/><published>2023-04-21T08:10:32+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/1</id><title>第一篇：从Github上开始写日记，记录，学习</title><updated>2024-07-19T07:25:03.718646+00:00</updated><content type="html"><![CDATA[<pre><code>print(&quot;Hello,World!&quot;)
+]]></content><link href="https://github.com/QiYongchuan/MyGitBlog/issues/2"/><category term="notes"/><published>2023-04-21T08:10:32+00:00</published></entry><entry><id>https://github.com/QiYongchuan/MyGitBlog/issues/1</id><title>第一篇：从Github上开始写日记，记录，学习</title><updated>2024-07-22T14:45:59.992762+00:00</updated><content type="html"><![CDATA[<pre><code>print(&quot;Hello,World!&quot;)
 </code></pre>
 <p>今天是2023年的4月20日，周四的晚上，不想太多的东西，仅仅是记录的开始，把思绪停在文字上，记录，与自己对话。
 写下计划，写下想法，让混乱或疯狂的想法，以文字的形式记录整理下来。</p>
