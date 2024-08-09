@@ -20,7 +20,6 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [从研究生退学之后的两年](https://github.com/QiYongchuan/MyGitBlog/issues/84)--2024-02-28
 - [哈佛大学cs50x-cs50-full-stack全栈项目学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/82)--2024-02-24
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
-- [扫盲：科学上网（请不要转发分享）](https://github.com/QiYongchuan/MyGitBlog/issues/54)--2023-12-29
 - [自动化博客更新部署折腾日志](https://github.com/QiYongchuan/MyGitBlog/issues/35)--2023-12-04
 - [2023 第一学年结束的总结](https://github.com/QiYongchuan/MyGitBlog/issues/23)--2023-06-29
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
@@ -77,7 +76,7 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [在挂梯子的情况下pip install xx 失败以及git push失败的解决方案（443以及10087等）](https://github.com/QiYongchuan/MyGitBlog/issues/67)--2024-01-07
 - [git远程分支：如何将本地分支与远程分支相关联](https://github.com/QiYongchuan/MyGitBlog/issues/65)--2024-01-06
 - [算法知识补充：递归与尾递归](https://github.com/QiYongchuan/MyGitBlog/issues/57)--2023-12-31
-- [扫盲：科学上网（请不要转发分享）](https://github.com/QiYongchuan/MyGitBlog/issues/54)--2023-12-29
+- [扫盲：科学上网](https://github.com/QiYongchuan/MyGitBlog/issues/54)--2023-12-29
 - [算法设计与分析期末复习](https://github.com/QiYongchuan/MyGitBlog/issues/53)--2023-12-29
 - [Get和post的区别在哪里？](https://github.com/QiYongchuan/MyGitBlog/issues/51)--2023-12-27
 - [除了想象力，没有什么是限制](https://github.com/QiYongchuan/MyGitBlog/issues/50)--2023-12-23
