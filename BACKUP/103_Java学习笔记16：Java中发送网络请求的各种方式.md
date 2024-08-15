@@ -112,3 +112,30 @@ private static JSONObject handleResponse(CloseableHttpResponse response) throws 
 ---
 
 ![image](https://github.com/user-attachments/assets/56306e4e-d716-458f-a610-7e3603f5016f)
+
+
+---
+
+3.Java 11 引入的 HttpClient
+![image](https://github.com/user-attachments/assets/74050649-35ae-438a-8a2d-accffce0c075)
+```java
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+public class HttpClientExample {
+    public static void main(String[] args) throws Exception {
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create("https://jsonplaceholder.typicode.com/posts"))
+                .header("Content-Type", "application/json")
+                .POST(HttpRequest.BodyPublishers.ofString("{\"title\":\"foo\",\"body\":\"bar\",\"userId\":1}"))
+                .build();
+
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        System.out.println(response.body());
+    }
+}
+
+```
