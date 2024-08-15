@@ -162,3 +162,66 @@ public class RestTemplateExample {
 ---
 
 ![image](https://github.com/user-attachments/assets/a6b1254b-9e8d-4ce4-9628-d3473bc5a5bf)
+
+
+---
+
+![image](https://github.com/user-attachments/assets/7db0aaa5-48ff-4010-812a-5b288d645c47)
+
+
+---
+
+![image](https://github.com/user-attachments/assets/1a2e6cc9-00f2-41f4-93ec-d423f358c3b5)
+```java
+import retrofit2.Call;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.Body;
+import retrofit2.http.POST;
+
+import java.io.IOException;
+
+public class RetrofitExample {
+    public static void main(String[] args) throws IOException {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://jsonplaceholder.typicode.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        PostService service = retrofit.create(PostService.class);
+        Call<Post> call = service.createPost(new Post("foo", "bar", 1));
+        Post post = call.execute().body();
+        System.out.println(post);
+    }
+
+    interface PostService {
+        @POST("posts")
+        Call<Post> createPost(@Body Post post);
+    }
+
+    class Post {
+        String title;
+        String body;
+        int userId;
+
+        Post(String title, String body, int userId) {
+            this.title = title;
+            this.body = body;
+            this.userId = userId;
+        }
+
+        @Override
+        public String toString() {
+            return "Post{" +
+                    "title='" + title + '\'' +
+                    ", body='" + body + '\'' +
+                    ", userId=" + userId +
+                    '}';
+        }
+    }
+}
+
+
+---
+
+![image](https://github.com/user-attachments/assets/b2d2139f-2c08-42aa-b095-0da4a48e9c36)
