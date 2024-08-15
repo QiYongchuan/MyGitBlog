@@ -116,7 +116,7 @@ private static JSONObject handleResponse(CloseableHttpResponse response) throws 
 
 ---
 
-3.Java 11 引入的 HttpClient
+**3.Java 11 引入的 HttpClient**
 ![image](https://github.com/user-attachments/assets/74050649-35ae-438a-8a2d-accffce0c075)
 ```java
 import java.net.URI;
@@ -139,3 +139,26 @@ public class HttpClientExample {
 }
 
 ```
+
+---
+
+**4. Spring's RestTemplate**
+![image](https://github.com/user-attachments/assets/13f01ffe-6976-42c9-80c6-02ab015212d2)
+```java
+import org.springframework.web.client.RestTemplate;
+import org.springframework.http.ResponseEntity;
+
+public class RestTemplateExample {
+    public static void main(String[] args) {
+        RestTemplate restTemplate = new RestTemplate();
+        String url = "https://jsonplaceholder.typicode.com/posts";
+        String requestJson = "{\"title\":\"foo\",\"body\":\"bar\",\"userId\":1}";
+        ResponseEntity<String> response = restTemplate.postForEntity(url, requestJson, String.class);
+        System.out.println(response.getBody());
+    }
+}
+```
+
+---
+
+![image](https://github.com/user-attachments/assets/a6b1254b-9e8d-4ce4-9628-d3473bc5a5bf)
