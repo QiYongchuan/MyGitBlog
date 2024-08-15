@@ -25,11 +25,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [Java学习笔记16：Java中发送网络请求的各种方式](https://github.com/QiYongchuan/MyGitBlog/issues/103)--2024-08-15
 - [增援未来：健身与学习](https://github.com/QiYongchuan/MyGitBlog/issues/102)--2024-08-15
 - [从农业研究生退学到一名程序员：我的转码之路](https://github.com/QiYongchuan/MyGitBlog/issues/101)--2024-08-12
 - [火神的禁区与n<=4的联排插排](https://github.com/QiYongchuan/MyGitBlog/issues/100)--2024-08-11
 - [OpenApiUtil ：封装调用接口的方法](https://github.com/QiYongchuan/MyGitBlog/issues/99)--2024-07-22
-- [Java学习笔记15：数据结构](https://github.com/QiYongchuan/MyGitBlog/issues/98)--2024-07-19
 ## 总结
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
@@ -52,13 +52,15 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## notes
+- [Java学习笔记16：Java中发送网络请求的各种方式](https://github.com/QiYongchuan/MyGitBlog/issues/103)--2024-08-15
 - [OpenApiUtil ：封装调用接口的方法](https://github.com/QiYongchuan/MyGitBlog/issues/99)--2024-07-22
+- [Java学习笔记15：数据结构](https://github.com/QiYongchuan/MyGitBlog/issues/98)--2024-07-19
 - [基于自然语言和图像生成技术的英语词汇学习系统：项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/96)--2024-03-26
 - [SpringBoot学习笔记：RESTful应用接口](https://github.com/QiYongchuan/MyGitBlog/issues/92)--2024-03-19
-- [SpringBoot学习笔记：拦截器](https://github.com/QiYongchuan/MyGitBlog/issues/91)--2024-03-19
-- [Java学习笔记14：String类 ，StringBuffer以及StringBuilder](https://github.com/QiYongchuan/MyGitBlog/issues/90)--2024-03-18
 <details><summary>显示更多</summary>
 
+- [SpringBoot学习笔记：拦截器](https://github.com/QiYongchuan/MyGitBlog/issues/91)--2024-03-19
+- [Java学习笔记14：String类 ，StringBuffer以及StringBuilder](https://github.com/QiYongchuan/MyGitBlog/issues/90)--2024-03-18
 - [Java学习笔记13：包装类](https://github.com/QiYongchuan/MyGitBlog/issues/89)--2024-03-18
 - [Springboot学习笔记：@RequestMapping](https://github.com/QiYongchuan/MyGitBlog/issues/88)--2024-03-18
 - [Springboot学习笔记：@Controller、@RestController以及@RequestBody](https://github.com/QiYongchuan/MyGitBlog/issues/87)--2024-03-18
