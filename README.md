@@ -25,11 +25,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [增援未来：健身与学习](https://github.com/QiYongchuan/MyGitBlog/issues/102)--2024-08-15
 - [从农业研究生退学到一名程序员：我的转码之路](https://github.com/QiYongchuan/MyGitBlog/issues/101)--2024-08-12
 - [火神的禁区与n<=4的联排插排](https://github.com/QiYongchuan/MyGitBlog/issues/100)--2024-08-11
 - [OpenApiUtil ：封装调用接口的方法](https://github.com/QiYongchuan/MyGitBlog/issues/99)--2024-07-22
 - [Java学习笔记15：数据结构](https://github.com/QiYongchuan/MyGitBlog/issues/98)--2024-07-19
-- [海的那边是什么？  ](https://github.com/QiYongchuan/MyGitBlog/issues/97)--2024-06-03
 ## 总结
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
@@ -91,13 +91,15 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## daily
+- [增援未来：健身与学习](https://github.com/QiYongchuan/MyGitBlog/issues/102)--2024-08-15
+- [从农业研究生退学到一名程序员：我的转码之路](https://github.com/QiYongchuan/MyGitBlog/issues/101)--2024-08-12
 - [火神的禁区与n<=4的联排插排](https://github.com/QiYongchuan/MyGitBlog/issues/100)--2024-08-11
 - [第一次技术面试复盘](https://github.com/QiYongchuan/MyGitBlog/issues/85)--2024-03-07
 - [从研究生退学之后的两年](https://github.com/QiYongchuan/MyGitBlog/issues/84)--2024-02-28
-- [算法学习初体验：慢慢来，原来我也可以](https://github.com/QiYongchuan/MyGitBlog/issues/66)--2024-01-07
-- [开题答辩拿了高分，但关于未来很迷茫](https://github.com/QiYongchuan/MyGitBlog/issues/52)--2023-12-28
 <details><summary>显示更多</summary>
 
+- [算法学习初体验：慢慢来，原来我也可以](https://github.com/QiYongchuan/MyGitBlog/issues/66)--2024-01-07
+- [开题答辩拿了高分，但关于未来很迷茫](https://github.com/QiYongchuan/MyGitBlog/issues/52)--2023-12-28
 - [除了想象力，没有什么是限制](https://github.com/QiYongchuan/MyGitBlog/issues/50)--2023-12-23
 - [“既然这样，不如我们重新来过。”--考前押题复习的老师](https://github.com/QiYongchuan/MyGitBlog/issues/48)--2023-12-22
 - [只要太阳出来了，一切都会好起来的](https://github.com/QiYongchuan/MyGitBlog/issues/46)--2023-12-20
