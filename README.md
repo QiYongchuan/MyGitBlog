@@ -17,6 +17,7 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 [RSS Feed](https://raw.githubusercontent.com/QiYongchuan/MyGitBlog/master/feed.xml)
 
 ## 置顶文章
+- [从农业研究生退学到一名程序员：我的转码之路](https://github.com/QiYongchuan/MyGitBlog/issues/101)--2024-08-12
 - [从研究生退学之后的两年](https://github.com/QiYongchuan/MyGitBlog/issues/84)--2024-02-28
 - [哈佛大学cs50x-cs50-full-stack全栈项目学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/82)--2024-02-24
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
