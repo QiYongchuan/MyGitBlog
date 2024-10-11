@@ -21,6 +21,7 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [从研究生退学之后的两年](https://github.com/QiYongchuan/MyGitBlog/issues/84)--2024-02-28
 - [哈佛大学cs50x-cs50-full-stack全栈项目学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/82)--2024-02-24
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
+- [扫盲：科学上网](https://github.com/QiYongchuan/MyGitBlog/issues/54)--2023-12-29
 - [自动化博客更新部署折腾日志](https://github.com/QiYongchuan/MyGitBlog/issues/35)--2023-12-04
 - [2023 第一学年结束的总结](https://github.com/QiYongchuan/MyGitBlog/issues/23)--2023-06-29
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
