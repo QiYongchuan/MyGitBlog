@@ -27,24 +27,25 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [增量下载的时间陷阱：一次时间处理错误引发的重复下载问题](https://github.com/QiYongchuan/MyGitBlog/issues/106)--2024-10-22
 - [转码后第一份工作：那些内耗焦虑的时刻](https://github.com/QiYongchuan/MyGitBlog/issues/105)--2024-10-20
 - [跑车级大脑，但刹车失灵是一种什么体验：ADHD的困扰与天赋](https://github.com/QiYongchuan/MyGitBlog/issues/104)--2024-10-11
 - [Java学习笔记16：Java中发送网络请求的各种方式](https://github.com/QiYongchuan/MyGitBlog/issues/103)--2024-08-15
 - [增援未来：健身与学习](https://github.com/QiYongchuan/MyGitBlog/issues/102)--2024-08-15
-- [从农业研究生退学到一名程序员：我的转码之路](https://github.com/QiYongchuan/MyGitBlog/issues/101)--2024-08-12
 ## 总结
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
 - [2023 第一学年结束的总结](https://github.com/QiYongchuan/MyGitBlog/issues/23)--2023-06-29
 - [《一个帖子解决所有的英语学习问题》](https://github.com/QiYongchuan/MyGitBlog/issues/12)--2023-04-28
 ## Kill-bugs
+- [增量下载的时间陷阱：一次时间处理错误引发的重复下载问题](https://github.com/QiYongchuan/MyGitBlog/issues/106)--2024-10-22
 - [实现无限滚动遇到的坑—document.body.offsetHeight 的值一直不变？](https://github.com/QiYongchuan/MyGitBlog/issues/76)--2024-01-30
 - [在挂梯子的情况下pip install xx 失败以及git push失败的解决方案（443以及10087等）](https://github.com/QiYongchuan/MyGitBlog/issues/67)--2024-01-07
 - [GitHubPoster项目折腾记录：withings-sync 依赖下载失败到网络问题](https://github.com/QiYongchuan/MyGitBlog/issues/64)--2024-01-04
 - [issue中发帖子的图片无法显示问题](https://github.com/QiYongchuan/MyGitBlog/issues/55)--2023-12-29
-- [听了印度老哥的建议后修改权限，最终成功了！](https://github.com/QiYongchuan/MyGitBlog/issues/41)--2023-12-05
 <details><summary>显示更多</summary>
 
+- [听了印度老哥的建议后修改权限，最终成功了！](https://github.com/QiYongchuan/MyGitBlog/issues/41)--2023-12-05
 - [修改仓库的权限](https://github.com/QiYongchuan/MyGitBlog/issues/39)--2023-12-05
 - [Git创建新的分支，开发新功能](https://github.com/QiYongchuan/MyGitBlog/issues/29)--2023-07-08
 - [Python文件 xx.py如何打包成.exe格式文件，发给非程序员朋友玩](https://github.com/QiYongchuan/MyGitBlog/issues/27)--2023-07-07
@@ -54,13 +55,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## notes
+- [增量下载的时间陷阱：一次时间处理错误引发的重复下载问题](https://github.com/QiYongchuan/MyGitBlog/issues/106)--2024-10-22
 - [Java学习笔记16：Java中发送网络请求的各种方式](https://github.com/QiYongchuan/MyGitBlog/issues/103)--2024-08-15
 - [OpenApiUtil ：封装调用接口的方法](https://github.com/QiYongchuan/MyGitBlog/issues/99)--2024-07-22
 - [Java学习笔记15：数据结构](https://github.com/QiYongchuan/MyGitBlog/issues/98)--2024-07-19
 - [基于自然语言和图像生成技术的英语词汇学习系统：项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/96)--2024-03-26
-- [SpringBoot学习笔记：RESTful应用接口](https://github.com/QiYongchuan/MyGitBlog/issues/92)--2024-03-19
 <details><summary>显示更多</summary>
 
+- [SpringBoot学习笔记：RESTful应用接口](https://github.com/QiYongchuan/MyGitBlog/issues/92)--2024-03-19
 - [SpringBoot学习笔记：拦截器](https://github.com/QiYongchuan/MyGitBlog/issues/91)--2024-03-19
 - [Java学习笔记14：String类 ，StringBuffer以及StringBuilder](https://github.com/QiYongchuan/MyGitBlog/issues/90)--2024-03-18
 - [Java学习笔记13：包装类](https://github.com/QiYongchuan/MyGitBlog/issues/89)--2024-03-18
