@@ -27,11 +27,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [从985研究生退学重回二本读计算机的这几年--2024年终总结](https://github.com/QiYongchuan/MyGitBlog/issues/110)--2024-12-22
 - [生活是一场持续不断的战斗](https://github.com/QiYongchuan/MyGitBlog/issues/109)--2024-11-17
 - [Cursor小白使用教程：从安装到开发浏览器插件](https://github.com/QiYongchuan/MyGitBlog/issues/108)--2024-10-26
 - [Cursor折腾记录：开发趣味英语插件](https://github.com/QiYongchuan/MyGitBlog/issues/107)--2024-10-24
 - [增量下载的时间陷阱：一次时间处理错误引发的重复下载问题](https://github.com/QiYongchuan/MyGitBlog/issues/106)--2024-10-22
-- [转码后第一份工作：那些内耗焦虑的时刻](https://github.com/QiYongchuan/MyGitBlog/issues/105)--2024-10-20
 ## 总结
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
@@ -55,13 +55,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## notes
+- [从985研究生退学重回二本读计算机的这几年--2024年终总结](https://github.com/QiYongchuan/MyGitBlog/issues/110)--2024-12-22
 - [生活是一场持续不断的战斗](https://github.com/QiYongchuan/MyGitBlog/issues/109)--2024-11-17
 - [增量下载的时间陷阱：一次时间处理错误引发的重复下载问题](https://github.com/QiYongchuan/MyGitBlog/issues/106)--2024-10-22
 - [Java学习笔记16：Java中发送网络请求的各种方式](https://github.com/QiYongchuan/MyGitBlog/issues/103)--2024-08-15
 - [OpenApiUtil ：封装调用接口的方法](https://github.com/QiYongchuan/MyGitBlog/issues/99)--2024-07-22
-- [Java学习笔记15：数据结构](https://github.com/QiYongchuan/MyGitBlog/issues/98)--2024-07-19
 <details><summary>显示更多</summary>
 
+- [Java学习笔记15：数据结构](https://github.com/QiYongchuan/MyGitBlog/issues/98)--2024-07-19
 - [基于自然语言和图像生成技术的英语词汇学习系统：项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/96)--2024-03-26
 - [SpringBoot学习笔记：RESTful应用接口](https://github.com/QiYongchuan/MyGitBlog/issues/92)--2024-03-19
 - [SpringBoot学习笔记：拦截器](https://github.com/QiYongchuan/MyGitBlog/issues/91)--2024-03-19
