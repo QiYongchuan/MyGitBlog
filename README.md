@@ -17,6 +17,7 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 [RSS Feed](https://raw.githubusercontent.com/QiYongchuan/MyGitBlog/master/feed.xml)
 
 ## 置顶文章
+- [52weeks](https://github.com/QiYongchuan/MyGitBlog/issues/113)--2025-01-02
 - [从985研究生退学重回二本读计算机的这几年--2024年终总结](https://github.com/QiYongchuan/MyGitBlog/issues/110)--2024-12-22
 - [从农业研究生退学到一名程序员：我的转码之路](https://github.com/QiYongchuan/MyGitBlog/issues/101)--2024-08-12
 - [从研究生退学之后的两年](https://github.com/QiYongchuan/MyGitBlog/issues/84)--2024-02-28
@@ -57,13 +58,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## notes
+- [52weeks](https://github.com/QiYongchuan/MyGitBlog/issues/113)--2025-01-02
 - [研究生退学是一种什么体验？](https://github.com/QiYongchuan/MyGitBlog/issues/111)--2024-12-25
 - [从985研究生退学重回二本读计算机的这几年--2024年终总结](https://github.com/QiYongchuan/MyGitBlog/issues/110)--2024-12-22
 - [生活是一场持续不断的战斗](https://github.com/QiYongchuan/MyGitBlog/issues/109)--2024-11-17
 - [增量下载的时间陷阱：一次时间处理错误引发的重复下载问题](https://github.com/QiYongchuan/MyGitBlog/issues/106)--2024-10-22
-- [Java学习笔记16：Java中发送网络请求的各种方式](https://github.com/QiYongchuan/MyGitBlog/issues/103)--2024-08-15
 <details><summary>显示更多</summary>
 
+- [Java学习笔记16：Java中发送网络请求的各种方式](https://github.com/QiYongchuan/MyGitBlog/issues/103)--2024-08-15
 - [OpenApiUtil ：封装调用接口的方法](https://github.com/QiYongchuan/MyGitBlog/issues/99)--2024-07-22
 - [Java学习笔记15：数据结构](https://github.com/QiYongchuan/MyGitBlog/issues/98)--2024-07-19
 - [基于自然语言和图像生成技术的英语词汇学习系统：项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/96)--2024-03-26
