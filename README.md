@@ -28,11 +28,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [52weeks](https://github.com/QiYongchuan/MyGitBlog/issues/113)--2025-01-02
 - [研究生退学是一种什么体验？](https://github.com/QiYongchuan/MyGitBlog/issues/111)--2024-12-25
 - [从985研究生退学重回二本读计算机的这几年--2024年终总结](https://github.com/QiYongchuan/MyGitBlog/issues/110)--2024-12-22
 - [生活是一场持续不断的战斗](https://github.com/QiYongchuan/MyGitBlog/issues/109)--2024-11-17
 - [Cursor小白使用教程：从安装到开发浏览器插件](https://github.com/QiYongchuan/MyGitBlog/issues/108)--2024-10-26
-- [Cursor折腾记录：开发趣味英语插件](https://github.com/QiYongchuan/MyGitBlog/issues/107)--2024-10-24
 ## 总结
 - [研究生退学是一种什么体验？](https://github.com/QiYongchuan/MyGitBlog/issues/111)--2024-12-25
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
