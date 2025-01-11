@@ -58,13 +58,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## notes
+- [如何实现LLM的记忆功能，以及如何在对话中触发记忆存储呢？](https://github.com/QiYongchuan/MyGitBlog/issues/114)--2025-01-11
 - [52weeks](https://github.com/QiYongchuan/MyGitBlog/issues/113)--2025-01-02
 - [研究生退学是一种什么体验？](https://github.com/QiYongchuan/MyGitBlog/issues/111)--2024-12-25
 - [从985研究生退学重回二本读计算机的这几年--2024年终总结](https://github.com/QiYongchuan/MyGitBlog/issues/110)--2024-12-22
 - [生活是一场持续不断的战斗](https://github.com/QiYongchuan/MyGitBlog/issues/109)--2024-11-17
-- [增量下载的时间陷阱：一次时间处理错误引发的重复下载问题](https://github.com/QiYongchuan/MyGitBlog/issues/106)--2024-10-22
 <details><summary>显示更多</summary>
 
+- [增量下载的时间陷阱：一次时间处理错误引发的重复下载问题](https://github.com/QiYongchuan/MyGitBlog/issues/106)--2024-10-22
 - [Java学习笔记16：Java中发送网络请求的各种方式](https://github.com/QiYongchuan/MyGitBlog/issues/103)--2024-08-15
 - [OpenApiUtil ：封装调用接口的方法](https://github.com/QiYongchuan/MyGitBlog/issues/99)--2024-07-22
 - [Java学习笔记15：数据结构](https://github.com/QiYongchuan/MyGitBlog/issues/98)--2024-07-19
