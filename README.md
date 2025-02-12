@@ -29,11 +29,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [ADHD失去时间感知以及理性思考](https://github.com/QiYongchuan/MyGitBlog/issues/116)--2025-02-12
 - [找bug就像以前抓虫子，不一定会遇到什么稀奇古怪的虫子。](https://github.com/QiYongchuan/MyGitBlog/issues/115)--2025-01-15
 - [如何实现LLM的记忆功能，以及如何在对话中触发记忆存储呢？](https://github.com/QiYongchuan/MyGitBlog/issues/114)--2025-01-11
 - [52weeks](https://github.com/QiYongchuan/MyGitBlog/issues/113)--2025-01-02
 - [研究生退学是一种什么体验？](https://github.com/QiYongchuan/MyGitBlog/issues/111)--2024-12-25
-- [从985研究生退学重回二本读计算机的这几年--2024年终总结](https://github.com/QiYongchuan/MyGitBlog/issues/110)--2024-12-22
 ## 总结
 - [研究生退学是一种什么体验？](https://github.com/QiYongchuan/MyGitBlog/issues/111)--2024-12-25
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
@@ -105,13 +105,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 </details>
 
 ## daily
+- [ADHD失去时间感知以及理性思考](https://github.com/QiYongchuan/MyGitBlog/issues/116)--2025-02-12
 - [找bug就像以前抓虫子，不一定会遇到什么稀奇古怪的虫子。](https://github.com/QiYongchuan/MyGitBlog/issues/115)--2025-01-15
 - [转码后第一份工作：那些内耗焦虑的时刻](https://github.com/QiYongchuan/MyGitBlog/issues/105)--2024-10-20
 - [跑车级大脑，但刹车失灵是一种什么体验：ADHD的困扰与天赋](https://github.com/QiYongchuan/MyGitBlog/issues/104)--2024-10-11
 - [增援未来：健身与学习](https://github.com/QiYongchuan/MyGitBlog/issues/102)--2024-08-15
-- [从农业研究生退学到一名程序员：我的转码之路](https://github.com/QiYongchuan/MyGitBlog/issues/101)--2024-08-12
 <details><summary>显示更多</summary>
 
+- [从农业研究生退学到一名程序员：我的转码之路](https://github.com/QiYongchuan/MyGitBlog/issues/101)--2024-08-12
 - [火神的禁区与n<=4的联排插排](https://github.com/QiYongchuan/MyGitBlog/issues/100)--2024-08-11
 - [第一次技术面试复盘](https://github.com/QiYongchuan/MyGitBlog/issues/85)--2024-03-07
 - [从研究生退学之后的两年](https://github.com/QiYongchuan/MyGitBlog/issues/84)--2024-02-28
