@@ -39,3 +39,10 @@
 
 ![e845ae307c6c18b74c1d0627ca8feaa](https://github.com/user-attachments/assets/77f6d37f-776b-4ec6-8f33-d799de1cdc36)
 
+
+
+---
+
+> 青衫Aspie的公众号里有不少adhd的案例，对你应该会有帮助的💪
+
+我回来去看了，确实！
