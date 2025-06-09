@@ -107,13 +107,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [JSP学习笔记](https://github.com/QiYongchuan/MyGitBlog/issues/2)--2023-04-21
 </details>
 
+- [ADHD自述](https://github.com/QiYongchuan/MyGitBlog/issues/125)--2025-06-07
 - [研究生退学转码之路：招转培、网课、鱼皮社区以及二学位  （二）](https://github.com/QiYongchuan/MyGitBlog/issues/124)--2025-05-12
 - [结束远程办公，治好了我的精神内耗](https://github.com/QiYongchuan/MyGitBlog/issues/123)--2025-05-08
 - [chatgpt眼中的我](https://github.com/QiYongchuan/MyGitBlog/issues/122)--2025-04-30
 - [我猜，他上次体检也是在婚检，那时他也26岁，我如今的年纪。](https://github.com/QiYongchuan/MyGitBlog/issues/121)--2025-04-27
-- [ADHDer/infp:尊重你的天马行空的想法，以及现在就开始创造](https://github.com/QiYongchuan/MyGitBlog/issues/120)--2025-04-18
 <details><summary>显示更多</summary>
 
+- [ADHDer/infp:尊重你的天马行空的想法，以及现在就开始创造](https://github.com/QiYongchuan/MyGitBlog/issues/120)--2025-04-18
 - [ADHD时间感缺失、失眠症、记录与对抗遗忘](https://github.com/QiYongchuan/MyGitBlog/issues/119)--2025-04-17
 - [成人注意力不足过动症（ADHD)的诊断与学术进展](https://github.com/QiYongchuan/MyGitBlog/issues/118)--2025-03-23
 - [朋友，真正的生活究竟什么时候开始的呢？](https://github.com/QiYongchuan/MyGitBlog/issues/117)--2025-03-22
@@ -148,13 +149,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 
 ## 收藏
 - [有趣的文章](https://github.com/QiYongchuan/MyGitBlog/issues/71)--2024-01-11
+- [ADHD自述](https://github.com/QiYongchuan/MyGitBlog/issues/125)--2025-06-07
 - [ADHDer/infp:尊重你的天马行空的想法，以及现在就开始创造](https://github.com/QiYongchuan/MyGitBlog/issues/120)--2025-04-18
 - [ADHD时间感缺失、失眠症、记录与对抗遗忘](https://github.com/QiYongchuan/MyGitBlog/issues/119)--2025-04-17
 - [成人注意力不足过动症（ADHD)的诊断与学术进展](https://github.com/QiYongchuan/MyGitBlog/issues/118)--2025-03-23
 - [朋友，真正的生活究竟什么时候开始的呢？](https://github.com/QiYongchuan/MyGitBlog/issues/117)--2025-03-22
-- [研究生退学是一种什么体验？](https://github.com/QiYongchuan/MyGitBlog/issues/111)--2024-12-25
 <details><summary>显示更多</summary>
 
+- [研究生退学是一种什么体验？](https://github.com/QiYongchuan/MyGitBlog/issues/111)--2024-12-25
 - [2024一些完成的小事情](https://github.com/QiYongchuan/MyGitBlog/issues/72)--2024-01-14
 - [GPTs的学习记录](https://github.com/QiYongchuan/MyGitBlog/issues/69)--2024-01-08
 - [2024周记](https://github.com/QiYongchuan/MyGitBlog/issues/59)--2023-12-31
