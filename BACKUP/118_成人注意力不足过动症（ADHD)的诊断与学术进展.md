@@ -1,5 +1,7 @@
 # [成人注意力不足过动症（ADHD)的诊断与学术进展](https://github.com/QiYongchuan/MyGitBlog/issues/118)
 
+> 原视频链接：https://www.bilibili.com/video/BV1Xi421f7wC/
+
 ADHD 与以下相关：
 早产
 出生时体重低
