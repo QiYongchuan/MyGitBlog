@@ -30,11 +30,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [【ADHD】痛苦的副作用与决定停药](https://github.com/QiYongchuan/MyGitBlog/issues/126)--2025-06-22
 - [我的ADHD发育史：从赛博确诊到线下确诊了](https://github.com/QiYongchuan/MyGitBlog/issues/125)--2025-06-07
 - [研究生退学转码之路：招转培、网课、鱼皮社区以及二学位  （二）](https://github.com/QiYongchuan/MyGitBlog/issues/124)--2025-05-12
 - [结束远程办公，治好了我的精神内耗](https://github.com/QiYongchuan/MyGitBlog/issues/123)--2025-05-08
 - [chatgpt眼中的我](https://github.com/QiYongchuan/MyGitBlog/issues/122)--2025-04-30
-- [我猜，他上次体检也是在婚检，那时他也26岁，我如今的年纪。](https://github.com/QiYongchuan/MyGitBlog/issues/121)--2025-04-27
 - [研究生退学转码之路：招转培、网课、鱼皮社区以及二学位  （二）](https://github.com/QiYongchuan/MyGitBlog/issues/124)--2025-05-12
 - [研究生退学是一种什么体验？](https://github.com/QiYongchuan/MyGitBlog/issues/111)--2024-12-25
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
