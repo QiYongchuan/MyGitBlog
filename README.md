@@ -17,6 +17,7 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 [RSS Feed](https://raw.githubusercontent.com/QiYongchuan/MyGitBlog/master/feed.xml)
 
 ## 置顶文章
+- [科学上网：如何在没有梯子的时候，续费/订阅梯子呢？](https://github.com/QiYongchuan/MyGitBlog/issues/128)--2025-07-06
 - [研究生退学转码之路：招转培、网课、鱼皮社区以及二学位  （二）](https://github.com/QiYongchuan/MyGitBlog/issues/124)--2025-05-12
 - [52weeks](https://github.com/QiYongchuan/MyGitBlog/issues/113)--2025-01-02
 - [从985研究生退学重回二本读计算机的这几年--2024年终总结](https://github.com/QiYongchuan/MyGitBlog/issues/110)--2024-12-22
@@ -61,13 +62,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [Git push时遇到10054问题](https://github.com/QiYongchuan/MyGitBlog/issues/24)--2023-06-30
 </details>
 
+- [科学上网：如何在没有梯子的时候，续费/订阅梯子呢？](https://github.com/QiYongchuan/MyGitBlog/issues/128)--2025-07-06
 - [【ADHD】为何有的药物有效，有的药物无效？](https://github.com/QiYongchuan/MyGitBlog/issues/127)--2025-06-22
 - [如何实现LLM的记忆功能，以及如何在对话中触发记忆存储呢？](https://github.com/QiYongchuan/MyGitBlog/issues/114)--2025-01-11
 - [52weeks](https://github.com/QiYongchuan/MyGitBlog/issues/113)--2025-01-02
 - [研究生退学是一种什么体验？](https://github.com/QiYongchuan/MyGitBlog/issues/111)--2024-12-25
-- [从985研究生退学重回二本读计算机的这几年--2024年终总结](https://github.com/QiYongchuan/MyGitBlog/issues/110)--2024-12-22
 <details><summary>显示更多</summary>
 
+- [从985研究生退学重回二本读计算机的这几年--2024年终总结](https://github.com/QiYongchuan/MyGitBlog/issues/110)--2024-12-22
 - [生活是一场持续不断的战斗](https://github.com/QiYongchuan/MyGitBlog/issues/109)--2024-11-17
 - [增量下载的时间陷阱：一次时间处理错误引发的重复下载问题](https://github.com/QiYongchuan/MyGitBlog/issues/106)--2024-10-22
 - [Java学习笔记16：Java中发送网络请求的各种方式](https://github.com/QiYongchuan/MyGitBlog/issues/103)--2024-08-15
@@ -108,13 +110,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [JSP学习笔记](https://github.com/QiYongchuan/MyGitBlog/issues/2)--2023-04-21
 </details>
 
+- [科学上网：如何在没有梯子的时候，续费/订阅梯子呢？](https://github.com/QiYongchuan/MyGitBlog/issues/128)--2025-07-06
 - [【ADHD】为何有的药物有效，有的药物无效？](https://github.com/QiYongchuan/MyGitBlog/issues/127)--2025-06-22
 - [【ADHD】痛苦的副作用与决定停药](https://github.com/QiYongchuan/MyGitBlog/issues/126)--2025-06-22
 - [我的ADHD发育史：从赛博确诊到线下确诊了](https://github.com/QiYongchuan/MyGitBlog/issues/125)--2025-06-07
 - [研究生退学转码之路：招转培、网课、鱼皮社区以及二学位  （二）](https://github.com/QiYongchuan/MyGitBlog/issues/124)--2025-05-12
-- [结束远程办公，治好了我的精神内耗](https://github.com/QiYongchuan/MyGitBlog/issues/123)--2025-05-08
 <details><summary>显示更多</summary>
 
+- [结束远程办公，治好了我的精神内耗](https://github.com/QiYongchuan/MyGitBlog/issues/123)--2025-05-08
 - [chatgpt眼中的我](https://github.com/QiYongchuan/MyGitBlog/issues/122)--2025-04-30
 - [我猜，他上次体检也是在婚检，那时他也26岁，我如今的年纪。](https://github.com/QiYongchuan/MyGitBlog/issues/121)--2025-04-27
 - [ADHDer/infp:尊重你的天马行空的想法，以及现在就开始创造](https://github.com/QiYongchuan/MyGitBlog/issues/120)--2025-04-18
