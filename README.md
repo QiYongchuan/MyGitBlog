@@ -31,11 +31,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [近况：如此生活三十年](https://github.com/QiYongchuan/MyGitBlog/issues/131)--2025-10-16
 - [婚礼纪：混乱秩序下新的开始](https://github.com/QiYongchuan/MyGitBlog/issues/130)--2025-10-02
 - [INFP极度内耗型人格，如何处理工作上的困难，避免焦虑内耗？](https://github.com/QiYongchuan/MyGitBlog/issues/129)--2025-07-10
 - [科学上网：如何在没有梯子的时候，续费/订阅梯子呢？](https://github.com/QiYongchuan/MyGitBlog/issues/128)--2025-07-06
 - [【ADHD】为何有的药物有效，有的药物无效？](https://github.com/QiYongchuan/MyGitBlog/issues/127)--2025-06-22
-- [【ADHD】痛苦的副作用与决定停药](https://github.com/QiYongchuan/MyGitBlog/issues/126)--2025-06-22
 - [研究生退学转码之路：招转培、网课、鱼皮社区以及二学位  （二）](https://github.com/QiYongchuan/MyGitBlog/issues/124)--2025-05-12
 - [研究生退学是一种什么体验？](https://github.com/QiYongchuan/MyGitBlog/issues/111)--2024-12-25
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
