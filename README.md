@@ -31,18 +31,19 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [你可以做任何事，不觉得这一点就很疯狂吗？--基于笑容检测的哈基米大战黄瓜条项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/135)--2025-10-28
 - [Nerver-forget-记忆体](https://github.com/QiYongchuan/MyGitBlog/issues/134)--2025-10-24
 - [人终其一生，都在寻找那盏属于自己的灯火吧](https://github.com/QiYongchuan/MyGitBlog/issues/133)--2025-10-24
 - [工作一年多之后，我终于买了人生第一辆公路车。](https://github.com/QiYongchuan/MyGitBlog/issues/132)--2025-10-22
 - [近况：如此生活三十年](https://github.com/QiYongchuan/MyGitBlog/issues/131)--2025-10-16
-- [婚礼纪：混乱秩序下新的开始](https://github.com/QiYongchuan/MyGitBlog/issues/130)--2025-10-02
+- [你可以做任何事，不觉得这一点就很疯狂吗？--基于笑容检测的哈基米大战黄瓜条项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/135)--2025-10-28
 - [研究生退学转码之路：招转培、网课、鱼皮社区以及二学位  （二）](https://github.com/QiYongchuan/MyGitBlog/issues/124)--2025-05-12
 - [研究生退学是一种什么体验？](https://github.com/QiYongchuan/MyGitBlog/issues/111)--2024-12-25
 - [2023年年度总结](https://github.com/QiYongchuan/MyGitBlog/issues/58)--2023-12-31
 - [2023读书总结：《丰乳肥臀》与《百年孤独》，关于魔幻现实主义的思考](https://github.com/QiYongchuan/MyGitBlog/issues/56)--2023-12-29
-- [2023 第一学年结束的总结](https://github.com/QiYongchuan/MyGitBlog/issues/23)--2023-06-29
 <details><summary>显示更多</summary>
 
+- [2023 第一学年结束的总结](https://github.com/QiYongchuan/MyGitBlog/issues/23)--2023-06-29
 - [《一个帖子解决所有的英语学习问题》](https://github.com/QiYongchuan/MyGitBlog/issues/12)--2023-04-28
 </details>
 
@@ -62,13 +63,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [Git push时遇到10054问题](https://github.com/QiYongchuan/MyGitBlog/issues/24)--2023-06-30
 </details>
 
+- [你可以做任何事，不觉得这一点就很疯狂吗？--基于笑容检测的哈基米大战黄瓜条项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/135)--2025-10-28
 - [人终其一生，都在寻找那盏属于自己的灯火吧](https://github.com/QiYongchuan/MyGitBlog/issues/133)--2025-10-24
 - [科学上网：如何在没有梯子的时候，续费/订阅梯子呢？](https://github.com/QiYongchuan/MyGitBlog/issues/128)--2025-07-06
 - [【ADHD】为何有的药物有效，有的药物无效？](https://github.com/QiYongchuan/MyGitBlog/issues/127)--2025-06-22
 - [如何实现LLM的记忆功能，以及如何在对话中触发记忆存储呢？](https://github.com/QiYongchuan/MyGitBlog/issues/114)--2025-01-11
-- [52weeks](https://github.com/QiYongchuan/MyGitBlog/issues/113)--2025-01-02
 <details><summary>显示更多</summary>
 
+- [52weeks](https://github.com/QiYongchuan/MyGitBlog/issues/113)--2025-01-02
 - [研究生退学是一种什么体验？](https://github.com/QiYongchuan/MyGitBlog/issues/111)--2024-12-25
 - [从985研究生退学重回二本读计算机的这几年--2024年终总结](https://github.com/QiYongchuan/MyGitBlog/issues/110)--2024-12-22
 - [生活是一场持续不断的战斗](https://github.com/QiYongchuan/MyGitBlog/issues/109)--2024-11-17
@@ -111,13 +113,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [JSP学习笔记](https://github.com/QiYongchuan/MyGitBlog/issues/2)--2023-04-21
 </details>
 
+- [你可以做任何事，不觉得这一点就很疯狂吗？--基于笑容检测的哈基米大战黄瓜条项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/135)--2025-10-28
 - [人终其一生，都在寻找那盏属于自己的灯火吧](https://github.com/QiYongchuan/MyGitBlog/issues/133)--2025-10-24
 - [工作一年多之后，我终于买了人生第一辆公路车。](https://github.com/QiYongchuan/MyGitBlog/issues/132)--2025-10-22
 - [近况：如此生活三十年](https://github.com/QiYongchuan/MyGitBlog/issues/131)--2025-10-16
 - [INFP极度内耗型人格，如何处理工作上的困难，避免焦虑内耗？](https://github.com/QiYongchuan/MyGitBlog/issues/129)--2025-07-10
-- [科学上网：如何在没有梯子的时候，续费/订阅梯子呢？](https://github.com/QiYongchuan/MyGitBlog/issues/128)--2025-07-06
 <details><summary>显示更多</summary>
 
+- [科学上网：如何在没有梯子的时候，续费/订阅梯子呢？](https://github.com/QiYongchuan/MyGitBlog/issues/128)--2025-07-06
 - [【ADHD】为何有的药物有效，有的药物无效？](https://github.com/QiYongchuan/MyGitBlog/issues/127)--2025-06-22
 - [【ADHD】痛苦的副作用与决定停药](https://github.com/QiYongchuan/MyGitBlog/issues/126)--2025-06-22
 - [我的ADHD发育史：从赛博确诊到线下确诊了](https://github.com/QiYongchuan/MyGitBlog/issues/125)--2025-06-07
@@ -160,13 +163,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 
 ## 收藏
 - [有趣的文章](https://github.com/QiYongchuan/MyGitBlog/issues/71)--2024-01-11
+- [你可以做任何事，不觉得这一点就很疯狂吗？--基于笑容检测的哈基米大战黄瓜条项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/135)--2025-10-28
 - [工作一年多之后，我终于买了人生第一辆公路车。](https://github.com/QiYongchuan/MyGitBlog/issues/132)--2025-10-22
 - [近况：如此生活三十年](https://github.com/QiYongchuan/MyGitBlog/issues/131)--2025-10-16
 - [我的ADHD发育史：从赛博确诊到线下确诊了](https://github.com/QiYongchuan/MyGitBlog/issues/125)--2025-06-07
 - [ADHDer/infp:尊重你的天马行空的想法，以及现在就开始创造](https://github.com/QiYongchuan/MyGitBlog/issues/120)--2025-04-18
-- [ADHD时间感缺失、失眠症、记录与对抗遗忘](https://github.com/QiYongchuan/MyGitBlog/issues/119)--2025-04-17
 <details><summary>显示更多</summary>
 
+- [ADHD时间感缺失、失眠症、记录与对抗遗忘](https://github.com/QiYongchuan/MyGitBlog/issues/119)--2025-04-17
 - [成人注意力不足过动症（ADHD)的诊断与学术进展](https://github.com/QiYongchuan/MyGitBlog/issues/118)--2025-03-23
 - [朋友，真正的生活究竟什么时候开始的呢？](https://github.com/QiYongchuan/MyGitBlog/issues/117)--2025-03-22
 - [研究生退学是一种什么体验？](https://github.com/QiYongchuan/MyGitBlog/issues/111)--2024-12-25
