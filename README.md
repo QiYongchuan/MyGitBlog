@@ -17,6 +17,7 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 [RSS Feed](https://raw.githubusercontent.com/QiYongchuan/MyGitBlog/master/feed.xml)
 
 ## 置顶文章
+- [对抗遗忘与混乱：一个ADHD程序员的记忆实验](https://github.com/QiYongchuan/MyGitBlog/issues/138)--2025-10-29
 - [科学上网：如何在没有梯子的时候，续费/订阅梯子呢？](https://github.com/QiYongchuan/MyGitBlog/issues/128)--2025-07-06
 - [研究生退学转码之路：招转培、网课、鱼皮社区以及二学位  （二）](https://github.com/QiYongchuan/MyGitBlog/issues/124)--2025-05-12
 - [52weeks](https://github.com/QiYongchuan/MyGitBlog/issues/113)--2025-01-02
