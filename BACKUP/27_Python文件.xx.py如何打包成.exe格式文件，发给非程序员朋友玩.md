@@ -71,3 +71,10 @@ pip install chardet charset_normalizer
 
 
 
+
+
+---
+
+> 但是命令行编码我也有问题可以的话务必填坑
+
+编码的问题你解决了吗？ 我今天刚看到你的留言
