@@ -33,11 +33,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [当生化机器遇见ADHD：一个程序员读赵纯想的多巴胺实验](https://github.com/QiYongchuan/MyGitBlog/issues/143)--2026-01-22
 - [2025年度总结，从程序员到超级个体，我的AI时代求生记](https://github.com/QiYongchuan/MyGitBlog/issues/142)--2025-12-31
 - [纯小白无脑教程:如何将梯子绑定住宅静态IP,降低节点风险度](https://github.com/QiYongchuan/MyGitBlog/issues/141)--2025-12-04
 - [X(Twitter) 推文自动备份到 Notion + 飞书 - 完整开发文档](https://github.com/QiYongchuan/MyGitBlog/issues/140)--2025-11-10
 - [Dolores项目详解：中国开发者的《her》实现案例](https://github.com/QiYongchuan/MyGitBlog/issues/139)--2025-10-31
-- [对抗遗忘与混乱：一个ADHD程序员的记忆实验](https://github.com/QiYongchuan/MyGitBlog/issues/138)--2025-10-29
 - [2025年度总结，从程序员到超级个体，我的AI时代求生记](https://github.com/QiYongchuan/MyGitBlog/issues/142)--2025-12-31
 - [你可以做任何事，不觉得这一点就很疯狂吗？--基于笑容检测的哈基米大战黄瓜条项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/135)--2025-10-28
 - [研究生退学转码之路：招转培、网课、鱼皮社区以及二学位  （二）](https://github.com/QiYongchuan/MyGitBlog/issues/124)--2025-05-12
@@ -122,13 +122,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [JSP学习笔记](https://github.com/QiYongchuan/MyGitBlog/issues/2)--2023-04-21
 </details>
 
+- [当生化机器遇见ADHD：一个程序员读赵纯想的多巴胺实验](https://github.com/QiYongchuan/MyGitBlog/issues/143)--2026-01-22
 - [2025年度总结，从程序员到超级个体，我的AI时代求生记](https://github.com/QiYongchuan/MyGitBlog/issues/142)--2025-12-31
 - [Dolores项目详解：中国开发者的《her》实现案例](https://github.com/QiYongchuan/MyGitBlog/issues/139)--2025-10-31
 - [对抗遗忘与混乱：一个ADHD程序员的记忆实验](https://github.com/QiYongchuan/MyGitBlog/issues/138)--2025-10-29
 - [ADHD低成就感的原因：工作记忆短以及分心](https://github.com/QiYongchuan/MyGitBlog/issues/137)--2025-10-29
-- [你可以做任何事，不觉得这一点就很疯狂吗？--基于笑容检测的哈基米大战黄瓜条项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/135)--2025-10-28
 <details><summary>显示更多</summary>
 
+- [你可以做任何事，不觉得这一点就很疯狂吗？--基于笑容检测的哈基米大战黄瓜条项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/135)--2025-10-28
 - [人终其一生，都在寻找那盏属于自己的灯火吧](https://github.com/QiYongchuan/MyGitBlog/issues/133)--2025-10-24
 - [工作一年多之后，我终于买了人生第一辆公路车。](https://github.com/QiYongchuan/MyGitBlog/issues/132)--2025-10-22
 - [近况：如此生活三十年](https://github.com/QiYongchuan/MyGitBlog/issues/131)--2025-10-16
