@@ -33,11 +33,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [故地重游，熟悉又陌生的一切](https://github.com/QiYongchuan/MyGitBlog/issues/144)--2026-02-03
 - [当生化机器遇见ADHD：一个程序员读赵纯想的多巴胺实验](https://github.com/QiYongchuan/MyGitBlog/issues/143)--2026-01-22
 - [2025年度总结，从程序员到超级个体，我的AI时代求生记](https://github.com/QiYongchuan/MyGitBlog/issues/142)--2025-12-31
 - [纯小白无脑教程:如何将梯子绑定住宅静态IP,降低节点风险度](https://github.com/QiYongchuan/MyGitBlog/issues/141)--2025-12-04
 - [X(Twitter) 推文自动备份到 Notion + 飞书 - 完整开发文档](https://github.com/QiYongchuan/MyGitBlog/issues/140)--2025-11-10
-- [Dolores项目详解：中国开发者的《her》实现案例](https://github.com/QiYongchuan/MyGitBlog/issues/139)--2025-10-31
 - [2025年度总结，从程序员到超级个体，我的AI时代求生记](https://github.com/QiYongchuan/MyGitBlog/issues/142)--2025-12-31
 - [你可以做任何事，不觉得这一点就很疯狂吗？--基于笑容检测的哈基米大战黄瓜条项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/135)--2025-10-28
 - [研究生退学转码之路：招转培、网课、鱼皮社区以及二学位  （二）](https://github.com/QiYongchuan/MyGitBlog/issues/124)--2025-05-12
