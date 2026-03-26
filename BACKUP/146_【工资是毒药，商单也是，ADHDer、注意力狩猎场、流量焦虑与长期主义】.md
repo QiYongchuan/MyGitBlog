@@ -79,3 +79,26 @@
 内容了，真人手工表达在今天显得尤为珍贵。
 
 以及最重要的是真实。
+
+
+---
+
+bilibili 不太了解呢，说的还是x上的ai博主
+
+
+
+---原始邮件---
+发件人: "𝓒𝓱𝓲𝓲 ***@***.***&gt;
+发送时间: 2026年3月26日(周四) 中午1:56
+收件人: ***@***.***&gt;;
+抄送: ***@***.******@***.***&gt;;
+主题: Re: [QiYongchuan/MyGitBlog] 【工资是毒药，商单也是，ADHDer、注意力狩猎场、流量焦虑与长期主义】 (Issue #146)
+
+
+chiimagnus left a comment (QiYongchuan/MyGitBlog#146)
+ 
+你说的这个更像是bilibili up主的样子？
+ 
+—
+Reply to this email directly, view it on GitHub, or unsubscribe.
+You are receiving this because you authored the thread.Message ID: ***@***.***&gt;
