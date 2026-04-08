@@ -247,3 +247,9 @@ People die, words alive. 文字可以对抗生化系统的遗忘。
 
 我不知道谁会赢，但我会一直记录下去。
 
+
+
+---
+
+原文：
+https://x.com/chunxiangai/status/2013854869128675368
