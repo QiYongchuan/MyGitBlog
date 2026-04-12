@@ -33,11 +33,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [如何从想要到做到，之间的自动化系统](https://github.com/QiYongchuan/MyGitBlog/issues/152)--2026-04-12
 - [从MBTI到SBTI：当人格测试成为时代情绪的泄压阀](https://github.com/QiYongchuan/MyGitBlog/issues/151)--2026-04-09
 - [一些随机的想法](https://github.com/QiYongchuan/MyGitBlog/issues/150)--2026-04-08
 - [Tailscale + SSH 多设备并网完整教程（详细版本）](https://github.com/QiYongchuan/MyGitBlog/issues/148)--2026-03-27
 - [Tailscale + SSH 多设备并网完整教程](https://github.com/QiYongchuan/MyGitBlog/issues/147)--2026-03-26
-- [【工资是毒药，商单也是，ADHDer、注意力狩猎场、流量焦虑与长期主义】](https://github.com/QiYongchuan/MyGitBlog/issues/146)--2026-03-05
 - [2025年度总结，从程序员到超级个体，我的AI时代求生记](https://github.com/QiYongchuan/MyGitBlog/issues/142)--2025-12-31
 - [你可以做任何事，不觉得这一点就很疯狂吗？--基于笑容检测的哈基米大战黄瓜条项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/135)--2025-10-28
 - [研究生退学转码之路：招转培、网课、鱼皮社区以及二学位  （二）](https://github.com/QiYongchuan/MyGitBlog/issues/124)--2025-05-12
@@ -182,7 +182,7 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 </details>
 
-## thought
+- [如何从想要到做到，之间的自动化系统](https://github.com/QiYongchuan/MyGitBlog/issues/152)--2026-04-12
 - [一些随机的想法](https://github.com/QiYongchuan/MyGitBlog/issues/150)--2026-04-08
 ## 收藏
 - [有趣的文章](https://github.com/QiYongchuan/MyGitBlog/issues/71)--2024-01-11
