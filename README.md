@@ -33,11 +33,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [# 从 Mac mini 远程修复 Windows 上的 Claude Code —— 一场跨设备排查实录](https://github.com/QiYongchuan/MyGitBlog/issues/153)--2026-04-28
 - [如何从想要到做到，之间的自动化系统](https://github.com/QiYongchuan/MyGitBlog/issues/152)--2026-04-12
 - [从MBTI到SBTI：当人格测试成为时代情绪的泄压阀](https://github.com/QiYongchuan/MyGitBlog/issues/151)--2026-04-09
 - [一些随机的想法](https://github.com/QiYongchuan/MyGitBlog/issues/150)--2026-04-08
 - [Tailscale + SSH 多设备并网完整教程（详细版本）](https://github.com/QiYongchuan/MyGitBlog/issues/148)--2026-03-27
-- [Tailscale + SSH 多设备并网完整教程](https://github.com/QiYongchuan/MyGitBlog/issues/147)--2026-03-26
 - [2025年度总结，从程序员到超级个体，我的AI时代求生记](https://github.com/QiYongchuan/MyGitBlog/issues/142)--2025-12-31
 - [你可以做任何事，不觉得这一点就很疯狂吗？--基于笑容检测的哈基米大战黄瓜条项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/135)--2025-10-28
 - [研究生退学转码之路：招转培、网课、鱼皮社区以及二学位  （二）](https://github.com/QiYongchuan/MyGitBlog/issues/124)--2025-05-12
@@ -50,13 +50,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [《一个帖子解决所有的英语学习问题》](https://github.com/QiYongchuan/MyGitBlog/issues/12)--2023-04-28
 </details>
 
+- [# 从 Mac mini 远程修复 Windows 上的 Claude Code —— 一场跨设备排查实录](https://github.com/QiYongchuan/MyGitBlog/issues/153)--2026-04-28
 - [Tailscale + SSH 多设备并网完整教程](https://github.com/QiYongchuan/MyGitBlog/issues/147)--2026-03-26
 - [增量下载的时间陷阱：一次时间处理错误引发的重复下载问题](https://github.com/QiYongchuan/MyGitBlog/issues/106)--2024-10-22
 - [实现无限滚动遇到的坑—document.body.offsetHeight 的值一直不变？](https://github.com/QiYongchuan/MyGitBlog/issues/76)--2024-01-30
 - [在挂梯子的情况下pip install xx 失败以及git push失败的解决方案（443以及10087等）](https://github.com/QiYongchuan/MyGitBlog/issues/67)--2024-01-07
-- [GitHubPoster项目折腾记录：withings-sync 依赖下载失败到网络问题](https://github.com/QiYongchuan/MyGitBlog/issues/64)--2024-01-04
 <details><summary>显示更多</summary>
 
+- [GitHubPoster项目折腾记录：withings-sync 依赖下载失败到网络问题](https://github.com/QiYongchuan/MyGitBlog/issues/64)--2024-01-04
 - [issue中发帖子的图片无法显示问题](https://github.com/QiYongchuan/MyGitBlog/issues/55)--2023-12-29
 - [听了印度老哥的建议后修改权限，最终成功了！](https://github.com/QiYongchuan/MyGitBlog/issues/41)--2023-12-05
 - [修改仓库的权限](https://github.com/QiYongchuan/MyGitBlog/issues/39)--2023-12-05
