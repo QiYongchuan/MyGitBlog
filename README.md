@@ -33,11 +33,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [普通人投资的机会，btc本轮周期在哪里，以及未来一段时间的仓位管理](https://github.com/QiYongchuan/MyGitBlog/issues/156)--2026-07-08
 - [为什么工作之后 很难长时间投入精力去学习了？ 为什么在学校里反而容易持续学习？](https://github.com/QiYongchuan/MyGitBlog/issues/155)--2026-05-22
 - [这几年你最困难的是什么时候？](https://github.com/QiYongchuan/MyGitBlog/issues/154)--2026-04-30
 - [# 从 Mac mini 远程修复 Windows 上的 Claude Code —— 一场跨设备排查实录](https://github.com/QiYongchuan/MyGitBlog/issues/153)--2026-04-28
 - [如何从想要到做到，之间的自动化系统](https://github.com/QiYongchuan/MyGitBlog/issues/152)--2026-04-12
-- [从MBTI到SBTI：当人格测试成为时代情绪的泄压阀](https://github.com/QiYongchuan/MyGitBlog/issues/151)--2026-04-09
 - [这几年你最困难的是什么时候？](https://github.com/QiYongchuan/MyGitBlog/issues/154)--2026-04-30
 - [2025年度总结，从程序员到超级个体，我的AI时代求生记](https://github.com/QiYongchuan/MyGitBlog/issues/142)--2025-12-31
 - [你可以做任何事，不觉得这一点就很疯狂吗？--基于笑容检测的哈基米大战黄瓜条项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/135)--2025-10-28
