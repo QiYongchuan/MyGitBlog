@@ -131,13 +131,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 
 ## blog
 - [从MBTI到SBTI：当人格测试成为时代情绪的泄压阀](https://github.com/QiYongchuan/MyGitBlog/issues/151)--2026-04-09
+- [自由的代价？ 跟前ld聊天引发的思考，一台6万多的AI盒子引起的离职几个月后的反刍思考](https://github.com/QiYongchuan/MyGitBlog/issues/159)--2026-08-17
 - [摸鱼做了一个小游戏：一个凭记忆画国家边界的小游戏](https://github.com/QiYongchuan/MyGitBlog/issues/158)--2026-08-05
 - [为什么工作之后 很难长时间投入精力去学习了？ 为什么在学校里反而容易持续学习？](https://github.com/QiYongchuan/MyGitBlog/issues/155)--2026-05-22
 - [【工资是毒药，商单也是，ADHDer、注意力狩猎场、流量焦虑与长期主义】](https://github.com/QiYongchuan/MyGitBlog/issues/146)--2026-03-05
 - [故地重游，我与那个崩溃的自己重逢](https://github.com/QiYongchuan/MyGitBlog/issues/144)--2026-02-03
-- [当生化机器遇见ADHD：一个程序员读赵纯想的多巴胺实验](https://github.com/QiYongchuan/MyGitBlog/issues/143)--2026-01-22
 <details><summary>显示更多</summary>
 
+- [当生化机器遇见ADHD：一个程序员读赵纯想的多巴胺实验](https://github.com/QiYongchuan/MyGitBlog/issues/143)--2026-01-22
 - [2025年度总结，从程序员到超级个体，我的AI时代求生记](https://github.com/QiYongchuan/MyGitBlog/issues/142)--2025-12-31
 - [Dolores项目详解：中国开发者的《her》实现案例](https://github.com/QiYongchuan/MyGitBlog/issues/139)--2025-10-31
 - [对抗遗忘与混乱：一个ADHD程序员的记忆实验](https://github.com/QiYongchuan/MyGitBlog/issues/138)--2025-10-29
@@ -192,13 +193,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [一些随机的想法](https://github.com/QiYongchuan/MyGitBlog/issues/150)--2026-04-08
 ## 收藏
 - [有趣的文章](https://github.com/QiYongchuan/MyGitBlog/issues/71)--2024-01-11
+- [自由的代价？ 跟前ld聊天引发的思考，一台6万多的AI盒子引起的离职几个月后的反刍思考](https://github.com/QiYongchuan/MyGitBlog/issues/159)--2026-08-17
 - [摸鱼做了一个小游戏：一个凭记忆画国家边界的小游戏](https://github.com/QiYongchuan/MyGitBlog/issues/158)--2026-08-05
 - [【整活】赛博活佛，一个专门记录互联网“大善人”的地方--记录那些免费、开源、好用，曾经拯救过无数开发者的产品，都应该被供起来。](https://github.com/QiYongchuan/MyGitBlog/issues/157)--2026-07-12
 - [这几年你最困难的是什么时候？](https://github.com/QiYongchuan/MyGitBlog/issues/154)--2026-04-30
 - [【工资是毒药，商单也是，ADHDer、注意力狩猎场、流量焦虑与长期主义】](https://github.com/QiYongchuan/MyGitBlog/issues/146)--2026-03-05
-- [我需要一个活人感的真诚表达的地方，拒绝ai纯粹手写](https://github.com/QiYongchuan/MyGitBlog/issues/145)--2026-03-04
 <details><summary>显示更多</summary>
 
+- [我需要一个活人感的真诚表达的地方，拒绝ai纯粹手写](https://github.com/QiYongchuan/MyGitBlog/issues/145)--2026-03-04
 - [X(Twitter) 推文自动备份到 Notion + 飞书 - 完整开发文档](https://github.com/QiYongchuan/MyGitBlog/issues/140)--2025-11-10
 - [对抗遗忘与混乱：一个ADHD程序员的记忆实验](https://github.com/QiYongchuan/MyGitBlog/issues/138)--2025-10-29
 - [ADHD低成就感的原因：工作记忆短以及分心](https://github.com/QiYongchuan/MyGitBlog/issues/137)--2025-10-29
