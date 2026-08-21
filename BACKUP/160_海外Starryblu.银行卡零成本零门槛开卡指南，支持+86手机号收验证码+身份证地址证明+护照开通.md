@@ -3,6 +3,8 @@
 
 Starryblu 银行卡交流群 · 问答整理
 
+<img width="720" height="900" alt="Image" src="https://github.com/user-attachments/assets/a672a018-a00d-488f-b57a-249f6f65add9" />
+
 开卡关键入口（来自推文，群里高频问这个）
 
 **邀请码：`MPFK01E`**
@@ -40,48 +42,6 @@ https://my.feishu.cn/share/base/form/shrcnvbhu2ctt27xQJlIQWnyTdc
 
 ---
 
-总览（按频率 × 重要性）
-
-排序
-问题类型
-大约出现
-重要性
-官方有没有统一口径
-1
-没走博主邀请码 / 已开户加不了白 / 虚拟卡在排队
-8–10 人
-最高，直接卡住开卡
-有
-2
-审核通过后下一步：要不要填表、虚拟卡从哪来
-5–6 人
-高，流程断点
-有；推文补了邀请码/问卷/链接
-3
-护照 / 身份证 / 地址证明
-5–6 人
-高，注册门槛
-有
-4
-入金怎么转：FPS、港卡、中行、招行、SWIFT
-4–5 人，长线程
-高，钱转不进去
-有
-5
-买实体卡 / 找客服加白 / 9.9
-4 人
-中高，没邀请码的退路
-有
-6
-卡功能：收款还是付款、消费、订阅
-3–4 人
-中高，决策问题
-有，但偏简
-7
-汇率、手续费、支持币种、能不能充 U
-3 人连问 + 2 人问 U
-中
-部分有
 
 
 ---
@@ -384,7 +344,9 @@ https://my.feishu.cn/share/base/form/shrcnvbhu2ctt27xQJlIQWnyTdc
 ————————————————
 欢迎加群交流
 
-[图片]
+<img width="1146" height="1611" alt="Image" src="https://github.com/user-attachments/assets/77deafdb-4640-404a-b3ef-d30529fb296f" />
+
 文档整理：我真的没有拼多多 @我真的没有拼多多 
- 
-https://x.com/nopinduoduo
+ https://x.com/nopinduoduo
+推文：
+https://x.com/nopinduoduo/status/2090778105204138084
