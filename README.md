@@ -17,6 +17,7 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 [RSS Feed](https://raw.githubusercontent.com/QiYongchuan/MyGitBlog/master/feed.xml)
 
 ## 置顶文章
+- [海外Starryblu 银行卡零成本零门槛开卡指南，支持+86手机号收验证码+身份证地址证明+护照开通](https://github.com/QiYongchuan/MyGitBlog/issues/160)--2026-08-21
 - [【整活】赛博活佛，一个专门记录互联网“大善人”的地方--记录那些免费、开源、好用，曾经拯救过无数开发者的产品，都应该被供起来。](https://github.com/QiYongchuan/MyGitBlog/issues/157)--2026-07-12
 - [当生化机器遇见ADHD：一个程序员读赵纯想的多巴胺实验](https://github.com/QiYongchuan/MyGitBlog/issues/143)--2026-01-22
 - [纯小白无脑教程:如何将梯子绑定住宅静态IP,降低节点风险度](https://github.com/QiYongchuan/MyGitBlog/issues/141)--2025-12-04
@@ -34,11 +35,11 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [原来都得经过“折磨自己、吃苦，崩溃，bug调不出来”的过程](https://github.com/QiYongchuan/MyGitBlog/issues/4)--2023-04-21
 - [第一篇：从Github上开始写日记，记录，学习](https://github.com/QiYongchuan/MyGitBlog/issues/1)--2023-04-20
 ## 最近更新
+- [海外Starryblu 银行卡零成本零门槛开卡指南，支持+86手机号收验证码+身份证地址证明+护照开通](https://github.com/QiYongchuan/MyGitBlog/issues/160)--2026-08-21
 - [自由的代价？ 跟前ld聊天引发的思考，一台6万多的AI盒子引起的离职几个月后的反刍思考](https://github.com/QiYongchuan/MyGitBlog/issues/159)--2026-08-17
 - [摸鱼做了一个小游戏：一个凭记忆画国家边界的小游戏](https://github.com/QiYongchuan/MyGitBlog/issues/158)--2026-08-05
 - [【整活】赛博活佛，一个专门记录互联网“大善人”的地方--记录那些免费、开源、好用，曾经拯救过无数开发者的产品，都应该被供起来。](https://github.com/QiYongchuan/MyGitBlog/issues/157)--2026-07-12
 - [普通人投资的机会，btc本轮周期在哪里，以及未来一段时间的仓位管理](https://github.com/QiYongchuan/MyGitBlog/issues/156)--2026-07-08
-- [为什么工作之后 很难长时间投入精力去学习了？ 为什么在学校里反而容易持续学习？](https://github.com/QiYongchuan/MyGitBlog/issues/155)--2026-05-22
 - [这几年你最困难的是什么时候？](https://github.com/QiYongchuan/MyGitBlog/issues/154)--2026-04-30
 - [2025年度总结，从程序员到超级个体，我的AI时代求生记](https://github.com/QiYongchuan/MyGitBlog/issues/142)--2025-12-31
 - [你可以做任何事，不觉得这一点就很疯狂吗？--基于笑容检测的哈基米大战黄瓜条项目总结](https://github.com/QiYongchuan/MyGitBlog/issues/135)--2025-10-28
@@ -193,13 +194,14 @@ My personal blog using issues and GitHub Actions (参考[yihong](https://github.
 - [一些随机的想法](https://github.com/QiYongchuan/MyGitBlog/issues/150)--2026-04-08
 ## 收藏
 - [有趣的文章](https://github.com/QiYongchuan/MyGitBlog/issues/71)--2024-01-11
+- [海外Starryblu 银行卡零成本零门槛开卡指南，支持+86手机号收验证码+身份证地址证明+护照开通](https://github.com/QiYongchuan/MyGitBlog/issues/160)--2026-08-21
 - [自由的代价？ 跟前ld聊天引发的思考，一台6万多的AI盒子引起的离职几个月后的反刍思考](https://github.com/QiYongchuan/MyGitBlog/issues/159)--2026-08-17
 - [摸鱼做了一个小游戏：一个凭记忆画国家边界的小游戏](https://github.com/QiYongchuan/MyGitBlog/issues/158)--2026-08-05
 - [【整活】赛博活佛，一个专门记录互联网“大善人”的地方--记录那些免费、开源、好用，曾经拯救过无数开发者的产品，都应该被供起来。](https://github.com/QiYongchuan/MyGitBlog/issues/157)--2026-07-12
 - [这几年你最困难的是什么时候？](https://github.com/QiYongchuan/MyGitBlog/issues/154)--2026-04-30
-- [【工资是毒药，商单也是，ADHDer、注意力狩猎场、流量焦虑与长期主义】](https://github.com/QiYongchuan/MyGitBlog/issues/146)--2026-03-05
 <details><summary>显示更多</summary>
 
+- [【工资是毒药，商单也是，ADHDer、注意力狩猎场、流量焦虑与长期主义】](https://github.com/QiYongchuan/MyGitBlog/issues/146)--2026-03-05
 - [我需要一个活人感的真诚表达的地方，拒绝ai纯粹手写](https://github.com/QiYongchuan/MyGitBlog/issues/145)--2026-03-04
 - [X(Twitter) 推文自动备份到 Notion + 飞书 - 完整开发文档](https://github.com/QiYongchuan/MyGitBlog/issues/140)--2025-11-10
 - [对抗遗忘与混乱：一个ADHD程序员的记忆实验](https://github.com/QiYongchuan/MyGitBlog/issues/138)--2025-10-29
